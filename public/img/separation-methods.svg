@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1134" width="900" height="1134" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" role="img" aria-labelledby="t">
+  <title id="t">Способы разделения смесей</title>
+  <defs><clipPath id="fun"><path d="M 150 146 V 154 Q 118 176 124 200 Q 128 216 151 222 L 153 230 H 163 L 165 222 Q 188 216 192 200 Q 198 176 166 154 V 146 Z" /></clipPath></defs>
+  <rect width="900" height="1134" fill="#f1f4fd" />
+  <rect x="0" y="0" width="900" height="92" rx="0" fill="#1e2a4a" stroke="none" stroke-width="0"  />
+  <text x="30" y="50" font-size="34" font-weight="800" fill="#fff" text-anchor="start" >СПОСОБЫ РАЗДЕЛЕНИЯ СМЕСЕЙ</text>
+  <text x="30" y="78" font-size="18" font-weight="400" fill="#c9d3ef" text-anchor="start" >Все они — физические явления: новые вещества не образуются</text>
+  <rect x="24" y="112" width="268" height="324" rx="16" fill="#fff" stroke="#d6dbee" stroke-width="1.6"  />
+  <rect x="34" y="122" width="248" height="152" rx="12" fill="#e4f5f2" stroke="none" stroke-width="0"  />
+  <rect x="148" y="136" width="20" height="12" rx="3" fill="#b9794b" stroke="#1c2340" stroke-width="2"  />
+  <g clip-path="url(#fun)">  <rect x="113" y="144" width="90" height="90" rx="0" fill="#f6f9ff" stroke="none" stroke-width="0"  />
+  <rect x="113" y="176" width="90" height="26" rx="0" fill="#f2c94c" stroke="none" stroke-width="0"  />
+  <rect x="113" y="202" width="90" height="34" rx="0" fill="#9ec9f4" stroke="none" stroke-width="0"  />
+  <line x1="113" y1="202" x2="203" y2="202" stroke="#e5484d" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 4" />
+</g>
+  <path d="M 150 146 V 154 Q 118 176 124 200 Q 128 216 151 222 L 153 230 H 163 L 165 222 Q 188 216 192 200 Q 198 176 166 154 V 146" fill="none" stroke="#1c2340" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  />
+  <rect x="144" y="223" width="28" height="6" rx="2" fill="#8a93a8" stroke="#1c2340" stroke-width="1.6"  />
+  <rect x="132" y="220" width="12" height="4" rx="2" fill="#8a93a8" stroke="#1c2340" stroke-width="1.4"  />
+  <path d="M 136 252 H 180 V 264 Q 180 270 174 270 H 142 Q 136 270 136 264 Z" fill="#9ec9f4" />
+  <path d="M 132 236 H 136 V 264 Q 136 270 142 270 H 174 Q 180 270 180 264 V 236 H 184" fill="none" stroke="#1c2340" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  />
+  <circle cx="158" cy="234" r="2.6" fill="#9ec9f4" stroke="#1c2340" stroke-width="1.2" />
+  <text x="212" y="186" font-size="14" font-weight="600" fill="#8a6d00" text-anchor="start" >масло</text>
+  <text x="212" y="216" font-size="14" font-weight="600" fill="#2d6aa8" text-anchor="start" >вода</text>
+  <circle cx="54" cy="142" r="15" fill="#1e2a4a" stroke="none" stroke-width="1.5" />
+  <text x="54" y="148" font-size="17" font-weight="800" fill="#fff" text-anchor="middle" >1</text>
+  <text x="40" y="304" font-size="21" font-weight="800" fill="#1c2340" text-anchor="start" >Отстаивание</text>
+  <text x="40" y="330" font-size="15" fill="#1c2340" text-anchor="start"><tspan font-weight="700">Что разделяют:</tspan> <tspan font-weight="400">песок + вода;</tspan></text>
+  <text x="40" y="350" font-size="15" fill="#1c2340" text-anchor="start"><tspan font-weight="400">масло + вода (делительная</tspan></text>
+  <text x="40" y="370" font-size="15" fill="#1c2340" text-anchor="start"><tspan font-weight="400">воронка)</tspan></text>
+  <text x="40" y="398" font-size="15" fill="#56607f" text-anchor="start"><tspan font-weight="700">Основа:</tspan> <tspan font-weight="400">разная плотность,</tspan></text>
+  <text x="40" y="418" font-size="15" fill="#56607f" text-anchor="start"><tspan font-weight="400">нерастворимость</tspan></text>
+  <rect x="316" y="112" width="268" height="324" rx="16" fill="#fff" stroke="#d6dbee" stroke-width="1.6"  />
+  <rect x="326" y="122" width="248" height="152" rx="12" fill="#e6f0fb" stroke="none" stroke-width="0"  />
+  <polygon points="406,150 494,150 456,208 444,208" fill="#f6f9ff" stroke="#1c2340" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="412,152 488,152 450,204" fill="#fff" stroke="#9aa2b8" stroke-width="1.6" stroke-linejoin="round" />
+  <polygon points="432,180 468,180 450,204" fill="#d9c9a0" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <circle cx="442" cy="186" r="2.2" fill="#a58f5a" stroke="none" stroke-width="1.5" />
+  <circle cx="456" cy="190" r="2.2" fill="#a58f5a" stroke="none" stroke-width="1.5" />
+  <circle cx="450" cy="196" r="2.2" fill="#a58f5a" stroke="none" stroke-width="1.5" />
+  <circle cx="447" cy="184" r="2.2" fill="#a58f5a" stroke="none" stroke-width="1.5" />
+  <circle cx="460" cy="184" r="2.2" fill="#a58f5a" stroke="none" stroke-width="1.5" />
+  <rect x="445" y="208" width="10" height="20" rx="0" fill="#f6f9ff" stroke="#1c2340" stroke-width="2.2"  />
+  <circle cx="450" cy="234" r="3" fill="#9ec9f4" stroke="#1c2340" stroke-width="1.2" />
+  <path d="M 418 252 H 482 V 262 Q 482 268 476 268 H 424 Q 418 268 418 262 Z" fill="#9ec9f4" />
+  <path d="M 414 240 H 418 V 262 Q 418 268 424 268 H 476 Q 482 268 482 262 V 240 H 486" fill="none" stroke="#1c2340" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  />
+  <text x="500" y="182" font-size="14" font-weight="600" fill="#7a6a3a" text-anchor="start" >осадок</text>
+  <text x="490" y="250" font-size="14" font-weight="600" fill="#2d6aa8" text-anchor="start" >фильтрат</text>
+  <circle cx="346" cy="142" r="15" fill="#1e2a4a" stroke="none" stroke-width="1.5" />
+  <text x="346" y="148" font-size="17" font-weight="800" fill="#fff" text-anchor="middle" >2</text>
+  <text x="332" y="304" font-size="21" font-weight="800" fill="#1c2340" text-anchor="start" >Фильтрование</text>
+  <text x="332" y="330" font-size="15" fill="#1c2340" text-anchor="start"><tspan font-weight="700">Что разделяют:</tspan> <tspan font-weight="400">мел + вода</tspan></text>
+  <text x="332" y="358" font-size="15" fill="#56607f" text-anchor="start"><tspan font-weight="700">Основа:</tspan> <tspan font-weight="400">нерастворимое</tspan></text>
+  <text x="332" y="378" font-size="15" fill="#56607f" text-anchor="start"><tspan font-weight="400">вещество задерживается</tspan></text>
+  <text x="332" y="398" font-size="15" fill="#56607f" text-anchor="start"><tspan font-weight="400">фильтром</tspan></text>
+  <rect x="608" y="112" width="268" height="324" rx="16" fill="#fff" stroke="#d6dbee" stroke-width="1.6"  />
+  <rect x="618" y="122" width="248" height="152" rx="12" fill="#fdeee0" stroke="none" stroke-width="0"  />
+  <ellipse cx="742" cy="262" rx="76" ry="7" fill="#d7dbe8" stroke="none" stroke-width="2"  />
+  <path d="M 718 190 V 168 A 24 24 0 0 1 766 168 V 190" fill="none" stroke="#8a93a8" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"  />
+  <line x1="718" y1="180" x2="718" y2="194" stroke="#e5484d" stroke-width="16" stroke-linecap="round"  />
+  <line x1="766" y1="180" x2="766" y2="194" stroke="#3b82f6" stroke-width="16" stroke-linecap="round"  />
+  <rect x="717.1" y="217.4" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(17 720.1 218.9)" />
+  <rect x="724.3" y="212" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(0 727.3 213.5)" />
+  <rect x="713.2" y="197.2" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(-39 716.2 198.7)" />
+  <rect x="720.6" y="202.8" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(46 723.6 204.3)" />
+  <rect x="707.5" y="208.2" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(-2 710.5 209.7)" />
+  <rect x="715" y="208.4" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(16 718.0 209.9)" />
+  <rect x="703.4" y="214.1" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(-1 706.4 215.6)" />
+  <rect x="710.1" y="217.8" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(-7 713.1 219.3)" />
+  <rect x="704.1" y="199.3" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(-5 707.1 200.8)" />
+  <rect x="726.7" y="199.4" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(5 729.7 200.9)" />
+  <rect x="728.9" y="206.5" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(-45 731.9 208.0)" />
+  <rect x="761.6" y="216.6" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(-16 764.6 218.1)" />
+  <rect x="771.8" y="205" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(-41 774.8 206.5)" />
+  <rect x="765.7" y="199.5" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(-36 768.7 201.0)" />
+  <rect x="751.9" y="210.2" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(22 754.9 211.7)" />
+  <rect x="761.9" y="208.2" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(-44 764.9 209.7)" />
+  <rect x="753.4" y="198.6" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(57 756.4 200.1)" />
+  <rect x="776" y="211.6" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(-28 779.0 213.1)" />
+  <rect x="769.6" y="215.1" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(55 772.6 216.6)" />
+  <rect x="754.6" y="217.7" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(-54 757.6 219.2)" />
+  <rect x="773.8" y="198.1" width="6" height="3" rx="0" fill="#4b5163" stroke="none" stroke-width="0" transform="rotate(-54 776.8 199.6)" />
+  <polygon points="692,260 708,236 732,228 756,236 786,260" fill="#f6d02a" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <circle cx="770.4" cy="256.2" r="2.3" fill="#c99a06" stroke="none" stroke-width="1.5" />
+  <circle cx="718.4" cy="249.6" r="2.3" fill="#c99a06" stroke="none" stroke-width="1.5" />
+  <circle cx="750" cy="238.4" r="2.3" fill="#c99a06" stroke="none" stroke-width="1.5" />
+  <circle cx="708.3" cy="256.7" r="2.3" fill="#c99a06" stroke="none" stroke-width="1.5" />
+  <circle cx="730.9" cy="239.3" r="2.3" fill="#c99a06" stroke="none" stroke-width="1.5" />
+  <circle cx="761" cy="250.1" r="2.3" fill="#c99a06" stroke="none" stroke-width="1.5" />
+  <circle cx="737.4" cy="247.6" r="2.3" fill="#c99a06" stroke="none" stroke-width="1.5" />
+  <circle cx="708.1" cy="244.4" r="2.3" fill="#c99a06" stroke="none" stroke-width="1.5" />
+  <circle cx="762.6" cy="239.1" r="2.3" fill="#c99a06" stroke="none" stroke-width="1.5" />
+  <circle cx="749.1" cy="250" r="2.3" fill="#c99a06" stroke="none" stroke-width="1.5" />
+  <circle cx="740.6" cy="238.2" r="2.3" fill="#c99a06" stroke="none" stroke-width="1.5" />
+  <circle cx="725.5" cy="256.2" r="2.3" fill="#c99a06" stroke="none" stroke-width="1.5" />
+  <circle cx="773.9" cy="245.2" r="2.3" fill="#c99a06" stroke="none" stroke-width="1.5" />
+  <circle cx="717.4" cy="238.3" r="2.3" fill="#c99a06" stroke="none" stroke-width="1.5" />
+  <circle cx="740.1" cy="257.4" r="2.3" fill="#c99a06" stroke="none" stroke-width="1.5" />
+  <circle cx="755.6" cy="257.9" r="2.3" fill="#c99a06" stroke="none" stroke-width="1.5" />
+  <text x="798" y="212" font-size="16" font-weight="700" fill="#4b5163" text-anchor="start" >Fe</text>
+  <text x="794" y="248" font-size="16" font-weight="700" fill="#a07c00" text-anchor="start" >S</text>
+  <circle cx="638" cy="142" r="15" fill="#1e2a4a" stroke="none" stroke-width="1.5" />
+  <text x="638" y="148" font-size="17" font-weight="800" fill="#fff" text-anchor="middle" >3</text>
+  <text x="624" y="304" font-size="21" font-weight="800" fill="#1c2340" text-anchor="start" >Действие магнитом</text>
+  <text x="624" y="330" font-size="15" fill="#1c2340" text-anchor="start"><tspan font-weight="700">Что разделяют:</tspan> <tspan font-weight="400">железо + сера</tspan></text>
+  <text x="624" y="358" font-size="15" fill="#56607f" text-anchor="start"><tspan font-weight="700">Основа:</tspan> <tspan font-weight="400">железо притягивается</tspan></text>
+  <text x="624" y="378" font-size="15" fill="#56607f" text-anchor="start"><tspan font-weight="400">магнитом</tspan></text>
+  <rect x="24" y="456" width="268" height="324" rx="16" fill="#fff" stroke="#d6dbee" stroke-width="1.6"  />
+  <rect x="34" y="466" width="248" height="152" rx="12" fill="#fbf1d8" stroke="none" stroke-width="0"  />
+  <line x1="114" y1="536" x2="100" y2="604" stroke="#6b7390" stroke-width="4" stroke-linecap="round"  />
+  <line x1="202" y1="536" x2="216" y2="604" stroke="#6b7390" stroke-width="4" stroke-linecap="round"  />
+  <line x1="106" y1="536" x2="210" y2="536" stroke="#6b7390" stroke-width="4" stroke-linecap="round"  />
+  <path d="M 158 586 C 148.5 582.2 149.45 570.8 158 557.5 C 166.55 570.8 167.5 582.2 158 586 Z" fill="#ff9f1c" stroke="#e5484d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"  />
+  <path d="M 158 585 C 153.25 583.15 154.2 577.45 158 572.7 C 161.8 577.45 162.75 583.15 158 585 Z" fill="#ffe066" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  />
+  <rect x="142" y="586" width="32" height="24" rx="5" fill="#cfd6e6" stroke="#1c2340" stroke-width="2"  />
+  <path d="M 116 530 Q 158 580 200 530 Z" fill="#eceff7" stroke="#1c2340" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  />
+  <rect x="140" y="544" width="8" height="8" rx="0" fill="#fff" stroke="#1c2340" stroke-width="1.5"  />
+  <rect x="152" y="550" width="8" height="8" rx="0" fill="#fff" stroke="#1c2340" stroke-width="1.5"  />
+  <rect x="164" y="546" width="8" height="8" rx="0" fill="#fff" stroke="#1c2340" stroke-width="1.5"  />
+  <rect x="156" y="540" width="8" height="8" rx="0" fill="#fff" stroke="#1c2340" stroke-width="1.5"  />
+  <rect x="146" y="540" width="8" height="8" rx="0" fill="#fff" stroke="#1c2340" stroke-width="1.5"  />
+  <path d="M 138 520 q 7 -8 0 -16 t 0 -16" fill="none" stroke="#8fb2dc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"  />
+  <path d="M 158 514 q 7 -8 0 -16 t 0 -16" fill="none" stroke="#8fb2dc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"  />
+  <path d="M 178 520 q 7 -8 0 -16 t 0 -16" fill="none" stroke="#8fb2dc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"  />
+  <text x="214" y="548" font-size="14" font-weight="600" fill="#1c2340" text-anchor="start" >NaCl</text>
+  <circle cx="54" cy="486" r="15" fill="#1e2a4a" stroke="none" stroke-width="1.5" />
+  <text x="54" y="492" font-size="17" font-weight="800" fill="#fff" text-anchor="middle" >4</text>
+  <text x="40" y="648" font-size="21" font-weight="800" fill="#1c2340" text-anchor="start" >Выпаривание</text>
+  <text x="40" y="674" font-size="15" fill="#1c2340" text-anchor="start"><tspan font-weight="700">Что разделяют:</tspan> <tspan font-weight="400">соль из</tspan></text>
+  <text x="40" y="694" font-size="15" fill="#1c2340" text-anchor="start"><tspan font-weight="400">раствора</tspan></text>
+  <text x="40" y="722" font-size="15" fill="#56607f" text-anchor="start"><tspan font-weight="700">Основа:</tspan> <tspan font-weight="400">вода испаряется,</tspan></text>
+  <text x="40" y="742" font-size="15" fill="#56607f" text-anchor="start"><tspan font-weight="400">соль остаётся</tspan></text>
+  <rect x="316" y="456" width="268" height="324" rx="16" fill="#fff" stroke="#d6dbee" stroke-width="1.6"  />
+  <rect x="326" y="466" width="248" height="152" rx="12" fill="#e3effc" stroke="none" stroke-width="0"  />
+  <path d="M 412 512 H 488 V 594 Q 488 602 480 602 H 420 Q 412 602 412 594 Z" fill="#8ec5f0" />
+  <path d="M 408 490 H 412 V 594 Q 412 602 420 602 H 480 Q 488 602 488 594 V 490 H 492" fill="none" stroke="#1c2340" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  />
+  <polygon points="424,578 433.8,589.2 431,599 417,599 414.2,589.2" fill="#2f6fc4" stroke="#1c2340" stroke-width="1.6" stroke-linejoin="round" />
+  <polygon points="444,578 456.6,592.4 453,605 435,605 431.4,592.4" fill="#2f6fc4" stroke="#1c2340" stroke-width="1.6" stroke-linejoin="round" />
+  <polygon points="466,576 477.2,588.8 474,600 458,600 454.8,588.8" fill="#2f6fc4" stroke="#1c2340" stroke-width="1.6" stroke-linejoin="round" />
+  <polygon points="478,582 486.4,591.6 484,600 472,600 469.6,591.6" fill="#2f6fc4" stroke="#1c2340" stroke-width="1.6" stroke-linejoin="round" />
+  <polygon points="434,568 442.4,577.6 440,586 428,586 425.6,577.6" fill="#2f6fc4" stroke="#1c2340" stroke-width="1.6" stroke-linejoin="round" />
+  <polygon points="456,564 465.8,575.2 463,585 449,585 446.2,575.2" fill="#2f6fc4" stroke="#1c2340" stroke-width="1.6" stroke-linejoin="round" />
+  <line x1="400" y1="486" x2="500" y2="486" stroke="#8a93a8" stroke-width="5" stroke-linecap="round"  />
+  <line x1="450" y1="486" x2="450" y2="538" stroke="#8a93a8" stroke-width="2" stroke-linecap="round"  />
+  <polygon points="450,528 458,538 450,548 442,538" fill="#2f6fc4" stroke="#1c2340" stroke-width="1.5" stroke-linejoin="round" />
+  <text x="502" y="578" font-size="13" font-weight="700" fill="#2f6fc4" text-anchor="start" >CuSO₄</text>
+  <circle cx="346" cy="486" r="15" fill="#1e2a4a" stroke="none" stroke-width="1.5" />
+  <text x="346" y="492" font-size="17" font-weight="800" fill="#fff" text-anchor="middle" >5</text>
+  <text x="332" y="648" font-size="21" font-weight="800" fill="#1c2340" text-anchor="start" >Кристаллизация</text>
+  <text x="332" y="674" font-size="15" fill="#1c2340" text-anchor="start"><tspan font-weight="700">Что разделяют:</tspan> <tspan font-weight="400">медный</tspan></text>
+  <text x="332" y="694" font-size="15" fill="#1c2340" text-anchor="start"><tspan font-weight="400">купорос из раствора</tspan></text>
+  <text x="332" y="722" font-size="15" fill="#56607f" text-anchor="start"><tspan font-weight="700">Основа:</tspan> <tspan font-weight="400">вещество выпадает в</tspan></text>
+  <text x="332" y="742" font-size="15" fill="#56607f" text-anchor="start"><tspan font-weight="400">виде кристаллов</tspan></text>
+  <rect x="608" y="456" width="268" height="324" rx="16" fill="#fff" stroke="#d6dbee" stroke-width="1.6"  />
+  <rect x="618" y="466" width="248" height="152" rx="12" fill="#efe9fb" stroke="none" stroke-width="0"  />
+  <rect x="638" y="486" width="16" height="12" rx="2" fill="#b9794b" stroke="#1c2340" stroke-width="2"  />
+  <line x1="646" y1="482" x2="646" y2="536" stroke="#e5484d" stroke-width="3" stroke-linecap="round"  />
+  <circle cx="646" cy="540" r="3" fill="#e5484d" stroke="none" stroke-width="1.5" />
+  <path d="M 640 498 V 526 A 26 26 0 1 0 662 526 V 498" fill="#f6f9ff" stroke="#1c2340" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  />
+  <path d="M 630 562 A 26 26 0 0 0 670 562 Z" fill="#9ec9f4" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"  />
+  <path d="M 640 498 V 526 A 26 26 0 1 0 662 526 V 498" fill="none" stroke="#1c2340" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  />
+  <path d="M 651 610 C 643 606.8 643.8 597.2 651 586 C 658.2 597.2 659 606.8 651 610 Z" fill="#ff9f1c" stroke="#e5484d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"  />
+  <path d="M 651 609 C 647 607.6 647.8 602.8 651 598.8 C 654.2 602.8 655 607.6 651 609 Z" fill="#ffe066" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  />
+  <rect x="638" y="610" width="26" height="8" rx="3" fill="#cfd6e6" stroke="#1c2340" stroke-width="1.6"  />
+  <g transform="translate(676,524) rotate(22.9)">
+  <rect x="0" y="-10" width="112.9" height="20" rx="6" fill="#dce8f8" stroke="#1c2340" stroke-width="2.4"  />
+  <line x1="2" y1="0" x2="110.9" y2="0" stroke="#6b7390" stroke-width="3" stroke-linecap="round"  />
+  </g>
+  <path d="M 662 514 L 676 524" fill="none" stroke="#1c2340" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"  />
+  <text x="730" y="504" font-size="12.5" font-weight="600" fill="#2d6aa8" text-anchor="middle" >охлаждение</text>
+  <path d="M 766 598 H 806 V 610 Q 806 614 802 614 H 770 Q 766 614 766 610 Z" fill="#9ec9f4" />
+  <polygon points="780,574 792,574 808,614 764,614" fill="none" stroke="#1c2340" stroke-width="2.5" stroke-linejoin="round" />
+  <circle cx="783" cy="582" r="2.6" fill="#9ec9f4" stroke="#1c2340" stroke-width="1.2" />
+  <circle cx="638" cy="486" r="15" fill="#1e2a4a" stroke="none" stroke-width="1.5" />
+  <text x="638" y="492" font-size="17" font-weight="800" fill="#fff" text-anchor="middle" >6</text>
+  <text x="624" y="648" font-size="18" font-weight="800" fill="#1c2340" text-anchor="start" >Перегонка (дистилляция)</text>
+  <text x="624" y="674" font-size="15" fill="#1c2340" text-anchor="start"><tspan font-weight="700">Что разделяют:</tspan></text>
+  <text x="624" y="694" font-size="15" fill="#1c2340" text-anchor="start"><tspan font-weight="400">дистиллированная вода; спирт</tspan></text>
+  <text x="624" y="714" font-size="15" fill="#1c2340" text-anchor="start"><tspan font-weight="400">+ вода</tspan></text>
+  <text x="624" y="742" font-size="15" fill="#56607f" text-anchor="start"><tspan font-weight="700">Основа:</tspan> <tspan font-weight="400">разные температуры</tspan></text>
+  <text x="624" y="762" font-size="15" fill="#56607f" text-anchor="start"><tspan font-weight="400">кипения</tspan></text>
+  <rect x="24" y="800" width="268" height="324" rx="16" fill="#fff" stroke="#d6dbee" stroke-width="1.6"  />
+  <rect x="34" y="810" width="248" height="152" rx="12" fill="#fbe9ef" stroke="none" stroke-width="0"  />
+  <path d="M 122 930 H 194 V 950 Q 194 958 186 958 H 130 Q 122 958 122 950 Z" fill="#e6f2ff" />
+  <path d="M 118 850 H 122 V 950 Q 122 958 130 958 H 186 Q 194 958 194 950 V 850 H 198" fill="none" stroke="#1c2340" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  />
+  <rect x="143" y="832" width="30" height="104" rx="0" fill="#fffdf4" stroke="#1c2340" stroke-width="2"  />
+  <rect x="143" y="920" width="30" height="16" rx="0" fill="#eaf3ff" stroke="none" stroke-width="0"  />
+  <rect x="143" y="832" width="30" height="104" rx="0" fill="none" stroke="#1c2340" stroke-width="2"  />
+  <rect x="114" y="828" width="88" height="6" rx="2" fill="#8a93a8" stroke="#1c2340" stroke-width="1.8"  />
+  <line x1="143" y1="918" x2="173" y2="918" stroke="#9aa2b8" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 3" />
+  <ellipse cx="158" cy="874" rx="8" ry="5" fill="#f2c94c" stroke="none" stroke-width="2"  />
+  <ellipse cx="158" cy="892" rx="9" ry="5.5" fill="#e5484d" stroke="none" stroke-width="2"  />
+  <ellipse cx="158" cy="908" rx="9" ry="6" fill="#3b82f6" stroke="none" stroke-width="2"  />
+  <text x="206" y="878" font-size="13" font-weight="600" fill="#8a6d00" text-anchor="start" >жёлтый</text>
+  <text x="206" y="896" font-size="13" font-weight="600" fill="#c0262c" text-anchor="start" >красный</text>
+  <text x="206" y="912" font-size="13" font-weight="600" fill="#2455c0" text-anchor="start" >синий</text>
+  <circle cx="54" cy="830" r="15" fill="#1e2a4a" stroke="none" stroke-width="1.5" />
+  <text x="54" y="836" font-size="17" font-weight="800" fill="#fff" text-anchor="middle" >7</text>
+  <text x="40" y="992" font-size="21" font-weight="800" fill="#1c2340" text-anchor="start" >Хроматография</text>
+  <text x="40" y="1018" font-size="15" fill="#1c2340" text-anchor="start"><tspan font-weight="700">Что разделяют:</tspan> <tspan font-weight="400">красители</tspan></text>
+  <text x="40" y="1046" font-size="15" fill="#56607f" text-anchor="start"><tspan font-weight="700">Основа:</tspan> <tspan font-weight="400">разная скорость</tspan></text>
+  <text x="40" y="1066" font-size="15" fill="#56607f" text-anchor="start"><tspan font-weight="400">движения компонентов</tspan></text>
+  <rect x="316" y="800" width="560" height="324" rx="16" fill="#fff" stroke="#d6dbee" stroke-width="1.6"  />
+  <text x="336" y="834" font-size="21" font-weight="800" fill="#1c2340" text-anchor="start" >Пример: песок + соль + железо</text>
+  <rect x="336" y="854" width="520" height="54" rx="10" fill="#f1f4fd" stroke="none" stroke-width="0"  />
+  <text x="350" y="886" font-size="17" font-weight="700" fill="#1c2340" text-anchor="start" >Смесь:</text>
+  <circle cx="434" cy="880" r="7" fill="#d3a85c" stroke="#1c2340" stroke-width="1.4" />
+  <text x="448" y="886" font-size="16" font-weight="400" fill="#1c2340" text-anchor="start" >песок</text>
+  <circle cx="528" cy="880" r="6" fill="#fff" stroke="#1c2340" stroke-width="1.6" />
+  <text x="542" y="886" font-size="16" font-weight="400" fill="#1c2340" text-anchor="start" >соль</text>
+  <rect x="612" y="875" width="12" height="6" rx="0" fill="#4b5163" stroke="none" stroke-width="0"  />
+  <text x="632" y="886" font-size="16" font-weight="400" fill="#1c2340" text-anchor="start" >железо (опилки)</text>
+  <rect x="336" y="924" width="160" height="108" rx="12" fill="#fff" stroke="#aeb6d6" stroke-width="2"  />
+  <circle cx="356" cy="946" r="13" fill="#1e2a4a" stroke="none" stroke-width="1.5" />
+  <text x="356" y="952" font-size="15" font-weight="800" fill="#fff" text-anchor="middle" >1</text>
+  <text x="372" y="952" font-size="15" font-weight="800" fill="#1c2340" text-anchor="start" >магнит</text>
+  <text x="348" y="982" font-size="14" fill="#56607f" text-anchor="start"><tspan font-weight="400">притягивает</tspan></text>
+  <text x="348" y="1000" font-size="14" fill="#56607f" text-anchor="start"><tspan font-weight="400">железо</tspan></text>
+  <path d="M 416 1034 V 1046" fill="none" stroke="#6b7390" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  />
+  <rect x="354" y="1048" width="124" height="34" rx="17" fill="#f1f4fd" stroke="none" stroke-width="0"  />
+  <circle cx="376" cy="1065" r="8" fill="#4b5163" stroke="#1c2340" stroke-width="1.5" />
+  <text x="392" y="1071" font-size="17" font-weight="700" fill="#1c2340" text-anchor="start" >железо</text>
+  <path d="M 500 976 H 510" fill="none" stroke="#6b7390" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"  />
+  <polygon points="510,970 518,976 510,982" fill="#6b7390" stroke="#6b7390" stroke-width="1" stroke-linejoin="round" />
+  <rect x="516" y="924" width="160" height="108" rx="12" fill="#fff" stroke="#aeb6d6" stroke-width="2"  />
+  <circle cx="536" cy="946" r="13" fill="#1e2a4a" stroke="none" stroke-width="1.5" />
+  <text x="536" y="952" font-size="15" font-weight="800" fill="#fff" text-anchor="middle" >2</text>
+  <text x="552" y="952" font-size="15" font-weight="800" fill="#1c2340" text-anchor="start" >фильтрование</text>
+  <text x="528" y="982" font-size="14" fill="#56607f" text-anchor="start"><tspan font-weight="400">соль</tspan></text>
+  <text x="528" y="1000" font-size="14" fill="#56607f" text-anchor="start"><tspan font-weight="400">растворилась,</tspan></text>
+  <text x="528" y="1018" font-size="14" fill="#56607f" text-anchor="start"><tspan font-weight="400">песок на фильтре</tspan></text>
+  <path d="M 596 1034 V 1046" fill="none" stroke="#6b7390" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  />
+  <rect x="534" y="1048" width="124" height="34" rx="17" fill="#f1f4fd" stroke="none" stroke-width="0"  />
+  <circle cx="556" cy="1065" r="8" fill="#d3a85c" stroke="#1c2340" stroke-width="1.5" />
+  <text x="572" y="1071" font-size="17" font-weight="700" fill="#1c2340" text-anchor="start" >песок</text>
+  <path d="M 680 976 H 690" fill="none" stroke="#6b7390" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"  />
+  <polygon points="690,970 698,976 690,982" fill="#6b7390" stroke="#6b7390" stroke-width="1" stroke-linejoin="round" />
+  <rect x="696" y="924" width="160" height="108" rx="12" fill="#fff" stroke="#aeb6d6" stroke-width="2"  />
+  <circle cx="716" cy="946" r="13" fill="#1e2a4a" stroke="none" stroke-width="1.5" />
+  <text x="716" y="952" font-size="15" font-weight="800" fill="#fff" text-anchor="middle" >3</text>
+  <text x="732" y="952" font-size="15" font-weight="800" fill="#1c2340" text-anchor="start" >выпаривание</text>
+  <text x="708" y="982" font-size="14" fill="#56607f" text-anchor="start"><tspan font-weight="400">вода испарилась,</tspan></text>
+  <text x="708" y="1000" font-size="14" fill="#56607f" text-anchor="start"><tspan font-weight="400">соль в чашке</tspan></text>
+  <path d="M 776 1034 V 1046" fill="none" stroke="#6b7390" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  />
+  <rect x="714" y="1048" width="124" height="34" rx="17" fill="#f1f4fd" stroke="none" stroke-width="0"  />
+  <circle cx="736" cy="1065" r="8" fill="#fff" stroke="#1c2340" stroke-width="1.5" />
+  <text x="752" y="1071" font-size="17" font-weight="700" fill="#1c2340" text-anchor="start" >соль</text>
+  <text x="336" y="1108" font-size="15" font-weight="400" fill="#56607f" text-anchor="start" >Каждый шаг — своё свойство: магнит · растворимость · испарение</text>
+</svg>

@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250" width="720" height="250" role="img" aria-label="Четыре типа кристаллических решёток: ионная (ионы Na+ и Cl−), атомная (атомы углерода в алмазе), молекулярная (молекулы CO2), металлическая (катионы металла и электронный газ)">
+<rect width="720" height="250" fill="#ffffff"/>
+<rect x="10" y="8" width="170" height="234" rx="14" fill="#fde2e4" fill-opacity="0.45" stroke="#fde2e4" stroke-width="2"/>
+<text x="95" y="32" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="16" font-weight="800" fill="#c2326b">Ионная</text>
+<text x="95" y="50" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#1f2433">в узлах ионы</text>
+<rect x="190" y="8" width="170" height="234" rx="14" fill="#e3e0fb" fill-opacity="0.45" stroke="#e3e0fb" stroke-width="2"/>
+<text x="275" y="32" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="16" font-weight="800" fill="#5b3fd0">Атомная</text>
+<text x="275" y="50" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#1f2433">в узлах атомы</text>
+<rect x="370" y="8" width="170" height="234" rx="14" fill="#dff3ee" fill-opacity="0.45" stroke="#dff3ee" stroke-width="2"/>
+<text x="455" y="32" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="16" font-weight="800" fill="#0f8a74">Молекулярная</text>
+<text x="455" y="50" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#1f2433">в узлах молекулы</text>
+<rect x="550" y="8" width="170" height="234" rx="14" fill="#ffe9cc" fill-opacity="0.45" stroke="#ffe9cc" stroke-width="2"/>
+<text x="635" y="32" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="16" font-weight="800" fill="#b86a00">Металлическая</text>
+<text x="635" y="50" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#1f2433">катионы и ē-газ</text>
+<line x1="43" y1="84" x2="77" y2="84" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="43" y1="84" x2="43" y2="118" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="77" y1="84" x2="111" y2="84" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="77" y1="84" x2="77" y2="118" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="111" y1="84" x2="145" y2="84" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="111" y1="84" x2="111" y2="118" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="145" y1="84" x2="145" y2="118" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="43" y1="118" x2="77" y2="118" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="43" y1="118" x2="43" y2="152" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="77" y1="118" x2="111" y2="118" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="77" y1="118" x2="77" y2="152" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="111" y1="118" x2="145" y2="118" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="111" y1="118" x2="111" y2="152" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="145" y1="118" x2="145" y2="152" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="43" y1="152" x2="77" y2="152" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="43" y1="152" x2="43" y2="186" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="77" y1="152" x2="111" y2="152" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="77" y1="152" x2="77" y2="186" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="111" y1="152" x2="145" y2="152" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="111" y1="152" x2="111" y2="186" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="145" y1="152" x2="145" y2="186" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="43" y1="186" x2="77" y2="186" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="77" y1="186" x2="111" y2="186" stroke="#b9bfd3" stroke-width="2"/>
+<line x1="111" y1="186" x2="145" y2="186" stroke="#b9bfd3" stroke-width="2"/>
+<circle cx="43" cy="84" r="9" fill="#ffb3cf" stroke="#c2326b" stroke-width="2"/>
+<text x="43" y="88" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#1f2433">+</text>
+<circle cx="77" cy="84" r="12" fill="#cfe56a" stroke="#8fae1f" stroke-width="2"/>
+<text x="77" y="88" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#1f2433">−</text>
+<circle cx="111" cy="84" r="9" fill="#ffb3cf" stroke="#c2326b" stroke-width="2"/>
+<text x="111" y="88" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#1f2433">+</text>
+<circle cx="145" cy="84" r="12" fill="#cfe56a" stroke="#8fae1f" stroke-width="2"/>
+<text x="145" y="88" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#1f2433">−</text>
+<circle cx="43" cy="118" r="12" fill="#cfe56a" stroke="#8fae1f" stroke-width="2"/>
+<text x="43" y="122" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#1f2433">−</text>
+<circle cx="77" cy="118" r="9" fill="#ffb3cf" stroke="#c2326b" stroke-width="2"/>
+<text x="77" y="122" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#1f2433">+</text>
+<circle cx="111" cy="118" r="12" fill="#cfe56a" stroke="#8fae1f" stroke-width="2"/>
+<text x="111" y="122" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#1f2433">−</text>
+<circle cx="145" cy="118" r="9" fill="#ffb3cf" stroke="#c2326b" stroke-width="2"/>
+<text x="145" y="122" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#1f2433">+</text>
+<circle cx="43" cy="152" r="9" fill="#ffb3cf" stroke="#c2326b" stroke-width="2"/>
+<text x="43" y="156" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#1f2433">+</text>
+<circle cx="77" cy="152" r="12" fill="#cfe56a" stroke="#8fae1f" stroke-width="2"/>
+<text x="77" y="156" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#1f2433">−</text>
+<circle cx="111" cy="152" r="9" fill="#ffb3cf" stroke="#c2326b" stroke-width="2"/>
+<text x="111" y="156" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#1f2433">+</text>
+<circle cx="145" cy="152" r="12" fill="#cfe56a" stroke="#8fae1f" stroke-width="2"/>
+<text x="145" y="156" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#1f2433">−</text>
+<circle cx="43" cy="186" r="12" fill="#cfe56a" stroke="#8fae1f" stroke-width="2"/>
+<text x="43" y="190" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#1f2433">−</text>
+<circle cx="77" cy="186" r="9" fill="#ffb3cf" stroke="#c2326b" stroke-width="2"/>
+<text x="77" y="190" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#1f2433">+</text>
+<circle cx="111" cy="186" r="12" fill="#cfe56a" stroke="#8fae1f" stroke-width="2"/>
+<text x="111" y="190" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#1f2433">−</text>
+<circle cx="145" cy="186" r="9" fill="#ffb3cf" stroke="#c2326b" stroke-width="2"/>
+<text x="145" y="190" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#1f2433">+</text>
+<text x="95" y="214" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#1f2433">NaCl, KOH, CaCO₃</text>
+<text x="95" y="231" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#1f2433">связь ионная</text>
+<line x1="223" y1="84" x2="257" y2="84" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="223" y1="84" x2="223" y2="118" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="223" y1="84" x2="257" y2="118" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="257" y1="84" x2="291" y2="84" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="257" y1="84" x2="257" y2="118" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="291" y1="84" x2="257" y2="118" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="291" y1="84" x2="325" y2="84" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="291" y1="84" x2="291" y2="118" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="291" y1="84" x2="325" y2="118" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="325" y1="84" x2="325" y2="118" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="223" y1="118" x2="257" y2="118" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="223" y1="118" x2="223" y2="152" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="257" y1="118" x2="223" y2="152" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="257" y1="118" x2="291" y2="118" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="257" y1="118" x2="257" y2="152" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="257" y1="118" x2="291" y2="152" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="291" y1="118" x2="325" y2="118" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="291" y1="118" x2="291" y2="152" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="325" y1="118" x2="291" y2="152" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="325" y1="118" x2="325" y2="152" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="223" y1="152" x2="257" y2="152" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="223" y1="152" x2="223" y2="186" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="223" y1="152" x2="257" y2="186" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="257" y1="152" x2="291" y2="152" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="257" y1="152" x2="257" y2="186" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="291" y1="152" x2="257" y2="186" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="291" y1="152" x2="325" y2="152" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="291" y1="152" x2="291" y2="186" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="291" y1="152" x2="325" y2="186" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="325" y1="152" x2="325" y2="186" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="223" y1="186" x2="257" y2="186" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="257" y1="186" x2="291" y2="186" stroke="#1f2433" stroke-width="2.6"/>
+<line x1="291" y1="186" x2="325" y2="186" stroke="#1f2433" stroke-width="2.6"/>
+<circle cx="223" cy="84" r="10" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<text x="223" y="88" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="800" fill="#1f2433">C</text>
+<circle cx="257" cy="84" r="10" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<text x="257" y="88" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="800" fill="#1f2433">C</text>
+<circle cx="291" cy="84" r="10" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<text x="291" y="88" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="800" fill="#1f2433">C</text>
+<circle cx="325" cy="84" r="10" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<text x="325" y="88" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="800" fill="#1f2433">C</text>
+<circle cx="223" cy="118" r="10" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<text x="223" y="122" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="800" fill="#1f2433">C</text>
+<circle cx="257" cy="118" r="10" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<text x="257" y="122" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="800" fill="#1f2433">C</text>
+<circle cx="291" cy="118" r="10" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<text x="291" y="122" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="800" fill="#1f2433">C</text>
+<circle cx="325" cy="118" r="10" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<text x="325" y="122" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="800" fill="#1f2433">C</text>
+<circle cx="223" cy="152" r="10" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<text x="223" y="156" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="800" fill="#1f2433">C</text>
+<circle cx="257" cy="152" r="10" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<text x="257" y="156" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="800" fill="#1f2433">C</text>
+<circle cx="291" cy="152" r="10" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<text x="291" y="156" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="800" fill="#1f2433">C</text>
+<circle cx="325" cy="152" r="10" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<text x="325" y="156" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="800" fill="#1f2433">C</text>
+<circle cx="223" cy="186" r="10" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<text x="223" y="190" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="800" fill="#1f2433">C</text>
+<circle cx="257" cy="186" r="10" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<text x="257" y="190" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="800" fill="#1f2433">C</text>
+<circle cx="291" cy="186" r="10" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<text x="291" y="190" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="800" fill="#1f2433">C</text>
+<circle cx="325" cy="186" r="10" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<text x="325" y="190" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="800" fill="#1f2433">C</text>
+<text x="275" y="214" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#1f2433">алмаз, Si, SiO₂</text>
+<text x="275" y="231" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#1f2433">связь ковалентная, прочная</text>
+<line x1="452" y1="82" x2="458" y2="82" stroke="#0f8a74" stroke-width="2" stroke-dasharray="3 4"/>
+<line x1="416" y1="94" x2="426" y2="106" stroke="#0f8a74" stroke-width="2" stroke-dasharray="3 4"/>
+<line x1="494" y1="94" x2="504" y2="106" stroke="#0f8a74" stroke-width="2" stroke-dasharray="3 4"/>
+<line x1="462" y1="118" x2="468" y2="118" stroke="#0f8a74" stroke-width="2" stroke-dasharray="3 4"/>
+<line x1="426" y1="130" x2="416" y2="142" stroke="#0f8a74" stroke-width="2" stroke-dasharray="3 4"/>
+<line x1="504" y1="130" x2="494" y2="142" stroke="#0f8a74" stroke-width="2" stroke-dasharray="3 4"/>
+<line x1="452" y1="154" x2="458" y2="154" stroke="#0f8a74" stroke-width="2" stroke-dasharray="3 4"/>
+<line x1="416" y1="166" x2="426" y2="178" stroke="#0f8a74" stroke-width="2" stroke-dasharray="3 4"/>
+<line x1="494" y1="166" x2="504" y2="178" stroke="#0f8a74" stroke-width="2" stroke-dasharray="3 4"/>
+<line x1="462" y1="190" x2="468" y2="190" stroke="#0f8a74" stroke-width="2" stroke-dasharray="3 4"/>
+<line x1="399" y1="82" x2="433" y2="82" stroke="#1f2433" stroke-width="3"/>
+<circle cx="392" cy="82" r="9" fill="#ff9d9d" stroke="#e5484d" stroke-width="2"/>
+<circle cx="416" cy="82" r="9" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<circle cx="440" cy="82" r="9" fill="#ff9d9d" stroke="#e5484d" stroke-width="2"/>
+<line x1="477" y1="82" x2="511" y2="82" stroke="#1f2433" stroke-width="3"/>
+<circle cx="470" cy="82" r="9" fill="#ff9d9d" stroke="#e5484d" stroke-width="2"/>
+<circle cx="494" cy="82" r="9" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<circle cx="518" cy="82" r="9" fill="#ff9d9d" stroke="#e5484d" stroke-width="2"/>
+<line x1="409" y1="118" x2="443" y2="118" stroke="#1f2433" stroke-width="3"/>
+<circle cx="402" cy="118" r="9" fill="#ff9d9d" stroke="#e5484d" stroke-width="2"/>
+<circle cx="426" cy="118" r="9" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<circle cx="450" cy="118" r="9" fill="#ff9d9d" stroke="#e5484d" stroke-width="2"/>
+<line x1="487" y1="118" x2="521" y2="118" stroke="#1f2433" stroke-width="3"/>
+<circle cx="480" cy="118" r="9" fill="#ff9d9d" stroke="#e5484d" stroke-width="2"/>
+<circle cx="504" cy="118" r="9" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<circle cx="528" cy="118" r="9" fill="#ff9d9d" stroke="#e5484d" stroke-width="2"/>
+<line x1="399" y1="154" x2="433" y2="154" stroke="#1f2433" stroke-width="3"/>
+<circle cx="392" cy="154" r="9" fill="#ff9d9d" stroke="#e5484d" stroke-width="2"/>
+<circle cx="416" cy="154" r="9" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<circle cx="440" cy="154" r="9" fill="#ff9d9d" stroke="#e5484d" stroke-width="2"/>
+<line x1="477" y1="154" x2="511" y2="154" stroke="#1f2433" stroke-width="3"/>
+<circle cx="470" cy="154" r="9" fill="#ff9d9d" stroke="#e5484d" stroke-width="2"/>
+<circle cx="494" cy="154" r="9" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<circle cx="518" cy="154" r="9" fill="#ff9d9d" stroke="#e5484d" stroke-width="2"/>
+<line x1="409" y1="190" x2="443" y2="190" stroke="#1f2433" stroke-width="3"/>
+<circle cx="402" cy="190" r="9" fill="#ff9d9d" stroke="#e5484d" stroke-width="2"/>
+<circle cx="426" cy="190" r="9" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<circle cx="450" cy="190" r="9" fill="#ff9d9d" stroke="#e5484d" stroke-width="2"/>
+<line x1="487" y1="190" x2="521" y2="190" stroke="#1f2433" stroke-width="3"/>
+<circle cx="480" cy="190" r="9" fill="#ff9d9d" stroke="#e5484d" stroke-width="2"/>
+<circle cx="504" cy="190" r="9" fill="#aab2c0" stroke="#6b7387" stroke-width="2"/>
+<circle cx="528" cy="190" r="9" fill="#ff9d9d" stroke="#e5484d" stroke-width="2"/>
+<text x="455" y="214" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#1f2433">CO₂, H₂O, I₂, O₂</text>
+<text x="455" y="231" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#1f2433">между молекулами — слабо</text>
+<circle cx="583" cy="84" r="10" fill="#ffd9a0" stroke="#b86a00" stroke-width="2"/>
+<text x="583" y="88" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a4300">+</text>
+<circle cx="617" cy="84" r="10" fill="#ffd9a0" stroke="#b86a00" stroke-width="2"/>
+<text x="617" y="88" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a4300">+</text>
+<circle cx="651" cy="84" r="10" fill="#ffd9a0" stroke="#b86a00" stroke-width="2"/>
+<text x="651" y="88" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a4300">+</text>
+<circle cx="685" cy="84" r="10" fill="#ffd9a0" stroke="#b86a00" stroke-width="2"/>
+<text x="685" y="88" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a4300">+</text>
+<circle cx="583" cy="118" r="10" fill="#ffd9a0" stroke="#b86a00" stroke-width="2"/>
+<text x="583" y="122" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a4300">+</text>
+<circle cx="617" cy="118" r="10" fill="#ffd9a0" stroke="#b86a00" stroke-width="2"/>
+<text x="617" y="122" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a4300">+</text>
+<circle cx="651" cy="118" r="10" fill="#ffd9a0" stroke="#b86a00" stroke-width="2"/>
+<text x="651" y="122" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a4300">+</text>
+<circle cx="685" cy="118" r="10" fill="#ffd9a0" stroke="#b86a00" stroke-width="2"/>
+<text x="685" y="122" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a4300">+</text>
+<circle cx="583" cy="152" r="10" fill="#ffd9a0" stroke="#b86a00" stroke-width="2"/>
+<text x="583" y="156" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a4300">+</text>
+<circle cx="617" cy="152" r="10" fill="#ffd9a0" stroke="#b86a00" stroke-width="2"/>
+<text x="617" y="156" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a4300">+</text>
+<circle cx="651" cy="152" r="10" fill="#ffd9a0" stroke="#b86a00" stroke-width="2"/>
+<text x="651" y="156" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a4300">+</text>
+<circle cx="685" cy="152" r="10" fill="#ffd9a0" stroke="#b86a00" stroke-width="2"/>
+<text x="685" y="156" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a4300">+</text>
+<circle cx="583" cy="186" r="10" fill="#ffd9a0" stroke="#b86a00" stroke-width="2"/>
+<text x="583" y="190" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a4300">+</text>
+<circle cx="617" cy="186" r="10" fill="#ffd9a0" stroke="#b86a00" stroke-width="2"/>
+<text x="617" y="190" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a4300">+</text>
+<circle cx="651" cy="186" r="10" fill="#ffd9a0" stroke="#b86a00" stroke-width="2"/>
+<text x="651" y="190" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a4300">+</text>
+<circle cx="685" cy="186" r="10" fill="#ffd9a0" stroke="#b86a00" stroke-width="2"/>
+<text x="685" y="190" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a4300">+</text>
+<circle cx="600" cy="101" r="3.6" fill="#16a58c" stroke="#ffffff" stroke-width="1"/>
+<circle cx="634" cy="135" r="3.6" fill="#16a58c" stroke="#ffffff" stroke-width="1"/>
+<circle cx="668" cy="101" r="3.6" fill="#16a58c" stroke="#ffffff" stroke-width="1"/>
+<circle cx="600" cy="169" r="3.6" fill="#16a58c" stroke="#ffffff" stroke-width="1"/>
+<circle cx="651" cy="118" r="3.6" fill="#16a58c" stroke="#ffffff" stroke-width="1"/>
+<circle cx="617" cy="152" r="3.6" fill="#16a58c" stroke="#ffffff" stroke-width="1"/>
+<circle cx="685" cy="152" r="3.6" fill="#16a58c" stroke="#ffffff" stroke-width="1"/>
+<circle cx="668" cy="169" r="3.6" fill="#16a58c" stroke="#ffffff" stroke-width="1"/>
+<circle cx="634" cy="101" r="3.6" fill="#16a58c" stroke="#ffffff" stroke-width="1"/>
+<circle cx="600" cy="135" r="3.6" fill="#16a58c" stroke="#ffffff" stroke-width="1"/>
+<circle cx="685" cy="118" r="3.6" fill="#16a58c" stroke="#ffffff" stroke-width="1"/>
+<circle cx="651" cy="186" r="3.6" fill="#16a58c" stroke="#ffffff" stroke-width="1"/>
+<text x="635" y="214" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#1f2433">Fe, Cu, Al, сплавы</text>
+<text x="635" y="231" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#1f2433"><tspan fill="#0f8a74" font-weight="800">●</tspan> свободные электроны</text>
+</svg>

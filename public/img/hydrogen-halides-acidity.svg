@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img" aria-label="Схема: радиус атома водорода в HF, HCl, HBr, HI одинаков, а радиус галогена растёт, связь H–Э удлиняется и слабеет, протон отрывается легче, кислотные свойства усиливаются">
+<rect width="680" height="300" fill="#ffffff"/>
+<text x="20" y="30" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="19" font-weight="800" fill="#1f2433">Почему HI — кислота сильнее, чем HF</text>
+<circle cx="28" cy="52" r="8" fill="#ffb3cf" stroke="#c2326b" stroke-width="2"/><text x="42" y="57" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#1f2433">атом H: радиус <tspan font-weight="800" fill="#c2326b">не меняется</tspan></text>
+<circle cx="276" cy="52" r="8" fill="#c9a6e6" stroke="#8a55b8" stroke-width="2"/><text x="290" y="57" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#1f2433">атом галогена: радиус <tspan font-weight="800" fill="#8a55b8">растёт</tspan> от F к I</text>
+<text x="26" y="92" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="20" font-weight="800" fill="#1f2433">HF</text>
+<line x1="88" y1="130" x2="138" y2="130" stroke="#1f2433" stroke-width="5" stroke-linecap="round"/>
+<circle cx="88" cy="130" r="14" fill="#f3f1b5" stroke="#c8c36a" stroke-width="2.5"/>
+<text x="88" y="135" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#6b6620">F</text>
+<circle cx="138" cy="130" r="10" fill="#ffb3cf" stroke="#c2326b" stroke-width="2.5"/>
+<text x="138" y="134.5" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a1642">H</text>
+<text x="26" y="182" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#1f2433">связь H–F: <tspan font-weight="800">92 пм</tspan></text>
+<text x="26" y="200" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#1f2433">E = <tspan font-weight="800">565</tspan> кДж/моль</text>
+<rect x="26" y="210" width="112" height="22" rx="11" fill="#fde8c8"/><text x="82" y="226" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#8a5400">слабая</text>
+<line x1="174" y1="76" x2="174" y2="236" stroke="#e6e9f2" stroke-width="2"/>
+<text x="186" y="92" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="20" font-weight="800" fill="#1f2433">HCl</text>
+<line x1="230" y1="130" x2="298" y2="130" stroke="#1f2433" stroke-width="4.1" stroke-linecap="round"/>
+<circle cx="230" cy="130" r="21" fill="#cfe56a" stroke="#8fae1f" stroke-width="2.5"/>
+<text x="230" y="135" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="800" fill="#44570a">Cl</text>
+<circle cx="298" cy="130" r="10" fill="#ffb3cf" stroke="#c2326b" stroke-width="2.5"/>
+<text x="298" y="134.5" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a1642">H</text>
+<text x="186" y="182" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#1f2433">связь H–Cl: <tspan font-weight="800">127 пм</tspan></text>
+<text x="186" y="200" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#1f2433">E = <tspan font-weight="800">431</tspan> кДж/моль</text>
+<rect x="186" y="210" width="112" height="22" rx="11" fill="#ffd9b0"/><text x="242" y="226" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#8a4400">сильная</text>
+<line x1="334" y1="76" x2="334" y2="236" stroke="#e6e9f2" stroke-width="2"/>
+<text x="346" y="92" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="20" font-weight="800" fill="#1f2433">HBr</text>
+<line x1="382" y1="130" x2="458" y2="130" stroke="#1f2433" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="382" cy="130" r="24" fill="#f0a58a" stroke="#c4573a" stroke-width="2.5"/>
+<text x="382" y="135" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="800" fill="#7a2a12">Br</text>
+<circle cx="458" cy="130" r="10" fill="#ffb3cf" stroke="#c2326b" stroke-width="2.5"/>
+<text x="458" y="134.5" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a1642">H</text>
+<text x="346" y="182" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#1f2433">связь H–Br: <tspan font-weight="800">141 пм</tspan></text>
+<text x="346" y="200" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#1f2433">E = <tspan font-weight="800">366</tspan> кДж/моль</text>
+<rect x="346" y="210" width="112" height="22" rx="11" fill="#ffc2a0"/><text x="402" y="226" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#8a2f00">сильнее</text>
+<line x1="494" y1="76" x2="494" y2="236" stroke="#e6e9f2" stroke-width="2"/>
+<text x="506" y="92" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="20" font-weight="800" fill="#1f2433">HI</text>
+<line x1="531" y1="130" x2="618" y2="130" stroke="#1f2433" stroke-width="2.3" stroke-linecap="round"/>
+<circle cx="531" cy="130" r="28" fill="#c9a6e6" stroke="#8a55b8" stroke-width="2.5"/>
+<text x="531" y="135" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="800" fill="#47206b">I</text>
+<circle cx="618" cy="130" r="10" fill="#ffb3cf" stroke="#c2326b" stroke-width="2.5"/>
+<text x="618" y="134.5" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#7a1642">H</text>
+<text x="506" y="182" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#1f2433">связь H–I: <tspan font-weight="800">161 пм</tspan></text>
+<text x="506" y="200" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#1f2433">E = <tspan font-weight="800">299</tspan> кДж/моль</text>
+<rect x="506" y="210" width="112" height="22" rx="11" fill="#ffa98a"/><text x="562" y="226" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#8a1f00">ещё сильнее</text>
+<g stroke="#e5484d" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="24" y1="256" x2="654" y2="256"/><polyline points="642,248 656,256 642,264"/></g>
+<text x="24" y="280" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#1d4f9c">радиус ↑ → связь слабее → H⁺ легче отрывается → <tspan fill="#e5484d" font-weight="800">кислотные свойства ↑</tspan></text>
+</svg>

@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1287 910" width="1287" height="910" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" role="img" aria-labelledby="t">
+  <title id="t">Простые вещества элементов № 1–20 в картинках</title>
+  <defs><filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="4" /></filter></defs>
+  <rect width="1287" height="910" fill="#f1f4fd" />
+  <rect width="1287" height="96" fill="#1e2a4a" />
+  <text x="40" y="50" font-size="38" font-weight="800" fill="#fff" text-anchor="start" >ПРОСТЫЕ ВЕЩЕСТВА № 1–20 В КАРТИНКАХ</text>
+  <text x="40" y="76" font-size="20" font-weight="400" fill="#c9d3ef" text-anchor="start" >Как выглядят простые вещества при нормальных условиях</text>
+  <text x="100" y="138" font-size="17" font-weight="400" fill="#7b84a3" text-anchor="middle" >период</text>
+  <text x="206" y="138" font-size="20" font-weight="700" fill="#7b84a3" text-anchor="middle" >IA</text>
+  <text x="344" y="138" font-size="20" font-weight="700" fill="#7b84a3" text-anchor="middle" >IIA</text>
+  <text x="482" y="138" font-size="20" font-weight="700" fill="#7b84a3" text-anchor="middle" >IIIA</text>
+  <text x="620" y="138" font-size="20" font-weight="700" fill="#7b84a3" text-anchor="middle" >IVA</text>
+  <text x="758" y="138" font-size="20" font-weight="700" fill="#7b84a3" text-anchor="middle" >VA</text>
+  <text x="896" y="138" font-size="20" font-weight="700" fill="#7b84a3" text-anchor="middle" >VIA</text>
+  <text x="1034" y="138" font-size="20" font-weight="700" fill="#7b84a3" text-anchor="middle" >VIIA</text>
+  <text x="1172" y="138" font-size="20" font-weight="700" fill="#7b84a3" text-anchor="middle" >VIIIA</text>
+  <text x="100" y="247" font-size="26" font-weight="700" fill="#7b84a3" text-anchor="middle" >1</text>
+  <text x="100" y="415" font-size="26" font-weight="700" fill="#7b84a3" text-anchor="middle" >2</text>
+  <text x="100" y="583" font-size="26" font-weight="700" fill="#7b84a3" text-anchor="middle" >3</text>
+  <text x="100" y="751" font-size="26" font-weight="700" fill="#7b84a3" text-anchor="middle" >4</text>
+  <rect x="140" y="158" width="132" height="160" rx="14" fill="#f1f6ff" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="152" y="184" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >1</text>
+  <text x="260" y="196" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >H</text>
+  <polygon points="198,221 198,248 168,302 244,302 214,248 214,221" fill="#f6f9ff" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <polygon points="198,221 198,248 168,302 244,302 214,248 214,221" fill="none" stroke="#1c2340" stroke-width="2.5" stroke-linejoin="round" />
+  <rect x="197" y="212" width="18" height="10" rx="2" fill="#b9794b" stroke="#1c2340" stroke-width="2" />
+  <text x="206" y="292" font-size="17" font-weight="700" fill="#1c2340" text-anchor="middle" >H₂</text>
+  <rect x="1106" y="158" width="132" height="160" rx="14" fill="#eef3ff" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="1118" y="184" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >2</text>
+  <text x="1226" y="196" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >He</text>
+  <path d="M 1172 284 q -9 9 0 15 t 0 14" fill="none" stroke="#1c2340" stroke-width="2" />
+  <polygon points="1166,278 1178,278 1172,285" fill="#f27aa6" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <ellipse cx="1172" cy="250" rx="29" ry="34" fill="#f6a6c6" stroke="#1c2340" stroke-width="2.5" />
+  <path d="M 1156 236 q 4 -10 14 -13" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+  <text x="1172" y="256" font-size="19" font-weight="700" fill="#fff" text-anchor="middle" >He</text>
+  <rect x="140" y="326" width="132" height="160" rx="14" fill="#f6f7fa" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="152" y="352" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >3</text>
+  <text x="260" y="364" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >Li</text>
+  <rect x="168" y="400" width="76" height="70" rx="9" fill="#fbf3dc" stroke="#1c2340" stroke-width="2.5" />
+  <polygon points="189,445.4 195.8,430.1 211.1,426.7 223,438.6 219.6,452.2 199.2,455.6" fill="#c9ceda" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <rect x="173" y="410" width="66" height="22" rx="3" fill="#fff" stroke="#1c2340" stroke-width="1.5" />
+  <text x="206" y="426.5" font-size="14.5" font-weight="700" fill="#1c2340" text-anchor="middle" >вазелин</text>
+  <rect x="171" y="384" width="70" height="16" rx="4" fill="#4a5270" stroke="#1c2340" stroke-width="2" />
+  <rect x="278" y="326" width="132" height="160" rx="14" fill="#f4f5f8" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="290" y="352" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >4</text>
+  <text x="398" y="364" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >Be</text>
+  <ellipse cx="344" cy="464" rx="44" ry="7" fill="#d7dbe8" stroke="none" stroke-width="2" />
+  <polygon points="310,436 370,436 370,454 310,454" fill="#9aa2b5" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="310,436 326,422 386,422 370,436" fill="#dfe3ec" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="370,436 386,422 386,440 370,454" fill="#7d869b" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <rect x="416" y="326" width="132" height="160" rx="14" fill="#f8f3f0" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="428" y="352" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >5</text>
+  <text x="536" y="364" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >B</text>
+  <ellipse cx="482" cy="464" rx="44" ry="7" fill="#d7dbe8" stroke="none" stroke-width="2" />
+  <polygon points="456,454.4 464.8,434.6 484.6,430.2 500,445.6 495.6,463.2 469.2,467.6" fill="#4a3b38" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="440,437.2 446.4,422.8 460.8,419.6 472,430.8 468.8,443.6 449.6,446.8" fill="#5a4743" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="488,435.6 495.2,419.4 511.4,415.8 524,428.4 520.4,442.8 498.8,446.4" fill="#3d302e" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="474,422.8 479.6,410.2 492.2,407.4 502,417.2 499.2,428.4 482.4,431.2" fill="#5a4743" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <rect x="554" y="326" width="132" height="160" rx="14" fill="#f1f2f6" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="566" y="352" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >6</text>
+  <text x="674" y="364" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >C</text>
+  <ellipse cx="620" cy="464" rx="52" ry="7" fill="#d7dbe8" stroke="none" stroke-width="2" />
+  <text x="590" y="418" font-size="14" font-weight="600" fill="#56607f" text-anchor="middle" >графит</text>
+  <text x="648" y="418" font-size="14" font-weight="600" fill="#56607f" text-anchor="middle" >алмаз</text>
+  <polygon points="574,450.4 582.8,430.6 602.6,426.2 618,441.6 613.6,459.2 587.2,463.6" fill="#3b3f4c" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="580,438 584,429 593,427 600,434 598,442 586,444" fill="#565b6b" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="628,436 636,426 656,426 664,436 646,462" fill="#e9f6ff" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <path d="M 628 436 H 664 M 636 426 L 640 436 L 646 462 M 656 426 L 652 436 L 646 462" fill="none" stroke="#1c2340" stroke-width="1.6" stroke-linejoin="round" />
+  <rect x="692" y="326" width="132" height="160" rx="14" fill="#eef4ff" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="704" y="352" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >7</text>
+  <text x="812" y="364" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >N</text>
+  <polygon points="750,389 750,416 720,470 796,470 766,416 766,389" fill="#eaf2ff" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <polygon points="750,389 750,416 720,470 796,470 766,416 766,389" fill="none" stroke="#1c2340" stroke-width="2.5" stroke-linejoin="round" />
+  <rect x="749" y="380" width="18" height="10" rx="2" fill="#b9794b" stroke="#1c2340" stroke-width="2" />
+  <text x="758" y="460" font-size="17" font-weight="700" fill="#1c2340" text-anchor="middle" >N₂</text>
+  <rect x="830" y="326" width="132" height="160" rx="14" fill="#eef4ff" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="842" y="352" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >8</text>
+  <text x="950" y="364" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >O</text>
+  <rect x="880" y="404" width="32" height="70" rx="13" fill="#2f7de1" stroke="#1c2340" stroke-width="2.5" />
+  <rect x="890" y="392" width="12" height="14" rx="2" fill="#8a93a8" stroke="#1c2340" stroke-width="2" />
+  <rect x="883" y="384" width="26" height="9" rx="3" fill="#4a5270" stroke="#1c2340" stroke-width="2" />
+  <path d="M 888 418 V 436" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity="0.45" />
+  <text x="896" y="456" font-size="16" font-weight="700" fill="#fff" text-anchor="middle" >O₂</text>
+  <rect x="968" y="326" width="132" height="160" rx="14" fill="#fcf8dc" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="980" y="352" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >9</text>
+  <text x="1088" y="364" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >F</text>
+  <polygon points="1026,389 1026,416 996,470 1072,470 1042,416 1042,389" fill="#fcf6d4" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <polygon points="1014.9,436 1053.1,436 1072,470 996,470" fill="#f7e9a0" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <polygon points="1026,389 1026,416 996,470 1072,470 1042,416 1042,389" fill="none" stroke="#1c2340" stroke-width="2.5" stroke-linejoin="round" />
+  <rect x="1025" y="380" width="18" height="10" rx="2" fill="#b9794b" stroke="#1c2340" stroke-width="2" />
+  <text x="1034" y="460" font-size="17" font-weight="700" fill="#1c2340" text-anchor="middle" >F₂</text>
+  <rect x="1106" y="326" width="132" height="160" rx="14" fill="#eef3ff" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="1118" y="352" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >10</text>
+  <text x="1226" y="364" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >Ne</text>
+  <rect x="1128" y="400" width="88" height="64" rx="10" fill="#2a2d44" stroke="#1c2340" stroke-width="2.5" />
+  <text x="1172" y="444" font-size="40" font-weight="700" fill="#ff6b3d" text-anchor="middle" filter="url(#glow)">Ne</text>
+  <text x="1172" y="444" font-size="40" font-weight="700" fill="#ffd2b3" stroke="#ff6b3d" stroke-width="1.5" text-anchor="middle">Ne</text>
+  <rect x="140" y="494" width="132" height="160" rx="14" fill="#fbf6e2" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="152" y="520" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >11</text>
+  <text x="260" y="532" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >Na</text>
+  <rect x="168" y="568" width="76" height="70" rx="9" fill="#f6e3a1" stroke="#1c2340" stroke-width="2.5" />
+  <polygon points="189,619.4 195.8,604.1 211.1,600.7 223,612.6 219.6,626.2 199.2,629.6" fill="#c9ceda" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <rect x="173" y="578" width="66" height="22" rx="3" fill="#fff" stroke="#1c2340" stroke-width="1.5" />
+  <text x="206" y="594.5" font-size="14.5" font-weight="700" fill="#1c2340" text-anchor="middle" >керосин</text>
+  <rect x="171" y="552" width="70" height="16" rx="4" fill="#4a5270" stroke="#1c2340" stroke-width="2" />
+  <rect x="278" y="494" width="132" height="160" rx="14" fill="#f4f5f8" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="290" y="520" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >12</text>
+  <text x="398" y="532" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >Mg</text>
+  <ellipse cx="344" cy="634" rx="44" ry="7" fill="#d7dbe8" stroke="none" stroke-width="2" />
+  <rect x="302" y="582" width="14" height="46" rx="7" fill="none" stroke="#aab1c5" stroke-width="6" />
+  <rect x="320" y="582" width="14" height="46" rx="7" fill="none" stroke="#aab1c5" stroke-width="6" />
+  <rect x="338" y="582" width="14" height="46" rx="7" fill="none" stroke="#aab1c5" stroke-width="6" />
+  <rect x="356" y="582" width="14" height="46" rx="7" fill="none" stroke="#aab1c5" stroke-width="6" />
+  <rect x="374" y="582" width="14" height="46" rx="7" fill="none" stroke="#aab1c5" stroke-width="6" />
+  <path d="M 298 632 H 390" stroke="#1c2340" stroke-width="0" />
+  <rect x="416" y="494" width="132" height="160" rx="14" fill="#f4f5f8" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="428" y="520" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >13</text>
+  <text x="536" y="532" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >Al</text>
+  <ellipse cx="482" cy="636" rx="44" ry="7" fill="#d7dbe8" stroke="none" stroke-width="2" />
+  <polygon points="448,622 512,622 526,634 462,634" fill="#f4f5f8" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <rect x="452" y="586" width="58" height="36" rx="0" fill="#e3e6ee" stroke="#1c2340" stroke-width="2" />
+  <ellipse cx="452" cy="604" rx="9" ry="18" fill="#f7f8fb" stroke="#1c2340" stroke-width="2" />
+  <ellipse cx="510" cy="604" rx="9" ry="18" fill="#c9ceda" stroke="#1c2340" stroke-width="2" />
+  <path d="M 460 586 V 622" stroke="#fff" stroke-width="3" opacity="0.7" />
+  <rect x="554" y="494" width="132" height="160" rx="14" fill="#f2f3f7" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="566" y="520" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >14</text>
+  <text x="674" y="532" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >Si</text>
+  <ellipse cx="620" cy="632" rx="44" ry="7" fill="#d7dbe8" stroke="none" stroke-width="2" />
+  <polygon points="584,622 594,586 626,570 656,594 652,622" fill="#5f6880" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="594,586 626,570 624,600 584,622" fill="#8b93aa" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <rect x="692" y="494" width="132" height="160" rx="14" fill="#fbeeee" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="704" y="520" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >15</text>
+  <text x="812" y="532" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >P</text>
+  <ellipse cx="758" cy="632" rx="56" ry="7" fill="#d7dbe8" stroke="none" stroke-width="2" />
+  <text x="728" y="582" font-size="14" font-weight="600" fill="#56607f" text-anchor="middle" >красный</text>
+  <text x="786" y="564" font-size="14" font-weight="600" fill="#56607f" text-anchor="middle" >белый</text>
+  <path d="M 700 628 C 702 594 750 594 754 628 Z" fill="#d33a3a" stroke="#1c2340" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="768" y="584" width="36" height="48" rx="6" fill="#cfe6fb" stroke="#1c2340" stroke-width="2.2" />
+  <rect x="782" y="594" width="8" height="26" rx="3" fill="#fff" stroke="#1c2340" stroke-width="1.6" />
+  <rect x="766" y="576" width="40" height="10" rx="3" fill="#4a5270" stroke="#1c2340" stroke-width="2" />
+  <rect x="830" y="494" width="132" height="160" rx="14" fill="#fff8d6" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="842" y="520" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >16</text>
+  <text x="950" y="532" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >S</text>
+  <ellipse cx="896" cy="628" rx="50" ry="10" fill="#ead35a" stroke="#1c2340" stroke-width="2" />
+  <polygon points="856,626 856,602 868,588 880,602 880,626" fill="#f6c919" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="876,628 876,586 890,570 904,586 904,628" fill="#f9d530" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="902,628 902,600 914,588 926,600 926,628" fill="#f6c919" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="924,626 924,610 932,602 940,610 940,626" fill="#e5b30f" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <rect x="968" y="494" width="132" height="160" rx="14" fill="#f3f8dc" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="980" y="520" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >17</text>
+  <text x="1088" y="532" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >Cl</text>
+  <polygon points="1026,557 1026,584 996,638 1072,638 1042,584 1042,557" fill="#f1f7d6" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <polygon points="1014.9,604 1053.1,604 1072,638 996,638" fill="#cfe36a" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <polygon points="1026,557 1026,584 996,638 1072,638 1042,584 1042,557" fill="none" stroke="#1c2340" stroke-width="2.5" stroke-linejoin="round" />
+  <rect x="1025" y="548" width="18" height="10" rx="2" fill="#b9794b" stroke="#1c2340" stroke-width="2" />
+  <text x="1034" y="628" font-size="17" font-weight="700" fill="#1c2340" text-anchor="middle" >Cl₂</text>
+  <rect x="1106" y="494" width="132" height="160" rx="14" fill="#fff8e0" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="1118" y="520" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >18</text>
+  <text x="1226" y="532" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >Ar</text>
+  <circle cx="1172" cy="588" r="38" fill="#fff3b8" opacity="0.35" />
+  <circle cx="1172" cy="588" r="28" fill="#fff3b8" stroke="#1c2340" stroke-width="2.5" />
+  <polygon points="1157,608 1187,608 1184,616 1160,616" fill="#f2dc86" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <rect x="1159" y="616" width="26" height="22" rx="3" fill="#9aa2b5" stroke="#1c2340" stroke-width="2" />
+  <path d="M 1159 624 H 1185 M 1159 631 H 1185" stroke="#1c2340" stroke-width="1.5" />
+  <text x="1172" y="594" font-size="17" font-weight="700" fill="#1c2340" text-anchor="middle" >Ar</text>
+  <rect x="140" y="662" width="132" height="160" rx="14" fill="#fbf6e2" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="152" y="688" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >19</text>
+  <text x="260" y="700" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >K</text>
+  <rect x="168" y="736" width="76" height="70" rx="9" fill="#f6e3a1" stroke="#1c2340" stroke-width="2.5" />
+  <polygon points="189,787.4 195.8,772.1 211.1,768.7 223,780.6 219.6,794.2 199.2,797.6" fill="#c9ceda" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <rect x="173" y="746" width="66" height="22" rx="3" fill="#fff" stroke="#1c2340" stroke-width="1.5" />
+  <text x="206" y="762.5" font-size="14.5" font-weight="700" fill="#1c2340" text-anchor="middle" >керосин</text>
+  <rect x="171" y="720" width="70" height="16" rx="4" fill="#4a5270" stroke="#1c2340" stroke-width="2" />
+  <rect x="278" y="662" width="132" height="160" rx="14" fill="#f4f5f8" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="290" y="688" font-size="18" font-weight="700" fill="#7b84a3" text-anchor="start" >20</text>
+  <text x="398" y="700" font-size="38" font-weight="800" fill="#1c2340" text-anchor="end" >Ca</text>
+  <ellipse cx="344" cy="802" rx="50" ry="7" fill="#d7dbe8" stroke="none" stroke-width="2" />
+  <polygon points="300,782 308,764 326,760 340,774 336,790 312,794" fill="#dfe3ec" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="332,776.4 340.8,756.6 360.6,752.2 376,767.6 371.6,785.2 345.2,789.6" fill="#cfd4e0" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="357,791 363,777.5 376.5,774.5 387,785 384,797 366,800" fill="#e4e7ef" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="324,795.2 330.4,780.8 344.8,777.6 356,788.8 352.8,801.6 333.6,804.8" fill="#d6dae6" stroke="#1c2340" stroke-width="2" stroke-linejoin="round" />
+  <rect x="278" y="158" width="822" height="160" rx="14" fill="#fff" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="302" y="189" font-size="20" fill="#1c2340"><tspan font-weight="700">Обратите внимание. </tspan><tspan font-weight="400">Бесцветные газы нарисованы в колбах, баллоне, шарике</tspan></text>
+  <text x="302" y="216" font-size="20" fill="#1c2340"><tspan font-weight="400">и лампе: гелием наполняют шары, аргоном — лампы, неон светится в</tspan></text>
+  <text x="302" y="243" font-size="20" fill="#1c2340"><tspan font-weight="400">рекламных трубках. Натрий и калий хранят под керосином, литий — в</tspan></text>
+  <text x="302" y="270" font-size="20" fill="#1c2340"><tspan font-weight="400">вазелине (он легче керосина): щелочные металлы бурно реагируют с водой и</tspan></text>
+  <text x="302" y="297" font-size="20" fill="#1c2340"><tspan font-weight="400">воздухом. Белый фосфор хранят под водой.</tspan></text>
+  <rect x="416" y="662" width="822" height="160" rx="14" fill="#fff" stroke="#d6dbee" stroke-width="1.6" />
+  <text x="440" y="719" font-size="20" fill="#1c2340"><tspan font-weight="700">Задание. </tspan><tspan font-weight="400">Сравните эту таблицу со схемой «Простые вещества № 1–20» (цвет</tspan></text>
+  <text x="440" y="747" font-size="20" fill="#1c2340"><tspan font-weight="400">и агрегатное состояние). Выпишите: а) все газы; б) окрашенные газы; в)</tspan></text>
+  <text x="440" y="775" font-size="20" fill="#1c2340"><tspan font-weight="400">твёрдые неметаллы; г) металлы, которые хранят без доступа воздуха.</tspan></text>
+  <rect y="864" width="1287" height="46" fill="#1e2a4a" />
+  <text x="643.5" y="894" font-size="19" font-weight="700" fill="#fff" text-anchor="middle" >Химия • 8–9 класс • подготовка к ОГЭ • Простые вещества элементов № 1–20</text>
+</svg>

@@ -1,0 +1,77 @@
+import type { TopicMeta } from './types'
+
+/** Каталог тем (без самих уроков — они подгружаются отдельно). Порядок = порядок курса. */
+export const catalog: TopicMeta[] = [
+  {
+    id: 'concepts',
+    title: 'Основные химические понятия',
+    subtitle: 'Элемент, атом, молекула, вещество, смеси, сплавы',
+    emoji: '🧪',
+    accent: 'teal',
+    free: true,
+    kim: [1],
+    totalTasks: 29,
+  },
+  {
+    id: 'atom',
+    title: 'Строение атома',
+    subtitle: 'Ядро, электронные слои, распределение электронов',
+    emoji: '⚛️',
+    accent: 'purple',
+    free: true,
+    kim: [6],
+    totalTasks: 31,
+  },
+  {
+    id: 'periodic',
+    title: 'Периодический закон',
+    subtitle: 'Радиус атома, электроотрицательность, металлические и неметаллические свойства',
+    emoji: '📊',
+    accent: 'blue',
+    free: true,
+    kim: [3],
+    totalTasks: 34,
+  },
+  {
+    id: 'oxidation',
+    title: 'Степень окисления',
+    subtitle: 'Заряд иона, валентность, высшая и низшая степени окисления, расчёт по формуле',
+    emoji: '⚖️',
+    accent: 'pink',
+    free: true,
+    kim: [4],
+    totalTasks: 35,
+  },
+  {
+    id: 'bonds',
+    title: 'Химическая связь',
+    subtitle: 'Ковалентная, ионная, металлическая связь и кристаллические решётки',
+    emoji: '🔗',
+    accent: 'teal',
+    free: true,
+    kim: [5],
+    totalTasks: 35,
+  },
+  {
+    id: 'classes',
+    title: 'Классификация веществ',
+    subtitle: 'Оксиды, основания, кислоты и соли: как определить класс по формуле и названию',
+    emoji: '🗂️',
+    accent: 'purple',
+    free: true,
+    kim: [7],
+    totalTasks: 36,
+  },
+  {
+    id: 'metals',
+    title: 'Металлы',
+    subtitle: 'Na, K, Mg, Ca, Al, Fe: ряд напряжений, реакции с неметаллами, водой, кислотами и солями, получение',
+    emoji: '🔩',
+    accent: 'orange',
+    free: true,
+    kim: [8, 9, 10],
+    totalTasks: 37,
+  },
+]
+
+export const topicById = (id: string) => catalog.find((t) => t.id === id)

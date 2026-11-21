@@ -1,0 +1,225 @@
+@import 'tailwindcss';
+@import 'katex/dist/katex.min.css';
+
+@theme {
+  --color-navy: #1b2445;
+  --color-paper: #f2f5fb;
+  --color-teal: #16a58c;
+  --color-orange: #f5a623;
+  --color-purple: #7a5ce0;
+  --color-pink: #e6559b;
+  --color-red: #e5484d;
+  --color-blue: #2f7fec;
+  --color-ink: #1f2433;
+  --color-muted: #6b7387;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* Формулы KaTeX рисуем тем же шрифтом, что и обычный текст (по умолчанию у них засечки) */
+.katex,
+.katex .mathrm,
+.katex .mathnormal,
+.katex .mathit,
+.katex .textrm,
+.katex .mord {
+  font-family: var(--font-sans);
+}
+.katex {
+  font-size: 1.05em;
+}
+.katex .mathnormal,
+.katex .mathit {
+  font-style: normal;
+}
+
+/* Tailwind v4 сбрасывает курсор у кнопок на default — возвращаем pointer */
+a[href],
+button,
+summary,
+label[for],
+input[type='range'],
+input[type='checkbox'],
+input[type='radio'],
+input[type='button'],
+input[type='submit'],
+[role='button'],
+[role='tab'],
+[role='link'],
+[role='switch'],
+[role='combobox'],
+[role='option'],
+[onclick] {
+  cursor: pointer;
+}
+button:disabled,
+input:disabled,
+[aria-disabled='true'] {
+  cursor: not-allowed;
+}
+
+.orbit {
+  transform-origin: 160px 160px;
+  animation: spin linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes electron-out {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(70px, -46px) scale(0.6);
+    opacity: 0;
+  }
+}
+@keyframes electron-in {
+  from {
+    transform: translate(-90px, -46px) scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes fly {
+  0% {
+    transform: translate(var(--fx), var(--fy));
+  }
+  50% {
+    transform: translate(calc((var(--fx) + var(--tx)) / 2), calc((var(--fy) + var(--ty)) / 2 - 38px));
+  }
+  100% {
+    transform: translate(var(--tx), var(--ty));
+  }
+}
+@keyframes wander {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(var(--a), var(--b));
+  }
+  45% {
+    transform: translate(var(--c), var(--d));
+  }
+  70% {
+    transform: translate(var(--e), var(--f));
+  }
+}
+@keyframes pop {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes drop {
+  0% {
+    transform: translateY(-12px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(78px);
+    opacity: 0.15;
+  }
+}
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-70px);
+    opacity: 0;
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-6px);
+  }
+  40%,
+  80% {
+    transform: translateX(6px);
+  }
+}
+@keyframes fade-up {
+  from {
+    transform: translateY(6px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes flicker {
+  0%,
+  100% {
+    transform: scale(1, 1) skewX(0deg);
+  }
+  25% {
+    transform: scale(0.97, 1.05) skewX(-2deg);
+  }
+  50% {
+    transform: scale(1.02, 0.96) skewX(2deg);
+  }
+  75% {
+    transform: scale(0.98, 1.04) skewX(-1deg);
+  }
+}
+@keyframes glow {
+  0%,
+  100% {
+    transform: scale(0.8);
+    opacity: 0.25;
+  }
+  50% {
+    transform: scale(1.25);
+    opacity: 0.6;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  [style*="glow"] {
+    animation: none !important;
+  }
+  .orbit,
+  .flame {
+    animation: none;
+  }
+  .mech-sp {
+    transition: none !important;
+  }
+  [style*="shake"] {
+    animation: none !important;
+  }
+  [style*="fly"] {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
+  }
+}

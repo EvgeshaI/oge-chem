@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title>От атома к молекуле и веществу</title>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#6b7387" />
+    </marker>
+    <g id="w">
+      <circle cx="-9" cy="7" r="5.5" fill="#2f7fec" stroke="#fff" stroke-width="1" />
+      <circle cx="9" cy="7" r="5.5" fill="#2f7fec" stroke="#fff" stroke-width="1" />
+      <circle cx="0" cy="0" r="9" fill="#e5484d" stroke="#fff" stroke-width="1" />
+    </g>
+  </defs>
+
+  <text x="150" y="38" text-anchor="middle" font-size="24" font-weight="800" fill="#16a58c">Атом</text>
+  <text x="450" y="38" text-anchor="middle" font-size="24" font-weight="800" fill="#2f7fec">Молекула</text>
+  <text x="750" y="38" text-anchor="middle" font-size="24" font-weight="800" fill="#d98a0b">Вещество</text>
+
+  <!-- Атом кислорода: 2 + 6 электронов -->
+  <g>
+    <circle cx="150" cy="150" r="36" fill="none" stroke="#b9c1e0" stroke-width="1.5" />
+    <circle cx="150" cy="150" r="66" fill="none" stroke="#b9c1e0" stroke-width="1.5" />
+    <circle cx="150" cy="150" r="19" fill="#e5484d" stroke="#fff" stroke-width="2" />
+    <text x="150" y="155" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">+8</text>
+    <g fill="#2f7fec" stroke="#fff" stroke-width="1.5">
+      <circle cx="116.2" cy="137.7" r="6.5" />
+      <circle cx="183.8" cy="162.3" r="6.5" />
+      <circle cx="216" cy="150" r="6.5" />
+      <circle cx="183" cy="207.2" r="6.5" />
+      <circle cx="117" cy="207.2" r="6.5" />
+      <circle cx="84" cy="150" r="6.5" />
+      <circle cx="117" cy="92.8" r="6.5" />
+      <circle cx="183" cy="92.8" r="6.5" />
+    </g>
+  </g>
+
+  <!-- Молекула воды -->
+  <g>
+    <circle cx="415.3" cy="167" r="19" fill="#2f7fec" stroke="#fff" stroke-width="2" />
+    <circle cx="484.7" cy="167" r="19" fill="#2f7fec" stroke="#fff" stroke-width="2" />
+    <circle cx="450" cy="140" r="29" fill="#e5484d" stroke="#fff" stroke-width="2" />
+    <text x="450" y="148" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">O</text>
+    <text x="415.3" y="173" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">H</text>
+    <text x="484.7" y="173" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">H</text>
+  </g>
+
+  <!-- Вещество: много молекул -->
+  <rect x="650" y="80" width="200" height="140" rx="16" fill="#f7f9fe" stroke="#b9c1e0" stroke-width="1.5" />
+  <use href="#w" transform="translate(688 108) rotate(20)" />
+  <use href="#w" transform="translate(750 104) rotate(200)" />
+  <use href="#w" transform="translate(812 110) rotate(95)" />
+  <use href="#w" transform="translate(690 150) rotate(290)" />
+  <use href="#w" transform="translate(752 152) rotate(60)" />
+  <use href="#w" transform="translate(812 154) rotate(160)" />
+  <use href="#w" transform="translate(686 194) rotate(140)" />
+  <use href="#w" transform="translate(750 196) rotate(330)" />
+  <use href="#w" transform="translate(814 194) rotate(235)" />
+
+  <line x1="256" y1="150" x2="366" y2="150" stroke="#6b7387" stroke-width="2.5" marker-end="url(#arr)" />
+  <line x1="540" y1="150" x2="632" y2="150" stroke="#6b7387" stroke-width="2.5" marker-end="url(#arr)" />
+  <text x="311" y="138" text-anchor="middle" font-size="13" fill="#6b7387">соединяются</text>
+  <text x="586" y="138" text-anchor="middle" font-size="13" fill="#6b7387">множество</text>
+
+  <g text-anchor="middle">
+    <text x="150" y="260" font-size="18" font-weight="700" fill="#1f2433">Атом кислорода</text>
+    <text x="150" y="284" font-size="14" fill="#6b7387">ядро (p⁺, n⁰) + электроны ē</text>
+    <text x="150" y="304" font-size="14" fill="#6b7387">всего 8 ē: 2 + 6</text>
+
+    <text x="450" y="260" font-size="18" font-weight="700" fill="#1f2433">Молекула воды H₂O</text>
+    <text x="450" y="284" font-size="14" fill="#6b7387">атомы связаны</text>
+    <text x="450" y="304" font-size="14" fill="#6b7387">химическими связями</text>
+
+    <text x="750" y="260" font-size="18" font-weight="700" fill="#1f2433">Вода — вещество</text>
+    <text x="750" y="284" font-size="14" fill="#6b7387">состоит из огромного числа</text>
+    <text x="750" y="304" font-size="14" fill="#6b7387">одинаковых молекул</text>
+  </g>
+</svg>
