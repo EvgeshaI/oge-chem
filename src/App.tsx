@@ -14,8 +14,9 @@ function ScrollTop() {
 }
 
 export default function App() {
+  const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || undefined
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <ScrollTop />
       <Routes>
         <Route element={<Layout />}>

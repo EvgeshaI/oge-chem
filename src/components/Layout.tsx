@@ -1,4 +1,5 @@
 import { Link, NavLink, Outlet } from 'react-router-dom'
+import { publicUrl } from '../lib/publicUrl'
 import ScrollToTop from './ScrollToTop'
 
 export default function Layout() {
@@ -7,7 +8,7 @@ export default function Layout() {
       <header className="bg-navy text-white">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
           <Link to="/" className="flex items-center gap-2 text-lg font-bold">
-            <img src="/favicon.svg" alt="" className="h-8 w-8" />
+            <img src={publicUrl('/favicon.svg')} alt="" className="h-8 w-8" />
             ОГЭ · Химия
           </Link>
           <nav className="flex items-center gap-4 text-sm">

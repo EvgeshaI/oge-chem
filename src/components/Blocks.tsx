@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react'
 import type { AnimationName, Block } from '../content/types'
 import { ACCENT } from '../lib/accent'
+import { publicUrl } from '../lib/publicUrl'
 import { RichText, tex } from './RichText'
 
 const AtomShells = lazy(() => import('./AtomShells'))
@@ -236,7 +237,7 @@ export function BlockView({ block }: { block: Block }) {
           className="mx-auto overflow-hidden rounded-xl bg-white shadow-sm"
           style={block.maxWidth ? { maxWidth: block.maxWidth } : undefined}
         >
-          <img src={block.src} alt={block.alt} loading="lazy" className="w-full" />
+          <img src={publicUrl(block.src)} alt={block.alt} loading="lazy" className="w-full" />
           {block.caption && <figcaption className="px-4 py-2 text-sm text-muted">{block.caption}</figcaption>}
         </figure>
       )
@@ -246,7 +247,7 @@ export function BlockView({ block }: { block: Block }) {
           <div className="grid grid-cols-2 gap-3">
             {block.items.map((it) => (
               <div key={it.src} className="overflow-hidden rounded-lg bg-paper">
-                <img src={it.src} alt={it.alt} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+                <img src={publicUrl(it.src)} alt={it.alt} loading="lazy" className="aspect-[4/3] w-full object-cover" />
                 <div className="px-3 py-2">
                   <div className="flex items-start justify-between gap-2">
                     <div className="font-bold leading-tight">{it.title}</div>
@@ -266,8 +267,8 @@ export function BlockView({ block }: { block: Block }) {
     case 'video':
       return (
         <figure>
-          <video controls preload="metadata" poster={block.poster} className="w-full rounded-xl bg-black">
-            <source src={block.src} />
+          <video controls preload="metadata" poster={block.poster ? publicUrl(block.poster) : undefined} className="w-full rounded-xl bg-black">
+            <source src={publicUrl(block.src)} />
           </video>
           {block.caption && <figcaption className="mt-1 text-sm text-muted">{block.caption}</figcaption>}
         </figure>

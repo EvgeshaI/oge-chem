@@ -2,6 +2,8 @@
 
 Vite + React + TypeScript + Tailwind v4 + React Router + Framer Motion + KaTeX (mhchem).
 
+Сайт: https://evgeshai.github.io/oge-chem/ — публикуется сам при отправке ветки `main` на GitHub.
+
 ## Запуск
     npm install
     npm run dev        # разработка (в шапке есть dev-переключатель платного доступа)
