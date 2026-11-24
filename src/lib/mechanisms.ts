@@ -4,9 +4,9 @@
  * атом → ион, молекула → атомы → продукт. Электроны показываются отдельно (перелёты).
  */
 
-export type Kind = 'metal' | 'cu' | 'ag' | 'cation' | 'anion' | 'cl' | 'o' | 's' | 'h' | 'hplus' | 'c'
+export type Kind = 'metal' | 'cu' | 'ag' | 'cation' | 'anion' | 'cl' | 'o' | 's' | 'h' | 'hplus' | 'c' | 'f' | 'br' | 'i' | 'p'
 
-export type GroupId = 'nonmetals' | 'water' | 'acids' | 'salts' | 'oxides'
+export type GroupId = 'nonmetals' | 'water' | 'acids' | 'salts' | 'oxides' | 'hal-metals' | 'hal-nonmetals' | 'hal-water' | 'hal-displace'
 
 export interface St {
   x: number
@@ -66,6 +66,8 @@ export interface Scene {
   solution?: string
   steps: Step[]
   roles: Role[]
+  /** подпись под таблицей «что на что меняется» (по умолчанию — про металл) */
+  footnote?: string
 }
 
 export const GROUP_TITLES: Record<GroupId, string> = {
@@ -74,16 +76,20 @@ export const GROUP_TITLES: Record<GroupId, string> = {
   acids: 'С кислотами',
   salts: 'С растворами солей',
   oxides: 'С оксидами',
+  'hal-metals': 'Галогены с металлами',
+  'hal-nonmetals': 'Галогены с неметаллами',
+  'hal-water': 'Галогены с водой и щёлочью',
+  'hal-displace': 'Вытеснение галогенов из солей',
 }
 
 const BLUE = 'rgba(47,127,236,0.22)'
 const PINK = 'rgba(230,85,155,0.25)'
 const GREEN = 'rgba(22,165,140,0.22)'
 
-const a = (x: number, y: number, t: string, k: Kind, ox?: string, r?: number): St => ({ x, y, t, k, ox, r })
+export const a = (x: number, y: number, t: string, k: Kind, ox?: string, r?: number): St => ({ x, y, t, k, ox, r })
 
 /** Копия шага с изменениями частиц (patch === null — частица исчезает) */
-const next = (base: Record<string, St>, patch: Record<string, Partial<St> | null>): Record<string, St> => {
+export const next = (base: Record<string, St>, patch: Record<string, Partial<St> | null>): Record<string, St> => {
   const out: Record<string, St> = { ...base }
   for (const [id, p] of Object.entries(patch)) {
     if (p === null) delete out[id]
@@ -107,7 +113,7 @@ const naCl2 = next(naCl0, {
   cl2: { x: 400, y: 180, t: 'Cl⁻', k: 'anion', ox: '−1' },
 })
 
-const naCl: Scene = {
+export const naCl: Scene = {
   id: 'na-cl2',
   group: 'nonmetals',
   tab: 'Na + Cl₂',
@@ -280,7 +286,7 @@ const feCl2 = next(feCl0, {
   c2: { x: 410, y: 210, t: 'Cl⁻', k: 'anion', ox: '−1' },
 })
 
-const feCl: Scene = {
+export const feCl: Scene = {
   id: 'fe-cl2',
   group: 'nonmetals',
   tab: 'Fe + Cl₂',

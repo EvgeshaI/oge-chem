@@ -26,7 +26,7 @@ export default function TopicPage() {
   const [state, setState] = useState<State>({ status: 'loading' })
   const tabsRef = useRef<HTMLDivElement>(null)
 
-  const tab = (TABS.find((t) => t.id === params.get('tab'))?.id ?? 'theory') as TabId
+  const tab = ((meta?.theoryOnly ? undefined : TABS.find((t) => t.id === params.get('tab'))?.id) ?? 'theory') as TabId
 
   useEffect(() => {
     if (!meta) return
@@ -91,7 +91,7 @@ export default function TopicPage() {
       ) : (
         <>
           <div ref={tabsRef} role="tablist" className="mt-6 flex scroll-mt-4 gap-2 overflow-x-auto border-b border-navy/10">
-            {TABS.map((t) => (
+            {TABS.filter((t) => !meta.theoryOnly || t.id === 'theory').map((t) => (
               <button
                 key={t.id}
                 role="tab"
@@ -116,12 +116,14 @@ export default function TopicPage() {
                     ))}
                   </section>
                 ))}
-                <button
-                  onClick={() => goTab('practice')}
-                  className="rounded-xl bg-purple px-5 py-3 font-semibold text-white hover:bg-purple/90"
-                >
-                  К тренировке →
-                </button>
+                {!meta.theoryOnly && (
+                  <button
+                    onClick={() => goTab('practice')}
+                    className="rounded-xl bg-purple px-5 py-3 font-semibold text-white hover:bg-purple/90"
+                  >
+                    К тренировке →
+                  </button>
+                )}
               </div>
             )}
             {tab === 'practice' && <PracticeRunner key={id} tasks={state.content.practice} />}

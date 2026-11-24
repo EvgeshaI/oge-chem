@@ -56,7 +56,10 @@ describe('тема «Металлы»: уравнения', () => {
 
 describe('механизмы реакций', () => {
   it('в каждой группе есть сцены', () => {
-    for (const g of Object.keys(GROUP_TITLES) as GroupId[]) expect(scenesOf(g).length, g).toBeGreaterThan(0)
+    for (const g of Object.keys(GROUP_TITLES) as GroupId[]) {
+      if (g.startsWith('hal-')) continue // сцены галогенов — в halogens.test.ts
+      expect(scenesOf(g).length, g).toBeGreaterThan(0)
+    }
   })
   it('id сцен уникальны', () => {
     expect(new Set(SCENES.map((s) => s.id)).size).toBe(SCENES.length)

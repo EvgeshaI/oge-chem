@@ -72,6 +72,16 @@ export const catalog: TopicMeta[] = [
     kim: [8, 9, 10],
     totalTasks: 37,
   },
+  {
+    id: 'halogens',
+    title: 'Галогены',
+    subtitle: 'F, Cl, Br, I: строение атомов, физические свойства, реакции с металлами и неметаллами, вытеснение из солей, качественные реакции',
+    emoji: '🧫',
+    accent: 'blue',
+    free: true,
+    kim: [3, 8, 9, 13],
+    totalTasks: 39,
+  },
 ]
 
 export const topicById = (id: string) => catalog.find((t) => t.id === id)

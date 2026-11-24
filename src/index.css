@@ -204,7 +204,26 @@ input:disabled,
     opacity: 0.6;
   }
 }
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -14;
+  }
+}
+@keyframes fill-up {
+  from {
+    transform: scaleY(0.04);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
 @media (prefers-reduced-motion: reduce) {
+  [style*="dash-flow"],
+  [style*="rise"],
+  [style*="flicker"],
+  [style*="fill-up"] {
+    animation: none !important;
+  }
   [style*="glow"] {
     animation: none !important;
   }

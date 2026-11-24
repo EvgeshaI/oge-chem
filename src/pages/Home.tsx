@@ -44,11 +44,13 @@ export default function Home() {
                   </div>
                   <h3 className="mt-3 text-xl font-bold">{t.title}</h3>
                   <p className="mt-1 text-muted">{t.subtitle}</p>
-                  <div className="mt-4 h-2 overflow-hidden rounded-full bg-paper" aria-label={`Решено ${pct}%`}>
-                    <div className={`h-full ${a.bg} transition-all`} style={{ width: `${pct}%` }} />
-                  </div>
+                  {!t.theoryOnly && (
+                    <div className="mt-4 h-2 overflow-hidden rounded-full bg-paper" aria-label={`Решено ${pct}%`}>
+                      <div className={`h-full ${a.bg} transition-all`} style={{ width: `${pct}%` }} />
+                    </div>
+                  )}
                   <div className="mt-1 text-xs text-muted">
-                    Решено {solved} из {t.totalTasks} · задания КИМ: {t.kim.join(', ')}
+                    {t.theoryOnly ? 'Теория' : `Решено ${solved} из ${t.totalTasks}`} · задания КИМ: {t.kim.join(', ')}
                   </div>
                 </Link>
               </motion.div>

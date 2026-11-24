@@ -17,8 +17,9 @@ interface Flight {
 const key = (sub: string, j: number) => `${sub}:${j}`
 
 /** Основное и возбуждённые состояния: электроны переходят между ячейками внешнего слоя */
-export default function ExcitedStates() {
-  const [ei, setEi] = useState(2)
+export default function ExcitedStates({ symbols }: { symbols?: string[] } = {}) {
+  const list = symbols ? excitedElements.filter((e) => symbols.includes(e.sym)) : excitedElements
+  const [ei, setEi] = useState(symbols ? list.length - 1 : 2)
   const [k, setK] = useState(0)
   const [flights, setFlights] = useState<Flight[]>([])
   const [pending, setPending] = useState<Set<string>>(new Set())
@@ -29,7 +30,7 @@ export default function ExcitedStates() {
 
   useEffect(() => () => clearTimeout(timer.current), [])
 
-  const el = excitedElements[ei]
+  const el = list[ei]
   const state = stateAt(el, k)
   const un = unpaired(state)
 
@@ -83,7 +84,7 @@ export default function ExcitedStates() {
   return (
     <div className="rounded-2xl bg-navy p-4 text-white sm:p-6">
       <div className="flex flex-wrap gap-1">
-        {excitedElements.map((e, i) => (
+        {list.map((e, i) => (
           <button
             key={e.sym}
             onClick={() => pick(i)}

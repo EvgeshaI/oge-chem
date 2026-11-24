@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300" role="img" aria-label="Карта реакций хлора: реагирует с металлами, водородом, фосфором и кремнием, растворами бромидов и иодидов; с кислородом, азотом, углеродом и фторидами не реагирует">
+<style>text{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}.t{font-size:14px;font-weight:800;fill:#1f2433}.e{font-size:12.5px;fill:#1f2433}.n{font-size:12px;fill:#6b7387}</style>
+<rect width="760" height="300" fill="#ffffff"/>
+<g stroke-width="3" stroke-linecap="round">
+<line x1="380" y1="220" x2="125" y2="70" stroke="#16a58c"/>
+<line x1="380" y1="220" x2="380" y2="70" stroke="#16a58c"/>
+<line x1="380" y1="220" x2="635" y2="70" stroke="#16a58c"/>
+<line x1="380" y1="220" x2="125" y2="220" stroke="#e5484d" stroke-dasharray="7 6"/>
+<line x1="380" y1="220" x2="635" y2="220" stroke="#16a58c"/>
+</g>
+<circle cx="380" cy="220" r="58" fill="#cfe56a" stroke="#8fae1f" stroke-width="4"/>
+<text x="380" y="216" text-anchor="middle" font-size="30" font-weight="800" fill="#44570a">Cl₂</text>
+<text x="380" y="238" text-anchor="middle" font-size="13" font-weight="700" fill="#44570a">окислитель</text>
+
+<rect x="10" y="10" width="230" height="120" rx="14" fill="#e8f6f2" stroke="#16a58c" stroke-width="2"/>
+<text class="t" x="24" y="34">С металлами → хлориды</text>
+<text class="e" x="24" y="58">2Na + Cl₂ → 2NaCl</text>
+<text class="e" x="24" y="78">Cu + Cl₂ → CuCl₂</text>
+<text class="e" x="24" y="98">2Fe + 3Cl₂ → 2FeCl₃</text>
+<text class="n" x="24" y="118">железо — только до +3!</text>
+
+<rect x="265" y="10" width="230" height="120" rx="14" fill="#e8f6f2" stroke="#16a58c" stroke-width="2"/>
+<text class="t" x="279" y="34">С водородом</text>
+<text class="e" x="279" y="62">H₂ + Cl₂ → 2HCl</text>
+<text class="n" x="279" y="86">на свету — взрыв,</text>
+<text class="n" x="279" y="102">в темноте — медленно</text>
+
+<rect x="520" y="10" width="230" height="120" rx="14" fill="#e8f6f2" stroke="#16a58c" stroke-width="2"/>
+<text class="t" x="534" y="34">С неметаллами</text>
+<text class="e" x="534" y="58">2P + 3Cl₂ → 2PCl₃ (недост.)</text>
+<text class="e" x="534" y="78">2P + 5Cl₂ → 2PCl₅ (избыт.)</text>
+<text class="e" x="534" y="98">Si + 2Cl₂ → SiCl₄</text>
+
+<rect x="10" y="160" width="230" height="120" rx="14" fill="#fdecec" stroke="#e5484d" stroke-width="2"/>
+<text class="t" x="24" y="184" style="fill:#b3282d">Не реагирует</text>
+<text class="e" x="24" y="210">с O₂, N₂, C</text>
+<text class="e" x="24" y="230">с благородными газами</text>
+<text class="e" x="24" y="250">Cl₂ + KF → не идёт</text>
+<text class="n" x="24" y="270">F₂ сильнее Cl₂</text>
+
+<rect x="520" y="160" width="230" height="120" rx="14" fill="#e8f6f2" stroke="#16a58c" stroke-width="2"/>
+<text class="t" x="534" y="184">Вытесняет Br₂ и I₂</text>
+<text class="e" x="534" y="210">Cl₂ + 2KBr → 2KCl + Br₂</text>
+<text class="e" x="534" y="230">Cl₂ + 2KI → 2KCl + I₂</text>
+<text class="n" x="534" y="250">раствор желтеет / буреет;</text>
+<text class="n" x="534" y="266">с крахмалом иод — синий</text>
+</svg>

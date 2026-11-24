@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img" aria-label="Галогены F, Cl, Br, I: размер атома, электроотрицательность, агрегатное состояние. Сверху вниз по группе радиус растёт, электроотрицательность и окислительная активность падают">
+<style>text{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}</style>
+<rect width="760" height="420" fill="#ffffff"/>
+<text x="20" y="30" font-size="18" font-weight="800" fill="#1f2433">Галогены — VIIA группа</text>
+<text x="20" y="50" font-size="12" fill="#6b7387">На внешнем слое 7 электронов (ns²np⁵). Размер круга — условный размер атома</text>
+<g>
+<rect x="20" y="68" width="165" height="262" rx="14" fill="#f4f6fb" stroke="#e1e5f0" stroke-width="2"/>
+<circle cx="102" cy="140" r="34" fill="#f3ecb0" stroke="#c8bd5a" stroke-width="3"/>
+<text x="102" y="150" text-anchor="middle" font-size="26" font-weight="800" fill="#6b6620">F</text>
+<text x="102" y="226" text-anchor="middle" font-size="14" font-weight="800" fill="#1f2433">фтор · Z = 9</text>
+<text x="102" y="246" text-anchor="middle" font-size="12" fill="#1f2433">2ē 7ē</text>
+<text x="102" y="264" text-anchor="middle" font-size="12" fill="#1f2433">ЭО 3,98 · r 72 пм</text>
+<rect x="27" y="278" width="150" height="26" rx="13" fill="#f3ecb0"/>
+<text x="102" y="295" text-anchor="middle" font-size="11" font-weight="800" fill="#6b6620">газ, светло-жёлтый</text>
+<text x="102" y="321" text-anchor="middle" font-size="11" fill="#6b7387">F₂</text>
+</g>
+<g>
+<rect x="195" y="68" width="165" height="262" rx="14" fill="#f4f6fb" stroke="#e1e5f0" stroke-width="2"/>
+<circle cx="277" cy="140" r="43" fill="#cfe56a" stroke="#8fae1f" stroke-width="3"/>
+<text x="277" y="150" text-anchor="middle" font-size="26" font-weight="800" fill="#44570a">Cl</text>
+<text x="277" y="226" text-anchor="middle" font-size="14" font-weight="800" fill="#1f2433">хлор · Z = 17</text>
+<text x="277" y="246" text-anchor="middle" font-size="12" fill="#1f2433">2ē 8ē 7ē</text>
+<text x="277" y="264" text-anchor="middle" font-size="12" fill="#1f2433">ЭО 3,16 · r 99 пм</text>
+<rect x="202" y="278" width="150" height="26" rx="13" fill="#cfe56a"/>
+<text x="277" y="295" text-anchor="middle" font-size="11" font-weight="800" fill="#44570a">газ, жёлто-зелёный</text>
+<text x="277" y="321" text-anchor="middle" font-size="11" fill="#6b7387">Cl₂</text>
+</g>
+<g>
+<rect x="370" y="68" width="165" height="262" rx="14" fill="#f4f6fb" stroke="#e1e5f0" stroke-width="2"/>
+<circle cx="452" cy="140" r="47" fill="#e9946a" stroke="#b4502a" stroke-width="3"/>
+<text x="452" y="150" text-anchor="middle" font-size="26" font-weight="800" fill="#5a1d08">Br</text>
+<text x="452" y="226" text-anchor="middle" font-size="14" font-weight="800" fill="#1f2433">бром · Z = 35</text>
+<text x="452" y="246" text-anchor="middle" font-size="12" fill="#1f2433">2ē 8ē 18ē 7ē</text>
+<text x="452" y="264" text-anchor="middle" font-size="12" fill="#1f2433">ЭО 2,96 · r 114 пм</text>
+<rect x="377" y="278" width="150" height="26" rx="13" fill="#e9946a"/>
+<text x="452" y="295" text-anchor="middle" font-size="11" font-weight="800" fill="#5a1d08">жидкость, бурая</text>
+<text x="452" y="321" text-anchor="middle" font-size="11" fill="#6b7387">Br₂</text>
+</g>
+<g>
+<rect x="545" y="68" width="165" height="262" rx="14" fill="#f4f6fb" stroke="#e1e5f0" stroke-width="2"/>
+<circle cx="627" cy="140" r="53" fill="#c9a6e6" stroke="#8a55b8" stroke-width="3"/>
+<text x="627" y="150" text-anchor="middle" font-size="26" font-weight="800" fill="#47206b">I</text>
+<text x="627" y="226" text-anchor="middle" font-size="14" font-weight="800" fill="#1f2433">иод · Z = 53</text>
+<text x="627" y="246" text-anchor="middle" font-size="12" fill="#1f2433">2ē 8ē 18ē 18ē 7ē</text>
+<text x="627" y="264" text-anchor="middle" font-size="12" fill="#1f2433">ЭО 2,66 · r 133 пм</text>
+<rect x="552" y="278" width="150" height="26" rx="13" fill="#c9a6e6"/>
+<text x="627" y="295" text-anchor="middle" font-size="11" font-weight="800" fill="#47206b">твёрдый, фиолетовый</text>
+<text x="627" y="321" text-anchor="middle" font-size="11" fill="#6b7387">I₂</text>
+</g>
+<g stroke-linecap="round" stroke-linejoin="round" fill="none">
+<line x1="30" y1="362" x2="690" y2="362" stroke="#16a58c" stroke-width="4"/>
+<polyline points="678,354 692,362 678,370" stroke="#16a58c" stroke-width="4"/>
+<line x1="30" y1="392" x2="690" y2="392" stroke="#e5484d" stroke-width="4"/>
+<polyline points="678,384 692,392 678,400" stroke="#e5484d" stroke-width="4"/>
+</g>
+<text x="30" y="350" font-size="11.5" font-weight="800" fill="#0f7c69">растут: радиус атома · число слоёв · t плавления и кипения · интенсивность окраски</text>
+<text x="30" y="380" font-size="11.5" font-weight="800" fill="#b3282d">падают: электроотрицательность · окислительная активность · неметаллические свойства</text>
+<text x="30" y="414" font-size="10.5" fill="#6b7387">Астат At — радиоактивный, в школе не изучают; в природе галогены — только в соединениях</text>
+</svg>

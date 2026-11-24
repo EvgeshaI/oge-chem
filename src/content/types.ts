@@ -32,6 +32,18 @@ export type AnimationName =
   | 'metal-ion'
   | 'react-nonmetals'
   | 'mech-switcher'
+  | 'halogen-atoms'
+  | 'excited-halogens'
+  | 'halogen-trends'
+  | 'halogen-molecule'
+  | 'halogen-tubes'
+  | 'chlorine-lab'
+  | 'halogen-mech-metals'
+  | 'halogen-mech-nonmetals'
+  | 'halogen-mech-water'
+  | 'halogen-mech-displace'
+  | 'halogen-displace'
+  | 'halide-test'
 
 export interface CardItem {
   title: string
@@ -246,4 +258,6 @@ export interface TopicMeta {
   kim: number[]
   /** Сколько заданий всего (практика + экзамен). Сверяется тестом. */
   totalTasks: number
+  /** Тема пока только с теорией: вкладки «Тренировка» и «Формат ОГЭ» скрыты */
+  theoryOnly?: boolean
 }

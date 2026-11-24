@@ -14,6 +14,10 @@ const LOOK: Record<Kind, { fill: string; text: string; r: number }> = {
   h: { fill: '#ffffff', text: '#1b2445', r: 13 },
   hplus: { fill: '#ffb3cf', text: '#5a1031', r: 16 },
   c: { fill: '#3a4056', text: '#ffffff', r: 20 },
+  f: { fill: '#f3ecb0', text: '#4d4710', r: 17 },
+  br: { fill: '#e9946a', text: '#3d1405', r: 23 },
+  i: { fill: '#c9a6e6', text: '#2e1250', r: 26 },
+  p: { fill: '#f4b183', text: '#4a2108', r: 22 },
 }
 
 const NOTE_COLOR = { info: '#cfd6f5', good: '#6ee7c4', bad: '#ff8a8f' } as const
@@ -304,7 +308,7 @@ function SceneView({ scene }: { scene: Scene }) {
               ))}
             </tbody>
           </table>
-          <p className="px-3 pb-2 pt-1 text-xs text-white/65">Металл всегда отдаёт электроны: степень окисления растёт — это <b>восстановитель</b>.</p>
+          <p className="px-3 pb-2 pt-1 text-xs text-white/65">{scene.footnote ? <RichText text={scene.footnote} /> : <>Металл всегда отдаёт электроны: степень окисления растёт — это <b>восстановитель</b>.</>}</p>
         </div>
       ) : (
         <p className="mt-3 rounded-xl bg-white/10 p-3 text-sm text-white/85">
@@ -316,15 +320,15 @@ function SceneView({ scene }: { scene: Scene }) {
 }
 
 /** Покадровая анимация: что на что меняется при реакции металла (электроны, ионы, продукты) */
-export default function ReactionMechanism({ group, embedded = false }: { group: GroupId; embedded?: boolean }) {
-  const scenes = scenesOf(group)
+export default function ReactionMechanism({ group, scenes: given, embedded = false }: { group?: GroupId; scenes?: Scene[]; embedded?: boolean }) {
+  const scenes = given ?? scenesOf(group!)
   const [id, setId] = useState(scenes[0].id)
   const scene = scenes.find((s) => s.id === id) ?? scenes[0]
   const body = (
     <>
       {!embedded && (
         <div className="text-sm text-white/75">
-          {GROUP_TITLES[group]}: пройдите реакцию по шагам и посмотрите, куда «уходят» электроны.
+          {group ? GROUP_TITLES[group] : 'Механизм реакции'}: пройдите реакцию по шагам и посмотрите, куда «уходят» электроны.
         </div>
       )}
       {scenes.length > 1 && (

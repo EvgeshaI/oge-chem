@@ -30,6 +30,14 @@ const FlameTest = lazy(() => import('./FlameTest'))
 const MetalIon = lazy(() => import('./MetalIon'))
 const NonmetalMatrix = lazy(() => import('./NonmetalMatrix'))
 const MechanismSwitcher = lazy(() => import('./MechanismSwitcher'))
+const HalogenAtoms = lazy(() => import('./HalogenAtoms'))
+const HalogenTrends = lazy(() => import('./HalogenTrends'))
+const HalogenMolecule = lazy(() => import('./HalogenMolecule'))
+const HalogenTubes = lazy(() => import('./HalogenTubes'))
+const ChlorineLab = lazy(() => import('./ChlorineLab'))
+const HalogenMechanisms = lazy(() => import('./HalogenMechanisms'))
+const HalogenDisplacement = lazy(() => import('./HalogenDisplacement'))
+const HalideTest = lazy(() => import('./HalideTest'))
 
 /** Светлый ли фон (hex) — тогда текст делаем тёмным */
 function isLightColor(hex: string): boolean {
@@ -104,6 +112,30 @@ function Animation({ name }: { name: AnimationName }) {
       return <ReactionMatrix />
     case 'flame-test':
       return <FlameTest />
+    case 'halogen-atoms':
+      return <HalogenAtoms />
+    case 'excited-halogens':
+      return <ExcitedStates symbols={['F', 'Cl']} />
+    case 'halogen-trends':
+      return <HalogenTrends />
+    case 'halogen-molecule':
+      return <HalogenMolecule />
+    case 'halogen-tubes':
+      return <HalogenTubes />
+    case 'chlorine-lab':
+      return <ChlorineLab />
+    case 'halogen-mech-metals':
+      return <HalogenMechanisms only="hal-metals" />
+    case 'halogen-mech-nonmetals':
+      return <HalogenMechanisms only="hal-nonmetals" />
+    case 'halogen-mech-water':
+      return <HalogenMechanisms only="hal-water" />
+    case 'halogen-mech-displace':
+      return <HalogenMechanisms only="hal-displace" />
+    case 'halogen-displace':
+      return <HalogenDisplacement />
+    case 'halide-test':
+      return <HalideTest />
   }
 }
 
@@ -177,7 +209,7 @@ export function BlockView({ block }: { block: Block }) {
               <div key={i} className="flex overflow-hidden rounded-xl bg-white shadow-sm">
                 <div className={`w-1.5 shrink-0 ${a.bg}`} />
                 <div className="min-w-0 flex-1 p-4">
-                  <div className="flex items-start justify-between gap-2">
+                  <div className="flex flex-wrap items-start justify-between gap-x-2 gap-y-1">
                     <div className={`font-bold ${a.text}`}>{c.title}</div>
                     {c.tag && <span className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-semibold ${a.soft} ${a.text}`}>{c.tag}</span>}
                   </div>
