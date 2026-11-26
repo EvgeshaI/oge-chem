@@ -96,8 +96,10 @@ export function AtomBoron() {
 
 /** Электронная схема для задания: ядро + n дуг, подписи отдельно */
 export function SchemeArcs({ layers, filled }: { layers: number; filled?: number[] }) {
+  // ширина растёт с числом слоёв, чтобы последние дуги не обрезались (Br — 4 слоя, I — 5)
+  const w = Math.max(170, 62 + (layers - 1) * 26 + 24)
   return (
-    <svg viewBox="0 0 170 90" className="w-full max-w-[200px]" role="img" aria-label={`Схема атома: ${layers} электронных слоя`}>
+    <svg viewBox={`0 0 ${w} 90`} className="w-full" style={{ maxWidth: (200 * w) / 170 }} role="img" aria-label={`Схема атома: ${layers} электронных слоя`}>
       <circle cx={30} cy={45} r={20} fill="#dcebff" stroke="#2f7fec" strokeWidth={2} />
       <text x={30} y={50} textAnchor="middle" fontSize={12} fontWeight={700} fill="#2f7fec">+</text>
       {Array.from({ length: layers }, (_, i) => {
