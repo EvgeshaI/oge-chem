@@ -4,9 +4,9 @@
  * атом → ион, молекула → атомы → продукт. Электроны показываются отдельно (перелёты).
  */
 
-export type Kind = 'metal' | 'cu' | 'ag' | 'cation' | 'anion' | 'cl' | 'o' | 's' | 'h' | 'hplus' | 'c' | 'f' | 'br' | 'i' | 'p'
+export type Kind = 'metal' | 'cu' | 'ag' | 'cation' | 'anion' | 'cl' | 'o' | 's' | 'h' | 'hplus' | 'c' | 'f' | 'br' | 'i' | 'p' | 'n'
 
-export type GroupId = 'nonmetals' | 'water' | 'acids' | 'salts' | 'oxides' | 'hal-metals' | 'hal-nonmetals' | 'hal-water' | 'hal-displace' | 'chal-oxygen' | 'chal-sulfur'
+export type GroupId = 'nonmetals' | 'water' | 'acids' | 'salts' | 'oxides' | 'hal-metals' | 'hal-nonmetals' | 'hal-water' | 'hal-displace' | 'chal-oxygen' | 'chal-sulfur' | 'pn-nitrogen' | 'pn-phosphorus'
 
 export interface St {
   x: number
@@ -82,6 +82,8 @@ export const GROUP_TITLES: Record<GroupId, string> = {
   'hal-displace': 'Вытеснение галогенов из солей',
   'chal-oxygen': 'Кислород — окислитель',
   'chal-sulfur': 'Сера — окислитель и восстановитель',
+  'pn-nitrogen': 'Азот — окислитель и восстановитель',
+  'pn-phosphorus': 'Фосфор — окислитель и восстановитель',
 }
 
 const BLUE = 'rgba(47,127,236,0.22)'

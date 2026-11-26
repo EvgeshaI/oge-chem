@@ -18,6 +18,7 @@ const LOOK: Record<Kind, { fill: string; text: string; r: number }> = {
   br: { fill: '#e9946a', text: '#3d1405', r: 23 },
   i: { fill: '#c9a6e6', text: '#2e1250', r: 26 },
   p: { fill: '#f4b183', text: '#4a2108', r: 22 },
+  n: { fill: '#9fa8ff', text: '#16205a', r: 19 },
 }
 
 const NOTE_COLOR = { info: '#cfd6f5', good: '#6ee7c4', bad: '#ff8a8f' } as const

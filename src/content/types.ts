@@ -53,6 +53,13 @@ export type AnimationName =
   | 'chal-mech-oxygen'
   | 'chal-mech-sulfur'
   | 'sulfur-roles'
+  | 'pnictogen-atoms'
+  | 'excited-pnictogens'
+  | 'pnictogen-molecules'
+  | 'pn-mech-nitrogen'
+  | 'pn-mech-phosphorus'
+  | 'pnictogen-roles'
+  | 'phosphorus-amount'
 
 export interface CardItem {
   title: string

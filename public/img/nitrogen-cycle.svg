@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img" aria-label="Круговорот азота: азот воздуха связывают молнии, клубеньковые бактерии и заводы синтеза аммиака; соединения азота попадают в почву, растения строят из них белки, а при гниении азот возвращается в воздух">
+<style>text{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}</style>
+<defs>
+<marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#6b7387"/></marker>
+</defs>
+<rect width="760" height="420" fill="#ffffff"/>
+<text x="20" y="30" font-size="18" font-weight="800" fill="#1f2433">Круговорот азота: как «связывают» малоактивный N₂</text>
+<text x="20" y="50" font-size="12" fill="#6b7387">Растения не могут взять азот прямо из воздуха — им нужны соединения азота в почве</text>
+<!-- воздух -->
+<rect x="270" y="66" width="220" height="70" rx="16" fill="#e7e9ff" stroke="#9fa8ff" stroke-width="2"/>
+<text x="380" y="96" text-anchor="middle" font-size="20" font-weight="800" fill="#262d7a">Воздух: N₂</text>
+<text x="380" y="118" text-anchor="middle" font-size="12" fill="#262d7a">78 % по объёму, N≡N</text>
+<!-- молния -->
+<rect x="20" y="170" width="200" height="86" rx="14" fill="#fff6d6" stroke="#f5c542" stroke-width="2"/>
+<path d="M44 182 L32 214 L42 214 L34 240 L56 206 L46 206 L54 182 Z" fill="#f5b400"/>
+<text x="140" y="196" text-anchor="middle" font-size="13.5" font-weight="800" fill="#7a5a00">Грозы (молния)</text>
+<text x="140" y="217" text-anchor="middle" font-size="12" fill="#1f2433">N₂ + O₂ → 2NO</text>
+<text x="140" y="236" text-anchor="middle" font-size="12" fill="#1f2433">2NO + O₂ → 2NO₂</text>
+<text x="140" y="250" text-anchor="middle" font-size="10.5" fill="#6b7387">→ с дождём в почву</text>
+<!-- бактерии -->
+<rect x="280" y="184" width="200" height="72" rx="14" fill="#e3f6ef" stroke="#7fd3bf" stroke-width="2"/>
+<text x="380" y="210" text-anchor="middle" font-size="13.5" font-weight="800" fill="#0f7c69">Клубеньковые бактерии</text>
+<text x="380" y="230" text-anchor="middle" font-size="12" fill="#1f2433">на корнях бобовых</text>
+<text x="380" y="247" text-anchor="middle" font-size="12" fill="#1f2433">(горох, клевер)</text>
+<!-- завод -->
+<rect x="540" y="170" width="200" height="86" rx="14" fill="#e6f0ff" stroke="#8bb6f5" stroke-width="2"/>
+<text x="640" y="196" text-anchor="middle" font-size="13.5" font-weight="800" fill="#1a4fa3">Завод: синтез аммиака</text>
+<text x="640" y="217" text-anchor="middle" font-size="12" fill="#1f2433">N₂ + 3H₂ ⇄ 2NH₃</text>
+<text x="640" y="236" text-anchor="middle" font-size="12" fill="#1f2433">t, p, катализатор</text>
+<text x="640" y="250" text-anchor="middle" font-size="10.5" fill="#6b7387">→ азотные удобрения</text>
+<!-- почва -->
+<rect x="180" y="300" width="400" height="44" rx="12" fill="#f3e6d6" stroke="#c9a57c" stroke-width="2"/>
+<text x="380" y="327" text-anchor="middle" font-size="14" font-weight="800" fill="#6b4320">Соединения азота в почве: нитраты, соли аммония</text>
+<!-- растения -->
+<rect x="250" y="366" width="260" height="44" rx="12" fill="#e6f5d8" stroke="#9cd06f" stroke-width="2"/>
+<text x="380" y="393" text-anchor="middle" font-size="13.5" font-weight="800" fill="#3d6b14">Растения → белки → животные</text>
+<!-- стрелки -->
+<g stroke="#6b7387" stroke-width="2.5" fill="none" marker-end="url(#ar)">
+<path d="M290 120 C 200 130 140 140 120 166"/>
+<path d="M380 138 L 380 180"/>
+<path d="M470 120 C 560 130 620 140 640 166"/>
+<path d="M120 258 C 140 290 170 305 178 312"/>
+<path d="M380 258 L 380 296"/>
+<path d="M640 258 C 620 290 590 305 582 312"/>
+<path d="M380 346 L 380 362"/>
+</g>
+<g stroke="#9fa8ff" stroke-width="2.5" fill="none" stroke-dasharray="7 6" marker-end="url(#ar)">
+<path d="M512 388 C 740 380 740 110 494 100"/>
+</g>
+<text x="690" y="300" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4b52b8">гниение:</text>
+<text x="690" y="316" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4b52b8">азот снова</text>
+<text x="690" y="332" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4b52b8">в воздух</text>
+</svg>

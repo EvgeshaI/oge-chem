@@ -45,6 +45,11 @@ const OxygenLab = lazy(() => import('./OxygenLab'))
 const OxygenBurning = lazy(() => import('./OxygenBurning'))
 const ChalcogenMechanisms = lazy(() => import('./ChalcogenMechanisms'))
 const SulfurRoles = lazy(() => import('./SulfurRoles'))
+const PnictogenAtoms = lazy(() => import('./PnictogenAtoms'))
+const PnictogenMolecules = lazy(() => import('./PnictogenMolecules'))
+const PnictogenMechanisms = lazy(() => import('./PnictogenMechanisms'))
+const PnictogenRoles = lazy(() => import('./PnictogenRoles'))
+const PhosphorusAmount = lazy(() => import('./PhosphorusAmount'))
 
 /** Светлый ли фон (hex) — тогда текст делаем тёмным */
 function isLightColor(hex: string): boolean {
@@ -161,6 +166,20 @@ function Animation({ name }: { name: AnimationName }) {
       return <ChalcogenMechanisms only="chal-sulfur" />
     case 'sulfur-roles':
       return <SulfurRoles />
+    case 'pnictogen-atoms':
+      return <PnictogenAtoms />
+    case 'excited-pnictogens':
+      return <ExcitedStates symbols={['N', 'P']} />
+    case 'pnictogen-molecules':
+      return <PnictogenMolecules />
+    case 'pn-mech-nitrogen':
+      return <PnictogenMechanisms only="pn-nitrogen" />
+    case 'pn-mech-phosphorus':
+      return <PnictogenMechanisms only="pn-phosphorus" />
+    case 'pnictogen-roles':
+      return <PnictogenRoles />
+    case 'phosphorus-amount':
+      return <PhosphorusAmount />
   }
 }
 

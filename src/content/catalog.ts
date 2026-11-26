@@ -92,6 +92,16 @@ export const catalog: TopicMeta[] = [
     kim: [8, 9, 10],
     totalTasks: 38,
   },
+  {
+    id: 'nitrogen-phosphorus',
+    title: 'Азот и фосфор',
+    subtitle: 'N и P: строение атомов, тройная связь N≡N, аллотропия фосфора, азот и фосфор — окислители и восстановители',
+    emoji: '⚡',
+    accent: 'purple',
+    free: true,
+    kim: [8, 9, 10],
+    totalTasks: 38,
+  },
 ]
 
 export const topicById = (id: string) => catalog.find((t) => t.id === id)

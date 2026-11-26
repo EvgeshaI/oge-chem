@@ -7,12 +7,13 @@ import classes from './topics/classes'
 import concepts from './topics/concepts'
 import halogens from './topics/halogens'
 import oxygenSulfur from './topics/oxygen-sulfur'
+import nitrogenPhosphorus from './topics/nitrogen-phosphorus'
 import metals from './topics/metals'
 import oxidation from './topics/oxidation'
 import periodic from './topics/periodic'
 import type { Task, TopicContent } from './types'
 
-const all: Record<string, TopicContent> = { atom, bonds, classes, concepts, halogens, metals, oxidation, periodic, 'oxygen-sulfur': oxygenSulfur }
+const all: Record<string, TopicContent> = { atom, bonds, classes, concepts, halogens, metals, oxidation, periodic, 'oxygen-sulfur': oxygenSulfur, 'nitrogen-phosphorus': nitrogenPhosphorus }
 const tasksOf = (c: TopicContent): Task[] => [...c.practice, ...c.exam.flatMap((v) => v.tasks)]
 
 describe('каталог', () => {
@@ -141,7 +142,7 @@ describe('задания', () => {
 
 describe('варианты ОГЭ', () => {
   it('по 10 заданий, id вариантов уникальны', () => {
-    for (const c of [concepts, atom, periodic, oxidation, bonds, classes, metals, halogens, oxygenSulfur]) {
+    for (const c of [concepts, atom, periodic, oxidation, bonds, classes, metals, halogens, oxygenSulfur, nitrogenPhosphorus]) {
       expect(c.exam).toHaveLength(2)
       for (const v of c.exam) expect(v.tasks).toHaveLength(10)
     }
