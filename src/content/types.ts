@@ -44,6 +44,15 @@ export type AnimationName =
   | 'halogen-mech-displace'
   | 'halogen-displace'
   | 'halide-test'
+  | 'chalcogen-atoms'
+  | 'excited-chalcogens'
+  | 'ozone-discharge'
+  | 'sulfur-heating'
+  | 'oxygen-lab'
+  | 'oxygen-burning'
+  | 'chal-mech-oxygen'
+  | 'chal-mech-sulfur'
+  | 'sulfur-roles'
 
 export interface CardItem {
   title: string

@@ -38,6 +38,13 @@ const ChlorineLab = lazy(() => import('./ChlorineLab'))
 const HalogenMechanisms = lazy(() => import('./HalogenMechanisms'))
 const HalogenDisplacement = lazy(() => import('./HalogenDisplacement'))
 const HalideTest = lazy(() => import('./HalideTest'))
+const ChalcogenAtoms = lazy(() => import('./ChalcogenAtoms'))
+const OzoneDischarge = lazy(() => import('./OzoneDischarge'))
+const SulfurHeating = lazy(() => import('./SulfurHeating'))
+const OxygenLab = lazy(() => import('./OxygenLab'))
+const OxygenBurning = lazy(() => import('./OxygenBurning'))
+const ChalcogenMechanisms = lazy(() => import('./ChalcogenMechanisms'))
+const SulfurRoles = lazy(() => import('./SulfurRoles'))
 
 /** Светлый ли фон (hex) — тогда текст делаем тёмным */
 function isLightColor(hex: string): boolean {
@@ -136,6 +143,24 @@ function Animation({ name }: { name: AnimationName }) {
       return <HalogenDisplacement />
     case 'halide-test':
       return <HalideTest />
+    case 'chalcogen-atoms':
+      return <ChalcogenAtoms />
+    case 'excited-chalcogens':
+      return <ExcitedStates symbols={['O', 'S']} />
+    case 'ozone-discharge':
+      return <OzoneDischarge />
+    case 'sulfur-heating':
+      return <SulfurHeating />
+    case 'oxygen-lab':
+      return <OxygenLab />
+    case 'oxygen-burning':
+      return <OxygenBurning />
+    case 'chal-mech-oxygen':
+      return <ChalcogenMechanisms only="chal-oxygen" />
+    case 'chal-mech-sulfur':
+      return <ChalcogenMechanisms only="chal-sulfur" />
+    case 'sulfur-roles':
+      return <SulfurRoles />
   }
 }
 

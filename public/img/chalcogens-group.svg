@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" role="img" aria-label="Кислород и сера — элементы VIA группы. У обоих 6 электронов на внешнем слое. От кислорода к сере радиус растёт, электроотрицательность и окислительные свойства уменьшаются">
+<style>text{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}</style>
+<rect width="760" height="400" fill="#ffffff"/>
+<text x="20" y="30" font-size="18" font-weight="800" fill="#1f2433">Кислород и сера — VIA группа (халькогены)</text>
+<text x="20" y="50" font-size="12" fill="#6b7387">На внешнем слое 6 электронов (ns²np⁴). Размер круга — условный размер атома</text>
+<g>
+<rect x="20" y="66" width="220" height="250" rx="14" fill="#fff4e4" stroke="#f1d7ad" stroke-width="2"/>
+<text x="36" y="88" font-size="12" font-weight="800" fill="#b8740a">8</text>
+<circle cx="130" cy="140" r="36" fill="#ff8a8a" stroke="#c94b4b" stroke-width="3"/>
+<text x="130" y="150" text-anchor="middle" font-size="28" font-weight="800" fill="#4a0f14">O</text>
+<text x="130" y="206" text-anchor="middle" font-size="15" font-weight="800" fill="#1f2433">кислород · Z = 8</text>
+<text x="130" y="226" text-anchor="middle" font-size="12" fill="#1f2433">2-й период · 2ē 6ē</text>
+<text x="130" y="244" text-anchor="middle" font-size="12" fill="#1f2433">ЭО 3,44 · r 73 пм</text>
+<rect x="34" y="256" width="192" height="26" rx="13" fill="#ffd6d6"/>
+<text x="130" y="273" text-anchor="middle" font-size="11" font-weight="800" fill="#7a1d22">с. о.: −2 (−1 в H₂O₂, +2 в OF₂)</text>
+<text x="130" y="304" text-anchor="middle" font-size="11" fill="#6b7387">простые вещества: O₂ и O₃</text>
+</g>
+<g>
+<rect x="255" y="66" width="220" height="250" rx="14" fill="#fffbe0" stroke="#efe19a" stroke-width="2"/>
+<text x="271" y="88" font-size="12" font-weight="800" fill="#8a7400">16</text>
+<circle cx="365" cy="140" r="48" fill="#f7d94c" stroke="#b89b12" stroke-width="3"/>
+<text x="365" y="150" text-anchor="middle" font-size="28" font-weight="800" fill="#4a3b00">S</text>
+<text x="365" y="206" text-anchor="middle" font-size="15" font-weight="800" fill="#1f2433">сера · Z = 16</text>
+<text x="365" y="226" text-anchor="middle" font-size="12" fill="#1f2433">3-й период · 2ē 8ē 6ē</text>
+<text x="365" y="244" text-anchor="middle" font-size="12" fill="#1f2433">ЭО 2,58 · r 103 пм</text>
+<rect x="269" y="256" width="192" height="26" rx="13" fill="#f9ec9c"/>
+<text x="365" y="273" text-anchor="middle" font-size="11" font-weight="800" fill="#5c4d00">с. о.: −2, 0, +4, +6</text>
+<text x="365" y="304" text-anchor="middle" font-size="11" fill="#6b7387">простое вещество: S (молекулы S₈)</text>
+</g>
+<g>
+<rect x="490" y="66" width="250" height="250" rx="14" fill="#f4f6fb" stroke="#e1e5f0" stroke-width="2"/>
+<text x="506" y="92" font-size="13" font-weight="800" fill="#1f2433">От O к S (сверху вниз):</text>
+<text x="506" y="122" font-size="13" font-weight="800" fill="#0f7c69">▲ число электронных слоёв</text>
+<text x="506" y="148" font-size="13" font-weight="800" fill="#0f7c69">▲ радиус атома</text>
+<text x="506" y="174" font-size="13" font-weight="800" fill="#0f7c69">▲ восстановительные свойства</text>
+<text x="506" y="200" font-size="13" font-weight="800" fill="#b3282d">▼ электроотрицательность</text>
+<text x="506" y="226" font-size="13" font-weight="800" fill="#b3282d">▼ окислительные свойства</text>
+<text x="506" y="252" font-size="13" font-weight="800" fill="#b3282d">▼ неметаллические свойства</text>
+<text x="506" y="282" font-size="11" fill="#6b7387">Число внешних электронов</text>
+<text x="506" y="298" font-size="11" fill="#6b7387">одинаковое — 6</text>
+</g>
+<g stroke-linecap="round" stroke-linejoin="round" fill="none">
+<line x1="30" y1="346" x2="720" y2="346" stroke="#16a58c" stroke-width="4"/>
+<polyline points="708,338 722,346 708,354" stroke="#16a58c" stroke-width="4"/>
+</g>
+<text x="30" y="336" font-size="11.5" font-weight="800" fill="#0f7c69">общее: 6 внешних ē · не хватает 2 ē до восьми · низшая степень окисления −2 · неметаллы</text>
+<text x="30" y="374" font-size="11.5" font-weight="800" fill="#b3282d">различие: у серы есть свободный 3d-подуровень → валентность II, IV, VI; у кислорода — только II</text>
+<text x="30" y="394" font-size="10.5" fill="#6b7387">В VIA группу входят также Se, Te, Po; в ОГЭ строение атомов изучают только у первых 20 элементов</text>
+</svg>

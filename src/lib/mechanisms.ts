@@ -6,7 +6,7 @@
 
 export type Kind = 'metal' | 'cu' | 'ag' | 'cation' | 'anion' | 'cl' | 'o' | 's' | 'h' | 'hplus' | 'c' | 'f' | 'br' | 'i' | 'p'
 
-export type GroupId = 'nonmetals' | 'water' | 'acids' | 'salts' | 'oxides' | 'hal-metals' | 'hal-nonmetals' | 'hal-water' | 'hal-displace'
+export type GroupId = 'nonmetals' | 'water' | 'acids' | 'salts' | 'oxides' | 'hal-metals' | 'hal-nonmetals' | 'hal-water' | 'hal-displace' | 'chal-oxygen' | 'chal-sulfur'
 
 export interface St {
   x: number
@@ -80,6 +80,8 @@ export const GROUP_TITLES: Record<GroupId, string> = {
   'hal-nonmetals': 'Галогены с неметаллами',
   'hal-water': 'Галогены с водой и щёлочью',
   'hal-displace': 'Вытеснение галогенов из солей',
+  'chal-oxygen': 'Кислород — окислитель',
+  'chal-sulfur': 'Сера — окислитель и восстановитель',
 }
 
 const BLUE = 'rgba(47,127,236,0.22)'
@@ -171,7 +173,7 @@ const mgO2 = next(mgO0, {
   o2: { x: 400, y: 180, t: 'O²⁻', k: 'anion', ox: '−2' },
 })
 
-const mgO: Scene = {
+export const mgO: Scene = {
   id: 'mg-o2',
   group: 'nonmetals',
   tab: 'Mg + O₂',
@@ -224,7 +226,7 @@ const feS2 = next(feS0, {
   s: { t: 'S²⁻', k: 'anion', ox: '−2' },
 })
 
-const feS: Scene = {
+export const feS: Scene = {
   id: 'fe-s',
   group: 'nonmetals',
   tab: 'Fe + S',

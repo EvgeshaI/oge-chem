@@ -217,10 +217,32 @@ input:disabled,
     transform: scaleY(1);
   }
 }
+@keyframes drip-down {
+  0% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+}
+@keyframes spark {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--dx), var(--dy)) scale(0.3);
+    opacity: 0;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   [style*="dash-flow"],
   [style*="rise"],
   [style*="flicker"],
+  [style*="drip-down"],
+  [style*="spark"],
   [style*="fill-up"] {
     animation: none !important;
   }

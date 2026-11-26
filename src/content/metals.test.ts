@@ -57,7 +57,7 @@ describe('тема «Металлы»: уравнения', () => {
 describe('механизмы реакций', () => {
   it('в каждой группе есть сцены', () => {
     for (const g of Object.keys(GROUP_TITLES) as GroupId[]) {
-      if (g.startsWith('hal-')) continue // сцены галогенов — в halogens.test.ts
+      if (g.startsWith('hal-') || g.startsWith('chal-')) continue // сцены галогенов и халькогенов — в своих тестах
       expect(scenesOf(g).length, g).toBeGreaterThan(0)
     }
   })

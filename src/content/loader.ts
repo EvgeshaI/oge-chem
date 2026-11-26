@@ -19,6 +19,7 @@ export const loaders: Record<string, Loader> = {
   classes: () => import('./topics/classes'),
   metals: () => import('./topics/metals'),
   halogens: () => import('./topics/halogens'),
+  'oxygen-sulfur': () => import('./topics/oxygen-sulfur'),
 }
 
 export async function loadTopic(id: string): Promise<TopicContent> {

@@ -57,7 +57,7 @@ function side(s: string): Atoms {
 
 /** null — уравнение нельзя проверить (нет стрелки, есть заряды); иначе баланс по атомам */
 export function isBalanced(eq: string): boolean | null {
-  const parts = eq.split(/<=>|->(?:\[[^\]]*\])?/)
+  const parts = eq.split(/(?:<=>|->)(?:\[[^\]]*\])*/)
   if (parts.length !== 2) return null
   if (/[+-]\s*$|\^\d|\^[+-]/.test(parts[0]) || /\^\d|\^[+-]/.test(parts[1])) return null
   const l = side(parts[0].trim())

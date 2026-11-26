@@ -82,6 +82,16 @@ export const catalog: TopicMeta[] = [
     kim: [3, 8, 9, 13],
     totalTasks: 39,
   },
+  {
+    id: 'oxygen-sulfur',
+    title: 'Кислород и сера',
+    subtitle: 'O и S: строение атомов, аллотропия, получение кислорода, горение, сера — окислитель и восстановитель',
+    emoji: '🔥',
+    accent: 'orange',
+    free: true,
+    kim: [8, 9, 10],
+    totalTasks: 38,
+  },
 ]
 
 export const topicById = (id: string) => catalog.find((t) => t.id === id)
