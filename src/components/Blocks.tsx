@@ -50,6 +50,14 @@ const PnictogenMolecules = lazy(() => import('./PnictogenMolecules'))
 const PnictogenMechanisms = lazy(() => import('./PnictogenMechanisms'))
 const PnictogenRoles = lazy(() => import('./PnictogenRoles'))
 const PhosphorusAmount = lazy(() => import('./PhosphorusAmount'))
+const CarbonAtoms = lazy(() => import('./CarbonAtoms'))
+const CarbonAllotropes = lazy(() => import('./CarbonAllotropes'))
+const CharcoalAdsorption = lazy(() => import('./CharcoalAdsorption'))
+const CarbonBurning = lazy(() => import('./CarbonBurning'))
+const CarbonReduction = lazy(() => import('./CarbonReduction'))
+const CarbonMechanisms = lazy(() => import('./CarbonMechanisms'))
+const SiliconLab = lazy(() => import('./SiliconLab'))
+const CarbonRoles = lazy(() => import('./CarbonRoles'))
 
 /** Светлый ли фон (hex) — тогда текст делаем тёмным */
 function isLightColor(hex: string): boolean {
@@ -180,6 +188,26 @@ function Animation({ name }: { name: AnimationName }) {
       return <PnictogenRoles />
     case 'phosphorus-amount':
       return <PhosphorusAmount />
+    case 'carbon-atoms':
+      return <CarbonAtoms />
+    case 'excited-carbon':
+      return <ExcitedStates symbols={['C', 'Si']} />
+    case 'carbon-allotropes':
+      return <CarbonAllotropes />
+    case 'charcoal-adsorption':
+      return <CharcoalAdsorption />
+    case 'carbon-burning':
+      return <CarbonBurning />
+    case 'carbon-reduction':
+      return <CarbonReduction />
+    case 'cs-mech-carbon':
+      return <CarbonMechanisms only="cs-carbon" />
+    case 'cs-mech-silicon':
+      return <CarbonMechanisms only="cs-silicon" />
+    case 'silicon-lab':
+      return <SiliconLab />
+    case 'carbon-roles':
+      return <CarbonRoles />
   }
 }
 

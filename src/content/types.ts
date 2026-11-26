@@ -60,6 +60,16 @@ export type AnimationName =
   | 'pn-mech-phosphorus'
   | 'pnictogen-roles'
   | 'phosphorus-amount'
+  | 'carbon-atoms'
+  | 'excited-carbon'
+  | 'carbon-allotropes'
+  | 'charcoal-adsorption'
+  | 'carbon-burning'
+  | 'carbon-reduction'
+  | 'cs-mech-carbon'
+  | 'cs-mech-silicon'
+  | 'silicon-lab'
+  | 'carbon-roles'
 
 export interface CardItem {
   title: string

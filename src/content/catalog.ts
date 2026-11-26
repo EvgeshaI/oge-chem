@@ -102,6 +102,16 @@ export const catalog: TopicMeta[] = [
     kim: [8, 9, 10],
     totalTasks: 38,
   },
+  {
+    id: 'carbon-silicon',
+    title: 'Углерод и кремний',
+    subtitle: 'C и Si: строение атомов, аллотропия углерода, адсорбция, кремний — полупроводник, углерод и кремний — окислители и восстановители',
+    emoji: '💎',
+    accent: 'teal',
+    free: true,
+    kim: [8, 9, 10],
+    totalTasks: 38,
+  },
 ]
 
 export const topicById = (id: string) => catalog.find((t) => t.id === id)

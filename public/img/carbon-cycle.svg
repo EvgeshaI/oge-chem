@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 450" width="780" height="450" role="img" aria-label="Круговорот углерода: растения поглощают углекислый газ при фотосинтезе, животные получают углерод с пищей и выдыхают CO2; остатки организмов гниют или за миллионы лет превращаются в уголь, нефть и газ; при сжигании топлива углерод возвращается в воздух в виде CO2; часть CO2 растворяется в океане и переходит в карбонаты — мел и известняк">
+<style>text{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}</style>
+<defs>
+<marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#16a58c"/></marker>
+<marker id="ao" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#f08c1a"/></marker>
+<marker id="an" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7387"/></marker>
+</defs>
+<rect width="780" height="450" fill="#ffffff"/>
+<text x="20" y="30" font-size="18" font-weight="800" fill="#1f2433">Круговорот углерода в природе</text>
+<text x="20" y="50" font-size="12" fill="#6b7387">Зелёные стрелки — углерод уходит из воздуха, оранжевые — возвращается в воздух в виде CO₂</text>
+
+<rect x="270" y="66" width="230" height="52" rx="14" fill="#e9f1ff" stroke="#b8cdf2" stroke-width="2"/>
+<text x="385" y="89" text-anchor="middle" font-size="15" font-weight="800" fill="#1f3f7a">CO₂ в воздухе</text>
+<text x="385" y="107" text-anchor="middle" font-size="11.5" fill="#1f2433">≈ 0,04 % по объёму</text>
+
+<rect x="30" y="190" width="200" height="66" rx="12" fill="#e3f6ef" stroke="#a9dfcc" stroke-width="2"/>
+<text x="130" y="212" text-anchor="middle" font-size="14" font-weight="800" fill="#0f7c69">Растения</text>
+<text x="130" y="230" text-anchor="middle" font-size="11" fill="#1f2433">фотосинтез: из CO₂ и воды —</text>
+<text x="130" y="245" text-anchor="middle" font-size="11" fill="#1f2433">органические вещества и O₂</text>
+
+<rect x="290" y="190" width="190" height="66" rx="12" fill="#fff4e6" stroke="#f3d3a8" stroke-width="2"/>
+<text x="385" y="212" text-anchor="middle" font-size="14" font-weight="800" fill="#a85a00">Животные и люди</text>
+<text x="385" y="230" text-anchor="middle" font-size="11" fill="#1f2433">получают углерод с пищей,</text>
+<text x="385" y="245" text-anchor="middle" font-size="11" fill="#1f2433">при дыхании выдыхают CO₂</text>
+
+<rect x="545" y="190" width="200" height="66" rx="12" fill="#e9f4fb" stroke="#b6d8ee" stroke-width="2"/>
+<text x="645" y="212" text-anchor="middle" font-size="14" font-weight="800" fill="#1b5f8a">Океан</text>
+<text x="645" y="230" text-anchor="middle" font-size="11" fill="#1f2433">растворяет CO₂; раковины →</text>
+<text x="645" y="245" text-anchor="middle" font-size="11" fill="#1f2433">мел, известняк CaCO₃</text>
+
+<rect x="30" y="326" width="200" height="66" rx="12" fill="#eef0f5" stroke="#cfd4e2" stroke-width="2"/>
+<text x="130" y="348" text-anchor="middle" font-size="14" font-weight="800" fill="#1f2433">Ископаемое топливо</text>
+<text x="130" y="366" text-anchor="middle" font-size="11" fill="#1f2433">каменный уголь, нефть,</text>
+<text x="130" y="381" text-anchor="middle" font-size="11" fill="#1f2433">природный газ</text>
+
+<rect x="290" y="326" width="190" height="66" rx="12" fill="#f6f0e8" stroke="#e2d3bd" stroke-width="2"/>
+<text x="385" y="348" text-anchor="middle" font-size="14" font-weight="800" fill="#6b4a1c">Гниение остатков</text>
+<text x="385" y="366" text-anchor="middle" font-size="11" fill="#1f2433">бактерии разлагают остатки</text>
+<text x="385" y="381" text-anchor="middle" font-size="11" fill="#1f2433">организмов → CO₂ в воздух</text>
+
+<rect x="545" y="326" width="200" height="66" rx="12" fill="#fff0dc" stroke="#f3cf9e" stroke-width="2"/>
+<text x="645" y="348" text-anchor="middle" font-size="14" font-weight="800" fill="#a85a00">Горение топлива</text>
+<text x="645" y="366" text-anchor="middle" font-size="11" fill="#1f2433">заводы, автомобили, печи</text>
+<text x="645" y="381" text-anchor="middle" font-size="11" fill="#1f2433">C + O₂ → CO₂</text>
+
+<g fill="none" stroke-width="3.5" stroke-linecap="round">
+<path d="M 286 120 C 230 140 170 150 140 184" stroke="#16a58c" marker-end="url(#ag)"/>
+<path d="M 236 222 H 282" stroke="#6b7387" marker-end="url(#an)"/>
+<path d="M 400 186 V 124" stroke="#f08c1a" marker-end="url(#ao)"/>
+<path d="M 504 98 C 580 110 630 140 640 184" stroke="#16a58c" marker-end="url(#ag)"/>
+<path d="M 100 262 V 320" stroke="#6b7387" marker-end="url(#an)"/>
+<path d="M 170 262 C 230 290 300 300 340 320" stroke="#6b7387" marker-end="url(#an)"/>
+<path d="M 385 262 V 320" stroke="#6b7387" marker-end="url(#an)"/>
+<path d="M 130 398 C 140 440 620 440 640 400" stroke="#6b7387" marker-end="url(#an)"/>
+<path d="M 750 358 C 778 300 778 92 508 86" stroke="#f08c1a" marker-end="url(#ao)"/>
+<path d="M 470 324 C 500 270 470 160 420 124" stroke="#f08c1a" stroke-dasharray="7 6" marker-end="url(#ao)"/>
+</g>
+<text x="170" y="146" font-size="11.5" font-weight="800" fill="#0f7c69">фотосинтез</text>
+<text x="246" y="214" font-size="11" fill="#6b7387">пища</text>
+<text x="408" y="160" font-size="11.5" font-weight="800" fill="#a85a00">дыхание</text>
+<text x="590" y="128" font-size="11.5" font-weight="800" fill="#0f7c69">растворение</text>
+<text x="40" y="296" font-size="11" fill="#6b7387">миллионы лет</text>
+<text x="250" y="300" font-size="11" fill="#6b7387">остатки</text>
+<text x="300" y="436" font-size="11" fill="#6b7387">добыча и сжигание</text>
+</svg>

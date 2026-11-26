@@ -57,7 +57,7 @@ describe('тема «Металлы»: уравнения', () => {
 describe('механизмы реакций', () => {
   it('в каждой группе есть сцены', () => {
     for (const g of Object.keys(GROUP_TITLES) as GroupId[]) {
-      if (g.startsWith('hal-') || g.startsWith('chal-') || g.startsWith('pn-')) continue // сцены галогенов, халькогенов и пниктогенов — в своих тестах
+      if (g.startsWith('hal-') || g.startsWith('chal-') || g.startsWith('pn-') || g.startsWith('cs-')) continue // сцены галогенов, халькогенов, пниктогенов, углерода и кремния — в своих тестах
       expect(scenesOf(g).length, g).toBeGreaterThan(0)
     }
   })
