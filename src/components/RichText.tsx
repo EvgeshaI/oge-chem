@@ -42,7 +42,7 @@ export function RichText({ text, className }: { text: string; className?: string
           return (
             <span
               key={i}
-              className="inline-block max-w-full overflow-x-auto align-middle [&>.katex]:max-w-none"
+              className="inline-block max-w-full overflow-x-auto align-middle [scrollbar-width:none] [&::-webkit-scrollbar]:hidden [&>.katex]:max-w-none"
               dangerouslySetInnerHTML={{ __html: tex(p.slice(1, -1)) }}
             />
           )

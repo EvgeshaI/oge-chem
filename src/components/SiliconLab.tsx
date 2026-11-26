@@ -38,7 +38,7 @@ export default function SiliconLab() {
       </div>
       <p className="mt-2 text-sm text-white/75">Нажмите на пробирку, чтобы насыпать в неё {name}.</p>
 
-      <svg viewBox="0 0 600 290" className="mt-2 w-full rounded-xl bg-white/5" role="img" aria-label={`${name} в растворах HCl, NaOH, HNO₃ и воде`}>
+      <svg viewBox="0 0 600 310" className="mt-2 w-full rounded-xl bg-white/5" role="img" aria-label={`${name} в растворах HCl, NaOH, HNO₃ и воде`}>
         {LAB_REAGENTS.map((r, k) => {
           const x = X[k]
           const c = LAB_CASES.find((z) => z.el === el && z.reagent === r.id)!
@@ -81,10 +81,10 @@ export default function SiliconLab() {
                   {c.reacts ? (c.gas === 'H2' ? 'H₂↑' : 'NO₂↑ бурый') : 'нет реакции'}
                 </text>
               )}
-              <text x={x} y={BOTTOM + 70} textAnchor="middle" fontSize={16} fontWeight={800} fill="#fff">
+              <text x={x} y={BOTTOM + 72} textAnchor="middle" fontSize={20} fontWeight={800} fill="#fff">
                 {r.label}
               </text>
-              <text x={x} y={BOTTOM + 86} textAnchor="middle" fontSize={11} fill="#fff" opacity={0.7}>
+              <text x={x} y={BOTTOM + 92} textAnchor="middle" fontSize={14} fill="#fff" opacity={0.7}>
                 {r.sub}
               </text>
             </g>

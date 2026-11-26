@@ -268,7 +268,7 @@ export function BlockView({ block }: { block: Block }) {
     case 'equation':
       return (
         <div
-          className="overflow-x-auto rounded-xl bg-white px-4 py-3 text-center text-xl shadow-sm"
+          className="overflow-x-auto rounded-xl bg-white px-3 py-3 text-center text-[15px] shadow-sm sm:px-4 sm:text-xl"
           dangerouslySetInnerHTML={{ __html: tex(block.tex, true) }}
         />
       )
