@@ -68,7 +68,6 @@ export type AnimationName =
   | 'carbon-reduction'
   | 'cs-mech-carbon'
   | 'cs-mech-silicon'
-  | 'silicon-lab'
   | 'carbon-roles'
 
 export interface CardItem {

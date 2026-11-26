@@ -56,7 +56,6 @@ const CharcoalAdsorption = lazy(() => import('./CharcoalAdsorption'))
 const CarbonBurning = lazy(() => import('./CarbonBurning'))
 const CarbonReduction = lazy(() => import('./CarbonReduction'))
 const CarbonMechanisms = lazy(() => import('./CarbonMechanisms'))
-const SiliconLab = lazy(() => import('./SiliconLab'))
 const CarbonRoles = lazy(() => import('./CarbonRoles'))
 
 /** Светлый ли фон (hex) — тогда текст делаем тёмным */
@@ -204,8 +203,6 @@ function Animation({ name }: { name: AnimationName }) {
       return <CarbonMechanisms only="cs-carbon" />
     case 'cs-mech-silicon':
       return <CarbonMechanisms only="cs-silicon" />
-    case 'silicon-lab':
-      return <SiliconLab />
     case 'carbon-roles':
       return <CarbonRoles />
   }

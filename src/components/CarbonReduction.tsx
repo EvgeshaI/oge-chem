@@ -29,8 +29,8 @@ export default function CarbonReduction() {
       </div>
 
       {/* ряд активности */}
-      <div className="mt-3 overflow-x-auto">
-        <div className="flex min-w-[560px] items-stretch gap-0.5 text-center text-sm font-bold">
+      <div className="mt-2 overflow-x-auto px-1 py-2">
+        <div className="flex min-w-[560px] items-stretch gap-1 text-center text-sm font-bold">
           {ACTIVITY.map((m, k) => {
             const active = k <= CARBON_LIMIT
             const here = k === pos

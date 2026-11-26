@@ -132,36 +132,3 @@ export const REDUCTION_CASES: ReductionCase[] = [
   { oxide: 'Al₂O₃', metal: 'алюминий', sym: 'Al', reacts: false, from: '#ecebe6', to: '#ecebe6', fromName: 'белый порошок Al₂O₃', toName: 'без изменений' },
   { oxide: 'CaO', metal: 'кальций', sym: 'Ca', reacts: false, from: '#f7f6f1', to: '#f7f6f1', fromName: 'белый порошок CaO', toName: 'без изменений' },
 ]
-
-/* ---------------------------------------------------------------- C и Si с растворами */
-
-export type LabReagent = 'HCl' | 'NaOH' | 'HNO3' | 'H2O'
-
-export interface LabCase {
-  el: 'C' | 'Si'
-  reagent: LabReagent
-  reacts: boolean
-  eq?: string
-  /** что видно */
-  sign: string
-  gas?: 'H2' | 'NO2'
-  why: string
-}
-
-export const LAB_REAGENTS: { id: LabReagent; label: string; sub: string; liquid: string }[] = [
-  { id: 'HCl', label: 'HCl', sub: 'соляная кислота', liquid: 'rgba(190,220,255,.35)' },
-  { id: 'NaOH', label: 'NaOH', sub: 'раствор щёлочи', liquid: 'rgba(200,230,255,.35)' },
-  { id: 'HNO3', label: 'HNO₃', sub: 'конц., нагрев', liquid: 'rgba(255,240,190,.4)' },
-  { id: 'H2O', label: 'H₂O', sub: 'вода', liquid: 'rgba(170,210,255,.3)' },
-]
-
-export const LAB_CASES: LabCase[] = [
-  { el: 'C', reagent: 'HCl', reacts: false, sign: 'ничего не происходит', why: 'Соляная кислота — не окислитель, а углерод не стоит в ряду активности металлов: водород он не вытесняет.' },
-  { el: 'C', reagent: 'NaOH', reacts: false, sign: 'ничего не происходит', why: 'Со щелочами углерод не реагирует.' },
-  { el: 'C', reagent: 'HNO3', reacts: true, eq: 'C + 4HNO3 -> CO2 + 4NO2 + 2H2O', gas: 'NO2', sign: 'выделяется бурый газ NO₂', why: 'Концентрированная азотная кислота — сильный окислитель: она окисляет углерод до CO₂ (C⁰ → C⁺⁴). Так же действует концентрированная серная кислота.' },
-  { el: 'C', reagent: 'H2O', reacts: false, sign: 'ничего не происходит', why: 'С жидкой водой углерод не реагирует. Реакция идёт только с водяным паром при ≈ 1000 °C: C + H₂O → CO + H₂.' },
-  { el: 'Si', reagent: 'HCl', reacts: false, sign: 'ничего не происходит', why: 'Кремний не реагирует с кислотами (кроме плавиковой HF).' },
-  { el: 'Si', reagent: 'NaOH', reacts: true, eq: 'Si + 2NaOH + H2O -> Na2SiO3 + 2H2 ^', gas: 'H2', sign: 'бурно выделяется бесцветный газ H₂', why: 'Главная реакция кремния: со щёлочью и водой он даёт силикат и водород. Кремний отдаёт 4 электрона (Si⁰ → Si⁺⁴), водород из воды и щёлочи их принимает (H⁺¹ → H⁰).' },
-  { el: 'Si', reagent: 'HNO3', reacts: false, sign: 'ничего не происходит', why: 'В отличие от углерода, кремний не реагирует даже с концентрированной азотной кислотой.' },
-  { el: 'Si', reagent: 'H2O', reacts: false, sign: 'ничего не происходит', why: 'С водой кремний не реагирует (в ОГЭ — нет).' },
-]

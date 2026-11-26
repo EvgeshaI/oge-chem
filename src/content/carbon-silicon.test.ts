@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { isBalanced } from '../lib/balance'
 import { CS_SCENES, csScenesOf, type CsGroup } from '../lib/carbonScenes'
-import { BURN_CASES, CARBON_LIMIT, ACTIVITY, CS_LEVELS, CS_REACTIONS, LAB_CASES, REDUCTION_CASES, TETRELS } from '../lib/carbonSilicon'
+import { BURN_CASES, CARBON_LIMIT, ACTIVITY, CS_LEVELS, CS_REACTIONS, REDUCTION_CASES, TETRELS } from '../lib/carbonSilicon'
 import { excitedElements, stateAt, unpaired } from '../lib/excited'
 import { GROUP_TITLES } from '../lib/mechanisms'
 import { catalog } from './catalog'
@@ -60,7 +60,7 @@ describe('тема «Углерод и кремний»: структура', ()
 describe('тема «Углерод и кремний»: уравнения уравнены', () => {
   const fromLessons = strings(content.lessons).flatMap(equationsIn)
   const fromTasks = strings([content.practice, content.exam]).flatMap(equationsIn)
-  const fromData = [...CS_REACTIONS, ...BURN_CASES, ...REDUCTION_CASES, ...LAB_CASES].flatMap((x) => (x.eq ? [x.eq] : []))
+  const fromData = [...CS_REACTIONS, ...BURN_CASES, ...REDUCTION_CASES].flatMap((x) => (x.eq ? [x.eq] : []))
   const eqs = [...new Set([...fromLessons, ...fromTasks, ...fromData])].filter(isReaction)
   it('уравнений достаточно', () => {
     expect(eqs.length).toBeGreaterThan(30)
@@ -102,10 +102,6 @@ describe('данные об углероде и кремнии', () => {
       expect(r.reacts, r.sym).toBe(ACTIVITY.indexOf(r.sym) > CARBON_LIMIT)
       expect(Boolean(r.eq), r.sym).toBe(r.reacts)
     }
-  })
-  it('опыт: углерод — только с HNO₃, кремний — только со щёлочью', () => {
-    const reacting = LAB_CASES.filter((c) => c.reacts).map((c) => `${c.el}+${c.reagent}`)
-    expect(reacting.sort()).toEqual(['C+HNO3', 'Si+NaOH'])
   })
 })
 

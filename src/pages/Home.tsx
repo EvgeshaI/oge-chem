@@ -34,23 +34,25 @@ export default function Home() {
           const pct = t.totalTasks ? Math.round((solved / t.totalTasks) * 100) : 0
           return (
             <Fragment key={t.id}>
-              <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.06 }}>
+              <motion.div className="h-full" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.06 }}>
                 <Link
                   to={`/topic/${t.id}`}
-                  className="block rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                  className="flex h-full flex-col rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
                 >
                   <div className="flex items-start justify-between">
                     <div className={`flex h-12 w-12 items-center justify-center rounded-xl text-2xl ${a.soft}`}>{t.emoji}</div>
                   </div>
                   <h3 className="mt-3 text-xl font-bold">{t.title}</h3>
                   <p className="mt-1 text-muted">{t.subtitle}</p>
-                  {!t.theoryOnly && (
-                    <div className="mt-4 h-2 overflow-hidden rounded-full bg-paper" aria-label={`Решено ${pct}%`}>
-                      <div className={`h-full ${a.bg} transition-all`} style={{ width: `${pct}%` }} />
+                  <div className="mt-auto pt-4">
+                    {!t.theoryOnly && (
+                      <div className="h-2 overflow-hidden rounded-full bg-paper" aria-label={`Решено ${pct}%`}>
+                        <div className={`h-full ${a.bg} transition-all`} style={{ width: `${pct}%` }} />
+                      </div>
+                    )}
+                    <div className="mt-1 text-xs text-muted">
+                      {t.theoryOnly ? 'Теория' : `Решено ${solved} из ${t.totalTasks}`} · задания КИМ: {t.kim.join(', ')}
                     </div>
-                  )}
-                  <div className="mt-1 text-xs text-muted">
-                    {t.theoryOnly ? 'Теория' : `Решено ${solved} из ${t.totalTasks}`} · задания КИМ: {t.kim.join(', ')}
                   </div>
                 </Link>
               </motion.div>

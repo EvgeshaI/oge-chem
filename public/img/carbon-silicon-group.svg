@@ -1,49 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" role="img" aria-label="Углерод и кремний — элементы IVA группы. У обоих 4 электрона на внешнем слое. От углерода к кремнию радиус растёт, электроотрицательность и неметаллические свойства уменьшаются, восстановительные свойства растут">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 356" width="760" height="356" role="img" aria-label="Углерод и кремний — элементы IVA группы, у обоих 4 электрона на внешнем слое. Углерод: степени окисления −4, 0, +2, +4, в природе — алмаз, графит, уголь, нефть; применение — топливо, металлургия, электроды. Кремний: степени окисления −4, 0, +4, в природе только в соединениях — песок, глина; применение — микросхемы, солнечные батареи. От углерода к кремнию растут число слоёв, радиус и восстановительные свойства, уменьшаются электроотрицательность и неметаллические свойства">
 <style>text{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}</style>
-<rect width="760" height="400" fill="#ffffff"/>
-<text x="20" y="30" font-size="18" font-weight="800" fill="#1f2433">Углерод и кремний — IVA группа</text>
-<text x="20" y="50" font-size="12" fill="#6b7387">На внешнем слое 4 электрона (ns²np²) — ровно половина от восьми. Размер круга — условный размер атома</text>
+<rect width="760" height="356" fill="#ffffff"/>
+<text x="20" y="30" font-size="17" font-weight="700" fill="#1f2433">Углерод и кремний — IVA группа</text>
+<text x="20" y="50" font-size="12" fill="#6b7387">У обоих атомов 4 электрона на внешнем слое</text>
+
 <g>
-<rect x="20" y="66" width="220" height="250" rx="14" fill="#eef0f5" stroke="#cfd4e2" stroke-width="2"/>
-<text x="36" y="88" font-size="12" font-weight="800" fill="#3a4056">6</text>
-<circle cx="130" cy="140" r="38" fill="#3a4056" stroke="#1b2033" stroke-width="3"/>
-<text x="130" y="150" text-anchor="middle" font-size="28" font-weight="800" fill="#ffffff">C</text>
-<text x="130" y="206" text-anchor="middle" font-size="15" font-weight="800" fill="#1f2433">углерод · Z = 6</text>
-<text x="130" y="226" text-anchor="middle" font-size="12" fill="#1f2433">2-й период · 2, 4</text>
-<text x="130" y="244" text-anchor="middle" font-size="12" fill="#1f2433">ЭО 2,55 · r 77 пм</text>
-<rect x="34" y="256" width="192" height="26" rx="13" fill="#dde1ec"/>
-<text x="130" y="273" text-anchor="middle" font-size="11" font-weight="800" fill="#1f2433">с. о.: −4, 0, +2, +4</text>
-<text x="130" y="304" text-anchor="middle" font-size="11" fill="#6b7387">алмаз, графит, фуллерен, уголь</text>
+<rect x="20" y="66" width="220" height="274" rx="14" fill="#f3f4f8" stroke="#dde1ea" stroke-width="1.5"/>
+<text x="130" y="94" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2433">Углерод</text>
+<circle cx="130" cy="145" r="32" fill="#3a4056"/>
+<text x="130" y="154" text-anchor="middle" font-size="25" font-weight="700" fill="#ffffff">C</text>
+<text x="130" y="207" text-anchor="middle" font-size="12" fill="#3a4056">электроны: 2, 4</text>
+<rect x="40" y="219" width="180" height="24" rx="12" fill="#e3e6ef"/>
+<text x="130" y="235" text-anchor="middle" font-size="11.5" font-weight="600" fill="#1f2433">с. о.: −4, 0, +2, +4</text>
+<text x="36" y="268" font-size="10.5" font-weight="600" fill="#8a91a3">В ПРИРОДЕ</text>
+<text x="36" y="284" font-size="11.5" fill="#1f2433">алмаз, графит, уголь, нефть</text>
+<text x="36" y="308" font-size="10.5" font-weight="600" fill="#8a91a3">ПРИМЕНЕНИЕ</text>
+<text x="36" y="324" font-size="11.5" fill="#1f2433">топливо, металлургия, электроды</text>
 </g>
+
 <g>
-<rect x="255" y="66" width="220" height="250" rx="14" fill="#edf2fa" stroke="#c4d0e6" stroke-width="2"/>
-<text x="271" y="88" font-size="12" font-weight="800" fill="#3d5580">14</text>
-<circle cx="365" cy="140" r="52" fill="#8ea3c4" stroke="#4f6690" stroke-width="3"/>
-<text x="365" y="150" text-anchor="middle" font-size="28" font-weight="800" fill="#14213d">Si</text>
-<text x="365" y="206" text-anchor="middle" font-size="15" font-weight="800" fill="#1f2433">кремний · Z = 14</text>
-<text x="365" y="226" text-anchor="middle" font-size="12" fill="#1f2433">3-й период · 2, 8, 4</text>
-<text x="365" y="244" text-anchor="middle" font-size="12" fill="#1f2433">ЭО 1,90 · r 118 пм</text>
-<rect x="269" y="256" width="192" height="26" rx="13" fill="#d5dff0"/>
-<text x="365" y="273" text-anchor="middle" font-size="11" font-weight="800" fill="#14213d">с. о.: −4, 0, +4</text>
-<text x="365" y="304" text-anchor="middle" font-size="11" fill="#6b7387">полупроводник, атомная решётка</text>
+<rect x="255" y="66" width="220" height="274" rx="14" fill="#f0f4fb" stroke="#d6dfee" stroke-width="1.5"/>
+<text x="365" y="94" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2433">Кремний</text>
+<circle cx="365" cy="145" r="42" fill="#8ea3c4"/>
+<text x="365" y="154" text-anchor="middle" font-size="25" font-weight="700" fill="#14213d">Si</text>
+<text x="365" y="207" text-anchor="middle" font-size="12" fill="#3a4056">электроны: 2, 8, 4</text>
+<rect x="275" y="219" width="180" height="24" rx="12" fill="#dce4f2"/>
+<text x="365" y="235" text-anchor="middle" font-size="11.5" font-weight="600" fill="#14213d">с. о.: −4, 0, +4</text>
+<text x="271" y="268" font-size="10.5" font-weight="600" fill="#8a91a3">В ПРИРОДЕ</text>
+<text x="271" y="284" font-size="11.5" fill="#1f2433">только соединения: песок, глина</text>
+<text x="271" y="308" font-size="10.5" font-weight="600" fill="#8a91a3">ПРИМЕНЕНИЕ</text>
+<text x="271" y="324" font-size="11.5" fill="#1f2433">микросхемы, солнечные батареи</text>
 </g>
+
 <g>
-<rect x="490" y="66" width="250" height="250" rx="14" fill="#f4f6fb" stroke="#e1e5f0" stroke-width="2"/>
-<text x="506" y="92" font-size="13" font-weight="800" fill="#1f2433">От C к Si (сверху вниз):</text>
-<text x="506" y="122" font-size="13" font-weight="800" fill="#0f7c69">↑ число электронных слоёв</text>
-<text x="506" y="148" font-size="13" font-weight="800" fill="#0f7c69">↑ радиус атома</text>
-<text x="506" y="174" font-size="13" font-weight="800" fill="#0f7c69">↑ восстановительные свойства</text>
-<text x="506" y="200" font-size="13" font-weight="800" fill="#b3282d">↓ электроотрицательность</text>
-<text x="506" y="226" font-size="13" font-weight="800" fill="#b3282d">↓ окислительные свойства</text>
-<text x="506" y="252" font-size="13" font-weight="800" fill="#b3282d">↓ неметаллические свойства</text>
-<text x="506" y="282" font-size="11" fill="#6b7387">Углерод — основа живой природы,</text>
-<text x="506" y="298" font-size="11" fill="#6b7387">кремний — основа горных пород</text>
+<rect x="490" y="66" width="250" height="274" rx="14" fill="#fafbfd" stroke="#e6e9f0" stroke-width="1.5"/>
+<text x="508" y="94" font-size="13" font-weight="700" fill="#1f2433">От C к Si</text>
+<text x="508" y="128" font-size="12.5" fill="#0f7c69">↑ число электронных слоёв</text>
+<text x="508" y="156" font-size="12.5" fill="#0f7c69">↑ радиус атома</text>
+<text x="508" y="184" font-size="12.5" fill="#0f7c69">↑ восстановительные свойства</text>
+<text x="508" y="212" font-size="12.5" fill="#b3282d">↓ электроотрицательность</text>
+<text x="508" y="240" font-size="12.5" fill="#b3282d">↓ неметаллические свойства</text>
+<line x1="508" y1="262" x2="722" y2="262" stroke="#e6e9f0" stroke-width="1.5"/>
+<text x="508" y="288" font-size="11.5" fill="#6b7387">Оба — неметаллы.</text>
+<text x="508" y="306" font-size="11.5" fill="#6b7387">Углерод — основа живой природы,</text>
+<text x="508" y="324" font-size="11.5" fill="#6b7387">кремний — горных пород.</text>
 </g>
-<g stroke-linecap="round" stroke-linejoin="round" fill="none">
-<line x1="30" y1="346" x2="720" y2="346" stroke="#16a58c" stroke-width="4"/>
-<polyline points="708,338 722,346 708,354" stroke="#16a58c" stroke-width="4"/>
-</g>
-<text x="30" y="336" font-size="11.5" font-weight="800" fill="#0f7c69">Общее: 4 внешних e⁻ · можно принять 4 e⁻ или отдать 4 e⁻ · низшая с. о. −4, высшая +4 · неметаллы</text>
-<text x="30" y="374" font-size="11.5" font-weight="800" fill="#b3282d">Различие: углерод встречается в природе в свободном виде (алмаз, графит), кремний — только в соединениях</text>
-<text x="30" y="394" font-size="10.5" fill="#6b7387">В IVA группу входят также Ge, Sn, Pb; в 9 классе строение атомов изучают только у первых двух элементов</text>
 </svg>

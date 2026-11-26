@@ -24,7 +24,7 @@ export default function ScrollToTop() {
       title="Наверх"
       tabIndex={visible ? 0 : -1}
       aria-hidden={!visible}
-      className={`fixed bottom-5 right-5 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-purple text-white shadow-lg transition-all duration-200 hover:bg-purple/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple ${
+      className={`fixed bottom-5 left-5 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-purple text-white shadow-lg transition-all duration-200 hover:bg-purple/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple ${
         visible ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-3 opacity-0'
       }`}
     >
