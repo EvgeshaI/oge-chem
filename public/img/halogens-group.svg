@@ -10,7 +10,7 @@
 <text x="102" y="226" text-anchor="middle" font-size="14" font-weight="800" fill="#1f2433">фтор · Z = 9</text>
 <text x="102" y="246" text-anchor="middle" font-size="12" fill="#1f2433">2ē 7ē</text>
 <text x="102" y="264" text-anchor="middle" font-size="12" fill="#1f2433">ЭО 3,98 · r 72 пм</text>
-<rect x="27" y="278" width="150" height="26" rx="13" fill="#f3ecb0"/>
+<rect x="23.5" y="278" width="158" height="26" rx="13" fill="#f3ecb0"/>
 <text x="102" y="295" text-anchor="middle" font-size="11" font-weight="800" fill="#6b6620">газ, светло-жёлтый</text>
 <text x="102" y="321" text-anchor="middle" font-size="11" fill="#6b7387">F₂</text>
 </g>
@@ -21,7 +21,7 @@
 <text x="277" y="226" text-anchor="middle" font-size="14" font-weight="800" fill="#1f2433">хлор · Z = 17</text>
 <text x="277" y="246" text-anchor="middle" font-size="12" fill="#1f2433">2ē 8ē 7ē</text>
 <text x="277" y="264" text-anchor="middle" font-size="12" fill="#1f2433">ЭО 3,16 · r 99 пм</text>
-<rect x="202" y="278" width="150" height="26" rx="13" fill="#cfe56a"/>
+<rect x="198.5" y="278" width="158" height="26" rx="13" fill="#cfe56a"/>
 <text x="277" y="295" text-anchor="middle" font-size="11" font-weight="800" fill="#44570a">газ, жёлто-зелёный</text>
 <text x="277" y="321" text-anchor="middle" font-size="11" fill="#6b7387">Cl₂</text>
 </g>
@@ -32,8 +32,8 @@
 <text x="452" y="226" text-anchor="middle" font-size="14" font-weight="800" fill="#1f2433">бром · Z = 35</text>
 <text x="452" y="246" text-anchor="middle" font-size="12" fill="#1f2433">2ē 8ē 18ē 7ē</text>
 <text x="452" y="264" text-anchor="middle" font-size="12" fill="#1f2433">ЭО 2,96 · r 114 пм</text>
-<rect x="377" y="278" width="150" height="26" rx="13" fill="#e9946a"/>
-<text x="452" y="295" text-anchor="middle" font-size="11" font-weight="800" fill="#5a1d08">жидкость, бурая</text>
+<rect x="373.5" y="278" width="158" height="26" rx="13" fill="#e9946a"/>
+<text x="452" y="295" text-anchor="middle" font-size="11" font-weight="800" fill="#5a1d08">жидкость, красно-бурая</text>
 <text x="452" y="321" text-anchor="middle" font-size="11" fill="#6b7387">Br₂</text>
 </g>
 <g>
@@ -43,8 +43,8 @@
 <text x="627" y="226" text-anchor="middle" font-size="14" font-weight="800" fill="#1f2433">иод · Z = 53</text>
 <text x="627" y="246" text-anchor="middle" font-size="12" fill="#1f2433">2ē 8ē 18ē 18ē 7ē</text>
 <text x="627" y="264" text-anchor="middle" font-size="12" fill="#1f2433">ЭО 2,66 · r 133 пм</text>
-<rect x="552" y="278" width="150" height="26" rx="13" fill="#c9a6e6"/>
-<text x="627" y="295" text-anchor="middle" font-size="11" font-weight="800" fill="#47206b">твёрдый, фиолетовый</text>
+<rect x="548.5" y="278" width="158" height="26" rx="13" fill="#c9a6e6"/>
+<text x="627" y="295" text-anchor="middle" font-size="10" font-weight="800" letter-spacing="-0.2" fill="#47206b">твёрдый, тёмно-фиолетовый</text>
 <text x="627" y="321" text-anchor="middle" font-size="11" fill="#6b7387">I₂</text>
 </g>
 <g stroke-linecap="round" stroke-linejoin="round" fill="none">
