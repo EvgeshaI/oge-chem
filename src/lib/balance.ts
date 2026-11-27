@@ -55,6 +55,30 @@ function side(s: string): Atoms {
   return total
 }
 
+/** Ионное уравнение «Ba^2+ + SO4^2- -> BaSO4 v»: совпадают ли атомы и суммарный заряд */
+export function isIonBalanced(eq: string): boolean | null {
+  const parts = eq.split(/(?:<=>|->)(?:\[[^\]]*\])*/)
+  if (parts.length !== 2) return null
+  const count = (s: string) => {
+    const atoms: Atoms = {}
+    let charge = 0
+    for (const raw of s.trim().split(/\s\+\s/)) {
+      const term = raw.replace(/\s+[\^v]$/, '').trim()
+      const m = term.match(/^(\d+)?\s*(.+?)(?:\^(\d*)([+-])|([+-]))?$/)
+      if (!m) throw new Error(`Не разобран член «${term}»`)
+      const k = m[1] ? Number(m[1]) : 1
+      add(atoms, atomsOf(m[2]), k)
+      const sign = m[4] ?? m[5]
+      if (sign) charge += k * (m[3] ? Number(m[3]) : 1) * (sign === '+' ? 1 : -1)
+    }
+    return { atoms, charge }
+  }
+  const l = count(parts[0])
+  const r = count(parts[1])
+  const els = new Set([...Object.keys(l.atoms), ...Object.keys(r.atoms)])
+  return l.charge === r.charge && [...els].every((el) => (l.atoms[el] ?? 0) === (r.atoms[el] ?? 0))
+}
+
 /** null — уравнение нельзя проверить (нет стрелки, есть заряды); иначе баланс по атомам */
 export function isBalanced(eq: string): boolean | null {
   const parts = eq.split(/(?:<=>|->)(?:\[[^\]]*\])*/)

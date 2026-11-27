@@ -91,7 +91,7 @@ export default function TopicPage() {
       ) : (
         <>
           <div ref={tabsRef} role="tablist" className="mt-6 flex scroll-mt-4 gap-2 overflow-x-auto border-b border-navy/10">
-            {TABS.filter((t) => !meta.theoryOnly || t.id === 'theory').map((t) => (
+            {TABS.filter((t) => (!meta.theoryOnly || t.id === 'theory') && (t.id !== 'exam' || state.content.exam.length > 0)).map((t) => (
               <button
                 key={t.id}
                 role="tab"

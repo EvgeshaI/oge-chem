@@ -22,6 +22,9 @@ export const loaders: Record<string, Loader> = {
   'oxygen-sulfur': () => import('./topics/oxygen-sulfur'),
   'nitrogen-phosphorus': () => import('./topics/nitrogen-phosphorus'),
   'carbon-silicon': () => import('./topics/carbon-silicon'),
+  dissociation: () => import('./topics/dissociation'),
+  'ion-exchange': () => import('./topics/ion-exchange'),
+  'acids-bases-salts': () => import('./topics/acids-bases-salts'),
 }
 
 export async function loadTopic(id: string): Promise<TopicContent> {

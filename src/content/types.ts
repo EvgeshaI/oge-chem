@@ -69,6 +69,18 @@ export type AnimationName =
   | 'cs-mech-carbon'
   | 'cs-mech-silicon'
   | 'carbon-roles'
+  | 'ion-exchange'
+  | 'ion-tests'
+  | 'electrolyte-test'
+  | 'water-dipole'
+  | 'hydration'
+  | 'dissociation-degree'
+  | 'dissociation-classes'
+  | 'stepwise-dissociation'
+  | 'exchange-mechanism'
+  | 'exchange-conditions'
+  | 'exchange-writing'
+  | 'exchange-equations'
 
 export interface CardItem {
   title: string

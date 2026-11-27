@@ -10,6 +10,8 @@ const btn = 'rounded-xl px-5 py-2.5 font-semibold transition disabled:opacity-40
 export function PracticeRunner({ tasks }: { tasks: Task[] }) {
   const [values, setValues] = useState<Record<string, Value>>({})
   const [phase, setPhase] = useState<Record<string, Phase>>({})
+  /** Сохранённая самооценка развёрнутых ответов: сколько баллов записано */
+  const [saved, setSaved] = useState<Record<string, number>>({})
 
   if (tasks.length === 0) return <Empty text="Тренировочные задания по этой теме скоро появятся." />
 
@@ -33,7 +35,13 @@ export function PracticeRunner({ tasks }: { tasks: Task[] }) {
         const retry = () => {
           setValues((s) => ({ ...s, [t.id]: emptyValue(t) }))
           setPhase((p) => ({ ...p, [t.id]: 'answering' }))
+          setSaved((s) => {
+            const { [t.id]: _, ...rest } = s
+            return rest
+          })
         }
+        const score = checkTask(t, v).score
+        const isSaved = saved[t.id] === score
         return (
           <TaskCard
             key={t.id}
@@ -47,17 +55,23 @@ export function PracticeRunner({ tasks }: { tasks: Task[] }) {
                 <button onClick={check} className={`${btn} bg-purple text-white hover:bg-purple/90`}>Проверить</button>
               ) : (
                 <div className="flex gap-3">
-                  {t.type === 'open' && (
-                    <button
-                      onClick={() => {
-                        const r = checkTask(t, v)
-                        recordResult(t.id, r.score, r.max)
-                      }}
-                      className={`${btn} bg-teal text-white hover:bg-teal/90`}
-                    >
-                      Сохранить оценку
-                    </button>
-                  )}
+                  {t.type === 'open' &&
+                    (isSaved ? (
+                      <span className={`${btn} flex items-center gap-2 bg-teal/15 text-teal`} role="status">
+                        ✓ Оценка сохранена: {score} из {maxScore(t)}
+                      </span>
+                    ) : (
+                      <button
+                        onClick={() => {
+                          const r = checkTask(t, v)
+                          recordResult(t.id, r.score, r.max)
+                          setSaved((s) => ({ ...s, [t.id]: r.score }))
+                        }}
+                        className={`${btn} bg-teal text-white hover:bg-teal/90`}
+                      >
+                        Сохранить оценку
+                      </button>
+                    ))}
                   <button onClick={retry} className={`${btn} bg-navy/10 text-navy hover:bg-navy/15`}>Ещё раз</button>
                 </div>
               )

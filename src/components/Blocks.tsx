@@ -57,6 +57,18 @@ const CarbonBurning = lazy(() => import('./CarbonBurning'))
 const CarbonReduction = lazy(() => import('./CarbonReduction'))
 const CarbonMechanisms = lazy(() => import('./CarbonMechanisms'))
 const CarbonRoles = lazy(() => import('./CarbonRoles'))
+const IonExchange = lazy(() => import('./IonExchange'))
+const IonTests = lazy(() => import('./IonTests'))
+const ElectrolyteTest = lazy(() => import('./ElectrolyteTest'))
+const DipoleDemo = lazy(() => import('./WaterDipole').then((m) => ({ default: m.DipoleDemo })))
+const HydrationDemo = lazy(() => import('./WaterDipole').then((m) => ({ default: m.HydrationDemo })))
+const DissociationDegree = lazy(() => import('./DissociationDegree'))
+const ClassesDemo = lazy(() => import('./DissociationClasses').then((m) => ({ default: m.ClassesDemo })))
+const ExchangeMechanism = lazy(() => import('./IonEquations').then((m) => ({ default: m.MechanismDemo })))
+const ExchangeConditions = lazy(() => import('./IonEquations').then((m) => ({ default: m.ConditionsDemo })))
+const ExchangeWriting = lazy(() => import('./IonEquations').then((m) => ({ default: m.WritingDemo })))
+const ExchangeEquations = lazy(() => import('./IonEquations').then((m) => ({ default: m.BuilderDemo })))
+const StepwiseDemo = lazy(() => import('./DissociationClasses').then((m) => ({ default: m.StepwiseDemo })))
 
 /** Светлый ли фон (hex) — тогда текст делаем тёмным */
 function isLightColor(hex: string): boolean {
@@ -205,6 +217,30 @@ function Animation({ name }: { name: AnimationName }) {
       return <CarbonMechanisms only="cs-silicon" />
     case 'carbon-roles':
       return <CarbonRoles />
+    case 'ion-exchange':
+      return <IonExchange />
+    case 'ion-tests':
+      return <IonTests />
+    case 'electrolyte-test':
+      return <ElectrolyteTest />
+    case 'water-dipole':
+      return <DipoleDemo />
+    case 'hydration':
+      return <HydrationDemo />
+    case 'dissociation-degree':
+      return <DissociationDegree />
+    case 'dissociation-classes':
+      return <ClassesDemo />
+    case 'stepwise-dissociation':
+      return <StepwiseDemo />
+    case 'exchange-mechanism':
+      return <ExchangeMechanism />
+    case 'exchange-conditions':
+      return <ExchangeConditions />
+    case 'exchange-writing':
+      return <ExchangeWriting />
+    case 'exchange-equations':
+      return <ExchangeEquations />
   }
 }
 

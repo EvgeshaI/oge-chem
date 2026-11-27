@@ -112,6 +112,37 @@ export const catalog: TopicMeta[] = [
     kim: [8, 9, 10],
     totalTasks: 38,
   },
+  {
+    id: 'dissociation',
+    title: 'Электролитическая диссоциация',
+    subtitle: 'Электролиты и неэлектролиты, диполь воды, степень диссоциации, сильные и слабые электролиты, диссоциация кислот, оснований и солей',
+    emoji: '💧',
+    accent: 'blue',
+    free: true,
+    kim: [9, 10],
+    totalTasks: 25,
+  },
+  {
+    id: 'ion-exchange',
+    title: 'Реакции ионного обмена',
+    subtitle: 'Условия протекания, осадок, газ и вода, молекулярные, полные и сокращённые ионные уравнения',
+    emoji: '🔄',
+    accent: 'orange',
+    free: true,
+    kim: [9, 10],
+    totalTasks: 30,
+  },
+  {
+    id: 'acids-bases-salts',
+    title: 'Свойства кислот, оснований и солей',
+    subtitle: 'Электролитическая диссоциация, реакции ионного обмена, общие свойства кислот, оснований, амфотерных гидроксидов и солей, качественные реакции на ионы',
+    emoji: '🧬',
+    accent: 'pink',
+    free: true,
+    kim: [9, 10, 13, 14, 17],
+    totalTasks: 0,
+    theoryOnly: true,
+  },
 ]
 
 export const topicById = (id: string) => catalog.find((t) => t.id === id)
