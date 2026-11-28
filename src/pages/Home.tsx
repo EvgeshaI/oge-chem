@@ -2,9 +2,11 @@ import { motion } from 'framer-motion'
 import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import { RankBar } from '../components/quest/Hub'
+import { TestTube } from '../components/TestTube'
 import { catalog } from '../content/catalog'
 import { CASES } from '../content/quest'
 import { ACCENT } from '../lib/accent'
+import { EXPERIMENTS } from '../lib/labData'
 import { topicSolved, useProgress } from '../lib/progress'
 import { useQuest } from '../lib/quest'
 import { MAX_HEARTS, totalXp } from '../lib/questLogic'
@@ -89,6 +91,37 @@ export default function Home() {
             </Fragment>
           )
         })}
+
+        {/* практическая часть — последнее задание экзамена, поэтому лаборатория замыкает список */}
+        <motion.div
+          className="sm:col-span-2"
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: catalog.length * 0.06 }}
+        >
+          <Link
+            to="/lab"
+            className="block rounded-3xl bg-gradient-to-r from-teal to-blue p-6 text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md sm:p-8"
+          >
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <div className="max-w-md">
+                <div className="text-sm font-semibold uppercase tracking-wide text-white/80">Практическая часть ОГЭ</div>
+                <h2 className="mt-1 text-2xl font-extrabold sm:text-3xl">🥼 Лаборатория</h2>
+                <p className="mt-1 text-white/90">
+                  Приливайте реактивы в пробирки, следите за осадками и заполняйте таблицу, как на экзамене.
+                </p>
+              </div>
+              <div className="w-full max-w-xs sm:w-72">
+                <div className="flex justify-center gap-3" aria-hidden>
+                  <TestTube className="h-24 w-9" liquid="rgba(127,154,106,.55)" precip="#7f9a6a" precipH={0.3} />
+                  <TestTube className="h-24 w-9" liquid="rgba(255,255,255,.2)" />
+                  <TestTube className="h-24 w-9" liquid="rgba(255,255,255,.4)" precip="#ffffff" precipH={0.3} />
+                </div>
+                <div className="text-center text-sm text-white/90">Задание 23 · экспериментов: {EXPERIMENTS.length}</div>
+              </div>
+            </div>
+          </Link>
+        </motion.div>
       </div>
     </div>
   )
