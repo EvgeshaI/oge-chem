@@ -20,9 +20,10 @@ const charge = (label: string) => {
 
 describe('тема «Качественные реакции»', () => {
   const meta = catalog.find((t) => t.id === 'qualitative')!
-  it('идёт после свойств оксидов, кислот, оснований и солей', () => {
+  it('идёт после свойств веществ (углерод и кремний), перед массовой долей', () => {
     const ids = catalog.map((t) => t.id)
-    expect(ids.indexOf('qualitative')).toBe(ids.indexOf('acids-bases-salts') + 1)
+    expect(ids.indexOf('qualitative')).toBe(ids.indexOf('carbon-silicon') + 1)
+    expect(ids.indexOf('mass-fraction')).toBe(ids.indexOf('qualitative') + 1)
   })
   it('есть тренировка разных типов и вариант в формате ОГЭ из 15 тестовых заданий', () => {
     expect(meta.theoryOnly).toBeFalsy()

@@ -109,7 +109,8 @@ export function TaskCard({ task, index, value, onChange, phase, showExplanation 
               Ответ: <span className="rounded bg-teal/15 px-2 py-0.5">{task.answer}</span>
             </p>
           )}
-          <p className="leading-relaxed whitespace-pre-line">
+          {/* на телефоне формулы мельче: уравнение реакции не переносится по строкам и иначе обрезается */}
+          <p className="leading-relaxed whitespace-pre-line max-sm:[&_.katex]:text-[0.8em]!">
             <RichText text={task.explanation} />
           </p>
         </div>

@@ -1,9 +1,11 @@
 import { PROBLEMS } from '../../lib/problems'
 import type { AnimationName, Block, Lesson, TopicContent } from '../types'
+import { practice } from './problem-solving.practice'
 
 // Материал: «Решение задач» — расчётная задача части 2 ОГЭ (задание 22).
 // Главные акценты: количество вещества — единственный переход между веществами в уравнении реакции;
-// в расчётах n = m / M берётся масса вещества, а не раствора. Пока только теория с разбором 5 задач.
+// в расчётах n = m / M берётся масса вещества, а не раствора.
+// Теория с разбором 5 задач и тренировка из 20 задач, вариантов ОГЭ пока нет.
 
 const f = (s: string) => `$\\ce{${s}}$`
 const HEAD = '#eef0f5'
@@ -400,7 +402,7 @@ const content: TopicContent = {
       ],
     },
   ],
-  practice: [],
+  practice,
   exam: [],
 }
 

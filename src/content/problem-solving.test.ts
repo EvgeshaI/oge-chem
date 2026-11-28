@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { isBalanced } from '../lib/balance'
+import { checkTask, fieldsOf } from '../lib/check'
 import { AR, parseFormula } from '../lib/massFraction'
 import { BRIDGE, BRIDGE_REACTIONS, PROBLEMS, SOLUTION_EXAMPLE, num } from '../lib/problems'
 import { catalog } from './catalog'
@@ -11,12 +12,59 @@ const CE = /\\ce\{((?:[^{}]|\{[^{}]*\})*)\}/g
 describe('тема «Решение задач»', () => {
   const blocks = content.lessons.flatMap((l) => l.blocks)
 
-  it('идёт после «Массовой доли», пока только теория', () => {
+  it('идёт после «Массовой доли», есть тренировка из 20 задач, вариантов ОГЭ нет', () => {
     const ids = catalog.map((t) => t.id)
+    const meta = catalog.find((t) => t.id === 'problem-solving')!
     expect(ids.indexOf('problem-solving')).toBe(ids.indexOf('mass-fraction') + 1)
-    expect(catalog.find((t) => t.id === 'problem-solving')!.theoryOnly).toBe(true)
-    expect(content.practice).toEqual([])
+    expect(meta.theoryOnly).toBeFalsy()
+    expect(meta.totalTasks).toBe(20)
+    expect(content.practice).toHaveLength(20)
     expect(content.exam).toEqual([])
+  })
+
+  it('тренировка: одно поле ответа, указано округление, ответ совпадает с расчётом', () => {
+    // моли вещества в растворе массой m с массовой долей w (в процентах)
+    const sol = (m: number, w: number, formula: string) => (m * w) / 100 / M(formula)
+    const values = [
+      49 / M('H2SO4'),
+      0.25 * M('CaCO3'),
+      (11 / M('CO2')) * 22.4,
+      sol(150, 8, 'NaOH'),
+      0.6 / 2,
+      (4.8 / AR.Mg) * M('MgO'),
+      (13 / AR.Zn) * 22.4,
+      (((6.72 / 22.4) * 2) / 3) * AR.Al,
+      sol(208, 10, 'BaCl2') * M('BaSO4'),
+      sol(150, 11.1, 'CaCl2') * M('CaCO3'),
+      sol(80, 20, 'CuSO4') * M('Cu(OH)2'),
+      sol(106, 5, 'Na2CO3') * 22.4,
+      (sol(150, 14.6, 'HCl') / 2) * 22.4,
+      (((28.7 / M('AgCl') / 2) * M('CaCl2')) / 150) * 100,
+      (((46.6 / M('BaSO4')) * M('H2SO4')) / 196) * 100,
+      (((3.36 / 22.4) * M('Na2CO3')) / 80) * 100,
+      (sol(98, 10, 'H2SO4') * 2 * M('NaOH')) / 0.1,
+      ((8 / M('CuO')) * 2 * M('HCl')) / 0.073,
+      (((6.5 / AR.Zn) * M('ZnCl2')) / (6.5 + 100 - (6.5 / AR.Zn) * M('H2'))) * 100,
+      ((sol(100, 16, 'CuSO4') * M('Na2SO4')) / (100 + 80 - sol(100, 16, 'CuSO4') * M('Cu(OH)2'))) * 100,
+    ]
+    // в последней задаче щёлочи ровно вдвое больше по молям, чем сульфата меди
+    expect(sol(80, 10, 'NaOH')).toBeCloseTo(2 * sol(100, 16, 'CuSO4'))
+    const DIGITS: Record<string, number> = { целых: 0, десятых: 1, сотых: 2 }
+    expect(values).toHaveLength(content.practice.length)
+    content.practice.forEach((t, i) => {
+      expect(t.type, t.id).toBe('cells')
+      if (t.type !== 'cells') return
+      const round = t.question.match(/округлите до (целых|десятых|сотых)\.$/)
+      expect(round, `${t.id}: не указано округление`).not.toBeNull()
+      const expected = values[i].toFixed(DIGITS[round![1]]).replace('.', ',')
+      const fields = fieldsOf(t)
+      expect(fields, t.id).toHaveLength(1)
+      expect(fields[0].accept, t.id).toEqual([expected])
+      expect(checkTask(t, [expected]).correct, t.id).toBe(true)
+      expect(checkTask(t, [expected.replace(',', '.')]).correct, t.id).toBe(true)
+      expect(checkTask(t, [expected.replace(',', '')]).correct, `${t.id}: запятая важна`).toBe(!expected.includes(','))
+      expect(t.explanation, t.id).toContain(`Ответ: **${expected}`)
+    })
   })
 
   it('пять разобранных задач, у каждой своя анимация', () => {
