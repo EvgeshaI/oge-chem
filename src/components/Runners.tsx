@@ -112,14 +112,18 @@ export function ExamSection({ variants }: { variants: ExamVariant[] }) {
   )
 }
 
-/** Формат ОГЭ: отвечаем на всё, проверка и разбор — после «Завершить» */
+/** Формат ОГЭ: тесты части 1 — проверка после «Завершить»; задания ОВР части 2 — «Проверить» у каждого */
 export function ExamRunner({ tasks }: { tasks: Task[] }) {
   const [values, setValues] = useState<Record<string, Value>>({})
   const [done, setDone] = useState(false)
+  /** Отдельная проверка заданий с полями (ОВР части 2) — до общего «Завершить» */
+  const [checkedIds, setCheckedIds] = useState<Record<string, true>>({})
 
   const get = (t: Task) => values[t.id] ?? emptyValue(t)
   const total = tasks.reduce((s, t) => s + maxScore(t), 0)
   const got = tasks.reduce((s, t) => s + checkTask(t, get(t)).score, 0)
+  const hasRedox = tasks.some((t) => t.type === 'redox')
+  const onlyRedox = tasks.every((t) => t.type === 'redox')
 
   const finish = () => {
     setDone(true)
@@ -133,6 +137,7 @@ export function ExamRunner({ tasks }: { tasks: Task[] }) {
   const restart = () => {
     setValues({})
     setDone(false)
+    setCheckedIds({})
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
@@ -145,7 +150,8 @@ export function ExamRunner({ tasks }: { tasks: Task[] }) {
           {tasks.some((t) => t.type === 'digits') && ' В заданиях «выберите два высказывания» нажмите на оба верных.'}
           {tasks.some((t) => t.type === 'match') && ' В заданиях на соответствие для каждой буквы выберите цифру из списка.'}
           {tasks.some((t) => t.type === 'order') && ' В заданиях «расположите в порядке» нажимайте на элементы по очереди — цифры сложатся в ответ.'}
-          {' Ответы можно менять, пока вы не нажали «Завершить и проверить»; результат и разбор появятся после этого.'}
+          {hasRedox && ' В заданиях с уравнением ОВР после ответа нажмите «Проверить» у задания — появится разбор.'}
+          {!onlyRedox && ' Ответы в тестовых заданиях можно менять, пока вы не нажали «Завершить и проверить»; результат и разбор появятся после этого.'}
         </div>
       )}
       {done && (
@@ -156,19 +162,57 @@ export function ExamRunner({ tasks }: { tasks: Task[] }) {
           <button onClick={restart} className={`${btn} mt-4 bg-orange text-navy hover:bg-orange/90`}>Пройти заново</button>
         </div>
       )}
-      {tasks.map((t, i) => (
-        <TaskCard
-          key={t.id}
-          task={t}
-          index={i}
-          value={get(t)}
-          phase={done ? 'checked' : 'answering'}
-          onChange={(nv) => setValues((s) => ({ ...s, [t.id]: nv }))}
-        />
-      ))}
-      {!done && (
+      {tasks.map((t, i) => {
+        const perTask = t.type === 'redox'
+        const checked = done || !!checkedIds[t.id]
+        return (
+          <TaskCard
+            key={t.id}
+            task={t}
+            index={i}
+            value={get(t)}
+            phase={checked ? 'checked' : 'answering'}
+            onChange={(nv) => setValues((s) => ({ ...s, [t.id]: nv }))}
+            footer={
+              perTask && !done ? (
+                checked ? (
+                  <button
+                    onClick={() => {
+                      setValues((s) => ({ ...s, [t.id]: emptyValue(t) }))
+                      setCheckedIds((s) => {
+                        const { [t.id]: _, ...rest } = s
+                        return rest
+                      })
+                    }}
+                    className={`${btn} bg-navy/10 text-navy hover:bg-navy/15`}
+                  >
+                    Ещё раз
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => {
+                      setCheckedIds((s) => ({ ...s, [t.id]: true }))
+                      const r = checkTask(t, get(t))
+                      recordResult(t.id, r.score, r.max)
+                    }}
+                    className={`${btn} bg-purple text-white hover:bg-purple/90`}
+                  >
+                    Проверить
+                  </button>
+                )
+              ) : undefined
+            }
+          />
+        )
+      })}
+      {!done && !onlyRedox && (
         <button onClick={finish} className={`${btn} bg-purple text-white hover:bg-purple/90`}>
           Завершить и проверить
+        </button>
+      )}
+      {!done && onlyRedox && Object.keys(checkedIds).length === tasks.length && (
+        <button onClick={finish} className={`${btn} bg-navy text-white hover:bg-navy/90`}>
+          Показать итог варианта
         </button>
       )}
     </div>

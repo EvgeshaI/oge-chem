@@ -19,13 +19,18 @@ const render = (s: string) => katex.renderToString(s, { throwOnError: true, outp
 
 describe('тема «Окислительно-восстановительные реакции»', () => {
   const meta = catalog.find((t) => t.id === 'redox')!
-  it('стоит после ионного обмена, только теория', () => {
+  it('стоит после ионного обмена, есть тренировка и формат ОГЭ', () => {
     const ids = catalog.map((t) => t.id)
     expect(ids.indexOf('redox')).toBe(ids.indexOf('ion-exchange') + 1)
-    expect(meta.theoryOnly).toBe(true)
-    expect(meta.totalTasks).toBe(0)
-    expect(content.practice).toEqual([])
-    expect(content.exam).toEqual([])
+    expect(meta.theoryOnly).toBeFalsy()
+    expect(content.practice).toHaveLength(15)
+    expect(content.practice.some((t) => ['single', 'digits', 'match', 'order'].includes(t.type))).toBe(false)
+    expect(content.exam.map((v) => v.id)).toEqual(['v1', 'v2'])
+    expect(content.exam[0].tasks).toHaveLength(10)
+    expect(content.exam[0].tasks.every((t) => ['single', 'digits', 'match'].includes(t.type))).toBe(true)
+    expect(content.exam[1].tasks.length).toBeGreaterThanOrEqual(6)
+    expect(content.exam[1].tasks.every((t) => t.type === 'redox')).toBe(true)
+    expect(meta.totalTasks).toBe(content.practice.length + content.exam.reduce((n, v) => n + v.tasks.length, 0))
   })
   it('есть все пять анимаций в логичном порядке', () => {
     const anims = content.lessons.flatMap((l) => l.blocks).flatMap((b) => (b.kind === 'animation' ? [b.name] : []))
@@ -72,6 +77,36 @@ describe('тема «Окислительно-восстановительные
   })
   it('в теме нет ионных уравнений ОВР (чтобы не путать с обменом)', () => {
     expect(strings(content).some((s) => /сокращённое|полное ионное/i.test(s))).toBe(false)
+  })
+})
+
+describe('часть 2 ОГЭ: задания с коэффициентами и электронами', () => {
+  const tasks = content.exam.flatMap((v) => v.tasks).flatMap((t) => (t.type === 'redox' ? [t] : []))
+  it('уравнения с верными коэффициентами уравнены', () => {
+    for (const t of tasks) {
+      expect(t.coef).toHaveLength(t.ce.length)
+      expect(t.names).toHaveLength(t.ce.length)
+      expect(new Set(t.names).size).toBe(t.names.length)
+      const side = (a: number, b: number) => t.ce.slice(a, b).map((x, i) => `${t.coef[a + i] === 1 ? '' : t.coef[a + i]}${x}`).join(' + ')
+      const eq = `${side(0, t.nLeft)} -> ${side(t.nLeft, t.ce.length)}`
+      expect(isBalanced(eq), eq).toBe(true)
+    }
+  })
+  it('электронный баланс сходится: множители выравнивают электроны', () => {
+    for (const t of tasks) {
+      const L = lcm(t.halfRed.n, t.halfOx.n)
+      expect((L / t.halfRed.n) * t.halfRed.n).toBe((L / t.halfOx.n) * t.halfOx.n)
+      expect(t.ox).not.toBe(t.red)
+      expect(t.ox).toBeLessThan(t.nLeft)
+      expect(t.red).toBeLessThan(t.nLeft)
+      for (const h of [t.halfRed, t.halfOx]) {
+        render(h.pre)
+        render(h.post)
+      }
+    }
+  })
+  it('условия и формулы рисуются KaTeX', () => {
+    for (const t of tasks) for (const m of t.question.matchAll(/\$([^$]+)\$/g)) render(m[1])
   })
 })
 

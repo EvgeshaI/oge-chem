@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import type { Cell, CellInput, Task } from '../../content/types'
 import { checkTask, type OpenValue, type Result, type Value } from '../../lib/check'
 import { AtomBoron, ParticleModel, SchemeArcs } from '../Figures'
-import { RichText } from '../RichText'
+import { RichText, tex } from '../RichText'
 import { Select } from '../Select'
 
 const LABELS = ['А', 'Б', 'В', 'Г', 'Д', 'Е']
@@ -20,7 +20,7 @@ interface Props {
   footer?: ReactNode
 }
 
-const FIELD_TYPES = ['fill', 'classify', 'cells', 'models', 'schemes']
+const FIELD_TYPES = ['fill', 'classify', 'cells', 'models', 'schemes', 'redox']
 
 /** Типовая подсказка «как отвечать» для заданий, у которых нет своей */
 function defaultHint(task: Task): string | undefined {
@@ -41,6 +41,8 @@ function defaultHint(task: Task): string | undefined {
       return 'Для каждой буквы выберите цифру из списка. Ответ — цифры подряд, без пробелов.'
     case 'schemes':
       return 'Числа вводите цифрами, тип элемента выберите из списка.'
+    case 'redox':
+      return 'Впишите коэффициенты (единицу можно не писать — оставьте поле пустым), выберите окислитель и восстановитель из списка. После верного выбора появятся уравнения электронного баланса — впишите в них число электронов.'
     default:
       return undefined
   }
@@ -80,6 +82,7 @@ export function TaskCard({ task, index, value, onChange, phase, showExplanation 
       {task.type === 'fill' && <Fill task={task} {...fp} />}
       {task.type === 'classify' && <Classify task={task} {...fp} />}
       {task.type === 'cells' && <Cells task={task} {...fp} />}
+      {task.type === 'redox' && <RedoxEq task={task} {...fp} />}
       {task.type === 'models' && <Models task={task} {...fp} />}
       {task.type === 'schemes' && <Schemes task={task} {...fp} />}
       {task.type === 'digits' && <Digits task={task} value={value as string} onChange={onChange} checked={checked} />}
@@ -315,6 +318,67 @@ function Cells({ task, value, set, result }: { task: Extract<Task, { type: 'cell
             </li>
           ))}
         </ul>
+      )}
+    </div>
+  )
+}
+
+/* ---------- Часть 2: уравнение ОВР, окислитель/восстановитель, электроны ---------- */
+const Tex = ({ s }: { s: string }) => <span className="inline-block align-middle" dangerouslySetInnerHTML={{ __html: tex(s) }} />
+
+function RedoxEq({ task, value, set, result }: { task: Extract<Task, { type: 'redox' }> } & FP) {
+  const n = task.ce.length
+  const [iOx, iRed, iEr, iEo] = [n, n + 1, n + 2, n + 3]
+  const chosenOk = value[iOx] === task.names[task.ox] && value[iRed] === task.names[task.red]
+  const showHalf = chosenOk || result !== null
+  const fb = (idx: number, correct: string, label: string, opts?: { options?: string[]; w?: number }) => (
+    <FieldBox idx={idx} value={value[idx] ?? ''} onChange={(v) => set(idx, v)} result={result} correct={correct} label={label} {...opts} />
+  )
+  return (
+    <div>
+      <p className="mb-3 text-[17px] font-medium"><RichText text={task.question} /></p>
+      <div className="rounded-xl bg-paper p-3">
+        <div className="mb-2 text-sm font-semibold text-muted">Расставьте коэффициенты:</div>
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-3 text-[17px]">
+          {task.ce.map((f, i) => (
+            <span key={i} className="inline-flex items-center gap-1.5">
+              {i > 0 && <span className="mx-1 text-muted">{i === task.nLeft ? '→' : '+'}</span>}
+              {fb(i, task.coef[i] === 1 ? '1 (можно не писать)' : String(task.coef[i]), `Коэффициент перед ${task.names[i]}`, { w: 2 })}
+              <Tex s={`\\ce{${f}}`} />
+            </span>
+          ))}
+        </div>
+      </div>
+      <div className="mt-3 grid gap-3 sm:grid-cols-2">
+        <label className="flex flex-wrap items-center gap-2 rounded-xl bg-paper p-3">
+          <span className="font-semibold">Окислитель:</span>
+          {fb(iOx, task.names[task.ox], 'Окислитель', { options: task.names })}
+        </label>
+        <label className="flex flex-wrap items-center gap-2 rounded-xl bg-paper p-3">
+          <span className="font-semibold">Восстановитель:</span>
+          {fb(iRed, task.names[task.red], 'Восстановитель', { options: task.names })}
+        </label>
+      </div>
+      {showHalf ? (
+        <div className="mt-3 space-y-2 rounded-xl border-2 border-purple/20 p-3">
+          <div className="text-sm font-semibold text-muted">Электронный баланс — впишите число электронов:</div>
+          <div className="flex flex-wrap items-center gap-2 text-[17px]">
+            <span className="w-36 text-sm text-pink">восстановитель отдаёт</span>
+            <Tex s={task.halfRed.pre} />
+            {fb(iEr, String(task.halfRed.n), 'Число отданных электронов', { w: 2 })}
+            <Tex s={task.halfRed.post} />
+          </div>
+          <div className="flex flex-wrap items-center gap-2 text-[17px]">
+            <span className="w-36 text-sm text-blue">окислитель принимает</span>
+            <Tex s={task.halfOx.pre} />
+            {fb(iEo, String(task.halfOx.n), 'Число принятых электронов', { w: 2 })}
+            <Tex s={task.halfOx.post} />
+          </div>
+        </div>
+      ) : (
+        <p className="mt-3 rounded-xl bg-purple/5 px-3 py-2 text-sm text-muted">
+          Выберите окислитель и восстановитель — при верном выборе появятся уравнения отдачи и принятия электронов.
+        </p>
       )}
     </div>
   )

@@ -71,7 +71,7 @@ describe('утилиты', () => {
 })
 
 import { fieldsOf, norm } from './check'
-import type { CellsTask, ClassifyTask, ModelsTask, SchemesTask, SingleTask } from '../content/types'
+import type { CellsTask, ClassifyTask, ModelsTask, RedoxTask, SchemesTask, SingleTask } from '../content/types'
 
 describe('single', () => {
   const t: SingleTask = { id: 't.s', type: 'single', question: '', options: ['a', 'b', 'c', 'd'], answer: 3, explanation: '' }
@@ -141,5 +141,23 @@ describe('order', () => {
   })
   it('один балл', () => {
     expect(maxScore(order)).toBe(1)
+  })
+})
+
+describe('redox', () => {
+  const t: RedoxTask = {
+    id: 't.rx', type: 'redox', question: '', explanation: '',
+    ce: ['Zn', 'HCl', 'ZnCl2', 'H2'], nLeft: 2, coef: [1, 2, 1, 1],
+    names: ['цинк', 'HCl', 'хлорид цинка', 'водород'], ox: 1, red: 0,
+    halfRed: { pre: 'Zn^{0}', n: 2, post: 'e^{-} \\to Zn^{2+}' },
+    halfOx: { pre: '2H^{+}', n: 2, post: 'e^{-} \\to H_{2}' },
+  }
+  const ok = (coef: string[]) => [...coef, 'HCl', 'цинк', '2', '2']
+  it('коэффициент 1 можно не писать', () => {
+    expect(checkTask(t, ok(['1', '2', '1', '1'])).correct).toBe(true)
+    expect(checkTask(t, ok(['', '2', '', ''])).correct).toBe(true)
+    expect(checkTask(t, ok(['1', '2', '', '1'])).correct).toBe(true)
+    expect(checkTask(t, ok(['', '3', '', ''])).correct).toBe(false)
+    expect(checkTask(t, ok(['', '', '', ''])).gaps?.[1]).toBe(false)
   })
 })

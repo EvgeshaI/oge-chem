@@ -1,7 +1,9 @@
 import { ARROW, BALANCE_CASES, COMPLEX_CASES, E, complexCe, fo, so } from '../../lib/redox'
 import type { TopicContent } from '../types'
+import { exam } from './redox.exam'
+import { practice } from './redox.practice'
 
-// Тема «Окислительно-восстановительные реакции» — только теория (9 класс, задание 20 ОГЭ).
+// Тема «Окислительно-восстановительные реакции» — теория, 15 заданий тренировки и формат ОГЭ (часть 1 и часть 2; 9 класс, задание 20 ОГЭ).
 // Стоит после «Реакций ионного обмена»: опирается на степень окисления. Ионных уравнений ОВР здесь нет — чтобы не путать с обменом.
 // Цвета: восстановитель (отдаёт ē) — оранжевый, окислитель (принимает ē) — голубой (как в анимациях).
 
@@ -526,8 +528,8 @@ const content: TopicContent = {
       ],
     },
   ],
-  practice: [],
-  exam: [],
+  practice,
+  exam,
 }
 
 export default content

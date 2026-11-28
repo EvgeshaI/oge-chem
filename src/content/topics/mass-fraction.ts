@@ -1,8 +1,9 @@
 import type { TopicContent } from '../types'
+import { practice } from './mass-fraction.practice'
 
 // Материал: «Массовая доля» — массовая доля элемента в веществе (задание 15 ОГЭ)
 // и массовая доля растворённого вещества в растворе (основа расчётной задачи 22 части 2 — она будет отдельной темой).
-// Только теория.
+// Теория и 20 расчётных задач (вкладка «Тренировка»).
 
 const f = (s: string) => `$\\ce{${s}}$`
 const HEAD = '#eef0f5'
@@ -308,7 +309,7 @@ const content: TopicContent = {
       ],
     },
   ],
-  practice: [],
+  practice,
   exam: [],
 }
 

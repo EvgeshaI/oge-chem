@@ -140,8 +140,7 @@ export const catalog: TopicMeta[] = [
     accent: 'teal',
     free: true,
     kim: [20],
-    totalTasks: 0,
-    theoryOnly: true,
+    totalTasks: 31,
   },
   {
     id: 'acids-bases-salts',
@@ -172,8 +171,7 @@ export const catalog: TopicMeta[] = [
     accent: 'purple',
     free: true,
     kim: [15, 22],
-    totalTasks: 0,
-    theoryOnly: true,
+    totalTasks: 20,
   },
 ]
 

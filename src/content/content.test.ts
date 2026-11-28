@@ -112,6 +112,12 @@ function validate(topicId: string, t: Task) {
       if (t.head) for (const r of t.rows) expect(r.length, `${t.id}: ширина строки`).toBe(t.head.length)
       break
     }
+    case 'redox': {
+      expect(t.coef.length, t.id).toBe(t.ce.length)
+      expect(t.names, t.id).toContain(t.names[t.ox])
+      expect(t.ox, t.id).not.toBe(t.red)
+      break
+    }
     case 'models': {
       for (const m of t.models) {
         expect(t.kinds, `${t.id}: вид «${m.kind}»`).toContain(m.kind)

@@ -60,6 +60,15 @@ export function fieldsOf(task: Task): Field[] {
       return task.items.map((i) => ({ accept: [i.answer] }))
     case 'cells':
       return task.rows.flat().filter(isInput).map((c) => ({ accept: arr(c.a), set: c.set }))
+    case 'redox':
+      return [
+        // коэффициент 1 в уравнениях обычно не пишут — пустое поле тоже верно
+        ...task.coef.map((k) => ({ accept: k === 1 ? ['1', ''] : [String(k)] })),
+        { accept: [task.names[task.ox]] },
+        { accept: [task.names[task.red]] },
+        { accept: [String(task.halfRed.n)] },
+        { accept: [String(task.halfOx.n)] },
+      ]
     case 'models':
       return task.models.flatMap((m) => [
         { accept: [String(m.elements)] },
@@ -81,10 +90,12 @@ export function fieldsOf(task: Task): Field[] {
 }
 
 export function fieldOk(f: Field, v: string): boolean {
-  if (!v.trim()) return false
+  const t = v.trim()
+  // пустое значение верно только если оно явно допущено (например, коэффициент 1 в ОВР)
+  if (!t) return f.accept.some((a) => a === '')
   return f.set
-    ? f.accept.some((a) => normSet(a) === normSet(v))
-    : f.accept.some((a) => norm(a) === norm(v))
+    ? f.accept.some((a) => a !== '' && normSet(a) === normSet(v))
+    : f.accept.some((a) => a !== '' && norm(a) === norm(v))
 }
 
 export function emptyValue(task: Task): Value {

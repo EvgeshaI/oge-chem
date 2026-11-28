@@ -269,6 +269,33 @@ export interface SchemesTask extends TaskBase {
   }[]
 }
 
+/** Половина электронного баланса: TeX до и после поля, куда вписывают число электронов */
+export interface HalfReaction {
+  pre: string
+  post: string
+  n: number
+}
+
+/** Часть 2 ОГЭ: уравнение ОВР без коэффициентов, окислитель и восстановитель, число электронов */
+export interface RedoxTask extends TaskBase {
+  type: 'redox'
+  question: string
+  /** формулы веществ (mhchem), слева направо, без коэффициентов */
+  ce: string[]
+  /** сколько первых веществ — реагенты */
+  nLeft: number
+  /** верные коэффициенты */
+  coef: number[]
+  /** формулы для выпадающего списка (простой текст) */
+  names: string[]
+  /** индекс окислителя и восстановителя среди веществ */
+  ox: number
+  red: number
+  /** уравнение отдачи электронов (восстановитель) и принятия (окислитель) */
+  halfRed: HalfReaction
+  halfOx: HalfReaction
+}
+
 export type Task =
   | FillTask
   | DigitsTask
@@ -280,6 +307,7 @@ export type Task =
   | CellsTask
   | ModelsTask
   | SchemesTask
+  | RedoxTask
 
 export interface ExamVariant {
   id: string
