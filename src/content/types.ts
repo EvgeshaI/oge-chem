@@ -73,6 +73,7 @@ export type AnimationName =
   | 'salt-ratio'
   | 'ion-tests'
   | 'ion-search'
+  | 'amphoteric-excess'
   | 'electrolyte-test'
   | 'water-dipole'
   | 'hydration'

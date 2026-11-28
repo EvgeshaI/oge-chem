@@ -93,6 +93,12 @@ const content: TopicContent = {
             [HEAD, null, '#cfe6f7', null],
           ],
         },
+        { kind: 'heading', text: 'Осадок исчезает: избыток щёлочи' },
+        {
+          kind: 'text',
+          text: 'Al(OH)₃ и Zn(OH)₂ амфотерны: с избытком щёлочи они реагируют как кислоты и растворяются. Капайте щёлочь и следите за осадком; для сравнения возьмите соль магния — её осадок не растворяется.',
+        },
+        { kind: 'animation', name: 'amphoteric-excess' },
         {
           kind: 'callout',
           tone: 'warn',

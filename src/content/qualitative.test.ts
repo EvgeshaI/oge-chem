@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { ION_TESTS } from '../lib/acidsBasesSalts'
 import { isIonBalanced } from '../lib/balance'
-import { QUAL_EXAMPLES } from '../lib/qualitative'
+import { EXCESS_CASES, QUAL_EXAMPLES } from '../lib/qualitative'
 import { catalog } from './catalog'
 import content from './topics/qualitative'
 
@@ -29,7 +29,7 @@ describe('тема «Качественные реакции»', () => {
   it('есть анимации и таблицы, цвета ячеек по размеру таблицы', () => {
     const blocks = content.lessons.flatMap((l) => l.blocks)
     const anims = blocks.flatMap((b) => (b.kind === 'animation' ? [b.name] : []))
-    expect(anims).toEqual(expect.arrayContaining(['ion-search', 'ion-tests']))
+    expect(anims).toEqual(expect.arrayContaining(['ion-search', 'ion-tests', 'amphoteric-excess']))
     expect(blocks.filter((b) => b.kind === 'table').length).toBeGreaterThanOrEqual(3)
     for (const b of blocks)
       if (b.kind === 'table' && b.cellColors) {
@@ -49,6 +49,13 @@ describe('тема «Качественные реакции»', () => {
       const reacting = [...ex.sample.ions, ...ex.reagent.ions].filter((i) => i.reacts)
       expect(reacting.length).toBe(2)
       expect(reacting.some((i) => i.label === ex.ion)).toBe(true)
+    }
+  })
+  it('избыток щёлочи: амфотерные осадки растворяются, остальные нет; уравнения уравнены', () => {
+    for (const c of EXCESS_CASES) {
+      expect(c.stages.at(-1)!.precip === 0, c.ion).toBe(c.amphoteric)
+      expect(Math.max(...c.stages.map((x) => x.precip))).toBe(c.stages[3].precip)
+      for (const x of c.stages) if (x.eq) expect(isIonBalanced(x.eq), x.eq).toBe(true)
     }
   })
 })

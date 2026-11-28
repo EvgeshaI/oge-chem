@@ -61,6 +61,7 @@ const OxideMatrix = lazy(() => import('./OxideMatrix'))
 const SaltRatio = lazy(() => import('./SaltRatio'))
 const IonTests = lazy(() => import('./IonTests'))
 const IonSearch = lazy(() => import('./IonSearch'))
+const AmphotericExcess = lazy(() => import('./AmphotericExcess'))
 const ElectrolyteTest = lazy(() => import('./ElectrolyteTest'))
 const DipoleDemo = lazy(() => import('./WaterDipole').then((m) => ({ default: m.DipoleDemo })))
 const HydrationDemo = lazy(() => import('./WaterDipole').then((m) => ({ default: m.HydrationDemo })))
@@ -232,6 +233,8 @@ function Animation({ name }: { name: AnimationName }) {
       return <IonTests />
     case 'ion-search':
       return <IonSearch />
+    case 'amphoteric-excess':
+      return <AmphotericExcess />
     case 'electrolyte-test':
       return <ElectrolyteTest />
     case 'water-dipole':
