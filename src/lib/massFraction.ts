@@ -18,6 +18,7 @@ export const AR: Record<string, number> = {
   Fe: 56,
   Cu: 64,
   Zn: 65,
+  Ag: 108,
   Ba: 137,
 }
 

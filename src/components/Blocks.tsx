@@ -81,6 +81,9 @@ const ElementFraction = lazy(() => import('./MassFraction').then((m) => ({ defau
 const SolutionMixer = lazy(() => import('./MassFraction').then((m) => ({ default: m.SolutionMixerDemo })))
 const FractionTriangle = lazy(() => import('./MassFraction').then((m) => ({ default: m.FractionTriangleDemo })))
 const SolutionChanges = lazy(() => import('./MassFraction').then((m) => ({ default: m.SolutionChangesDemo })))
+const MoleBridge = lazy(() => import('./ProblemSolving').then((m) => ({ default: m.MoleBridgeDemo })))
+const SolutionSubstance = lazy(() => import('./ProblemSolving').then((m) => ({ default: m.SolutionSubstanceDemo })))
+const ProblemChain = lazy(() => import('./ProblemSolving').then((m) => ({ default: m.ProblemChainDemo })))
 
 /** Светлый ли фон (hex) — тогда текст делаем тёмным */
 function isLightColor(hex: string): boolean {
@@ -277,6 +280,20 @@ function Animation({ name }: { name: AnimationName }) {
       return <FractionTriangle />
     case 'solution-changes':
       return <SolutionChanges />
+    case 'mole-bridge':
+      return <MoleBridge />
+    case 'solution-substance':
+      return <SolutionSubstance />
+    case 'problem-chain-1':
+      return <ProblemChain id="p1" />
+    case 'problem-chain-2':
+      return <ProblemChain id="p2" />
+    case 'problem-chain-3':
+      return <ProblemChain id="p3" />
+    case 'problem-chain-4':
+      return <ProblemChain id="p4" />
+    case 'problem-chain-5':
+      return <ProblemChain id="p5" />
   }
 }
 
@@ -381,15 +398,17 @@ export function BlockView({ block }: { block: Block }) {
       )
     case 'steps': {
       const n = block.items.length
-      const cols = n <= 2 ? 'sm:grid-cols-2' : n === 3 ? 'sm:grid-cols-2 lg:grid-cols-3' : 'sm:grid-cols-2 lg:grid-cols-4'
+      const cols = block.vertical ? 'grid-cols-1' : n <= 2 ? 'sm:grid-cols-2' : n === 3 ? 'sm:grid-cols-2 lg:grid-cols-3' : 'sm:grid-cols-2 lg:grid-cols-4'
       return (
         <ol className={`grid gap-3 ${cols}`}>
           {block.items.map((s, i) => (
-            <li key={i} className="min-w-0 rounded-xl bg-white p-4 shadow-sm">
-              <div className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-purple text-sm font-bold text-white">{i + 1}</div>
-              <div className="font-bold">{s.title}</div>
-              <div className="mt-1 min-w-0 overflow-x-auto text-sm leading-relaxed">
-                <RichText text={s.text} />
+            <li key={i} className={`min-w-0 rounded-xl bg-white p-4 shadow-sm ${block.vertical ? 'sm:flex sm:gap-3' : ''}`}>
+              <div className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-purple text-sm font-bold text-white ${block.vertical ? 'mb-2 sm:mb-0' : 'mb-2'}`}>{i + 1}</div>
+              <div className="min-w-0 flex-1">
+                <div className="font-bold">{s.title}</div>
+                <div className={`mt-1 min-w-0 overflow-x-auto leading-relaxed ${block.vertical ? 'text-sm sm:text-base' : 'text-sm'}`}>
+                  <RichText text={s.text} />
+                </div>
               </div>
             </li>
           ))}

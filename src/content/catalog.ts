@@ -172,6 +172,17 @@ export const catalog: TopicMeta[] = [
     kim: [15, 22],
     totalTasks: 20,
   },
+  {
+    id: 'problem-solving',
+    title: 'Решение задач',
+    subtitle: 'Расчётная задача 22: количество вещества, переход по уравнению реакции, масса вещества в растворе и разбор пяти задач',
+    emoji: '🧮',
+    accent: 'orange',
+    free: true,
+    kim: [22],
+    totalTasks: 0,
+    theoryOnly: true,
+  },
 ]
 
 export const topicById = (id: string) => catalog.find((t) => t.id === id)

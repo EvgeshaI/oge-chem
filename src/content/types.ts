@@ -93,6 +93,13 @@ export type AnimationName =
   | 'solution-mixer'
   | 'fraction-triangle'
   | 'solution-changes'
+  | 'mole-bridge'
+  | 'solution-substance'
+  | 'problem-chain-1'
+  | 'problem-chain-2'
+  | 'problem-chain-3'
+  | 'problem-chain-4'
+  | 'problem-chain-5'
 
 export interface CardItem {
   title: string
@@ -110,7 +117,8 @@ export type Block =
   | { kind: 'callout'; tone: 'remember' | 'tip' | 'warn'; title?: string; text: string }
   | { kind: 'equation'; tex: string }
   | { kind: 'cards'; cols?: 1 | 2 | 3; items: CardItem[] }
-  | { kind: 'steps'; items: { title: string; text: string }[] }
+  /** vertical — шаги друг под другом на всю ширину (запись решения с длинными уравнениями) */
+  | { kind: 'steps'; items: { title: string; text: string }[]; vertical?: boolean }
   | { kind: 'animation'; name: AnimationName }
   | { kind: 'image'; src: string; alt: string; caption?: string; maxWidth?: number }
   | {

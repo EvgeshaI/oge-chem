@@ -15,12 +15,13 @@ import acidsBasesSalts from './topics/acids-bases-salts'
 import redox from './topics/redox'
 import qualitative from './topics/qualitative'
 import massFraction from './topics/mass-fraction'
+import problemSolving from './topics/problem-solving'
 import metals from './topics/metals'
 import oxidation from './topics/oxidation'
 import periodic from './topics/periodic'
 import type { Task, TopicContent } from './types'
 
-const all: Record<string, TopicContent> = { atom, bonds, classes, concepts, halogens, metals, oxidation, periodic, 'oxygen-sulfur': oxygenSulfur, 'nitrogen-phosphorus': nitrogenPhosphorus, 'carbon-silicon': carbonSilicon, dissociation, 'ion-exchange': ionExchange, redox, 'acids-bases-salts': acidsBasesSalts, qualitative, 'mass-fraction': massFraction }
+const all: Record<string, TopicContent> = { atom, bonds, classes, concepts, halogens, metals, oxidation, periodic, 'oxygen-sulfur': oxygenSulfur, 'nitrogen-phosphorus': nitrogenPhosphorus, 'carbon-silicon': carbonSilicon, dissociation, 'ion-exchange': ionExchange, redox, 'acids-bases-salts': acidsBasesSalts, qualitative, 'mass-fraction': massFraction, 'problem-solving': problemSolving }
 const tasksOf = (c: TopicContent): Task[] => [...c.practice, ...c.exam.flatMap((v) => v.tasks)]
 
 describe('каталог', () => {

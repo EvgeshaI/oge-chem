@@ -42,7 +42,8 @@ export function RichText({ text, className }: { text: string; className?: string
           return (
             <span
               key={i}
-              className="inline-block max-w-full overflow-x-auto align-middle [scrollbar-width:none] [&::-webkit-scrollbar]:hidden [&>.katex]:max-w-none"
+              // у дробей отступ сверху и снизу: иначе overflow обрезает числитель
+              className={`inline-block max-w-full overflow-x-auto align-middle [scrollbar-width:none] [&::-webkit-scrollbar]:hidden [&>.katex]:max-w-none${p.includes('frac') ? ' py-1.5' : ''}`}
               dangerouslySetInnerHTML={{ __html: tex(p.slice(1, -1)) }}
             />
           )
