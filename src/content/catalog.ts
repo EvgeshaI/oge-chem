@@ -160,8 +160,7 @@ export const catalog: TopicMeta[] = [
     accent: 'teal',
     free: true,
     kim: [13, 14],
-    totalTasks: 0,
-    theoryOnly: true,
+    totalTasks: 27,
   },
   {
     id: 'mass-fraction',

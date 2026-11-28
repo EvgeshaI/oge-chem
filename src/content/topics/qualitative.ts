@@ -1,7 +1,9 @@
 import type { TopicContent } from '../types'
+import { exam } from './qualitative.exam'
+import { practice } from './qualitative.practice'
 
 // Материал: «Качественные реакции» (задания 13 и 14 ОГЭ, кодификатор ФИПИ: качественные реакции на ионы и газы).
-// Только теория. Тема стоит после «Свойств оксидов, кислот, оснований и солей».
+// Теория, тренировка и вариант в формате ОГЭ. Тема стоит после «Свойств оксидов, кислот, оснований и солей».
 
 const f = (s: string) => `$\\ce{${s}}$`
 const HEAD = '#eef0f5'
@@ -143,8 +145,8 @@ const content: TopicContent = {
       ],
     },
   ],
-  practice: [],
-  exam: [],
+  practice,
+  exam,
 }
 
 export default content

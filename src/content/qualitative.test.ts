@@ -20,11 +20,20 @@ const charge = (label: string) => {
 
 describe('тема «Качественные реакции»', () => {
   const meta = catalog.find((t) => t.id === 'qualitative')!
-  it('идёт после свойств оксидов, кислот, оснований и солей, только теория', () => {
+  it('идёт после свойств оксидов, кислот, оснований и солей', () => {
     const ids = catalog.map((t) => t.id)
     expect(ids.indexOf('qualitative')).toBe(ids.indexOf('acids-bases-salts') + 1)
-    expect(meta.theoryOnly).toBe(true)
-    expect(content.practice).toEqual([])
+  })
+  it('есть тренировка разных типов и вариант в формате ОГЭ из 15 тестовых заданий', () => {
+    expect(meta.theoryOnly).toBeFalsy()
+    expect(content.practice.length).toBeGreaterThanOrEqual(10)
+    expect(content.practice.length).toBeLessThanOrEqual(15)
+    expect(new Set(content.practice.map((t) => t.type)).size).toBeGreaterThanOrEqual(5)
+    expect(content.exam).toHaveLength(1)
+    const tasks = content.exam[0].tasks
+    expect(tasks).toHaveLength(15)
+    for (const t of tasks) expect(['single', 'digits', 'match'], t.id).toContain(t.type)
+    expect(meta.totalTasks).toBe(content.practice.length + tasks.length)
   })
   it('есть анимации и таблицы, цвета ячеек по размеру таблицы', () => {
     const blocks = content.lessons.flatMap((l) => l.blocks)
