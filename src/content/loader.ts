@@ -26,6 +26,7 @@ export const loaders: Record<string, Loader> = {
   'ion-exchange': () => import('./topics/ion-exchange'),
   redox: () => import('./topics/redox'),
   'acids-bases-salts': () => import('./topics/acids-bases-salts'),
+  qualitative: () => import('./topics/qualitative'),
 }
 
 export async function loadTopic(id: string): Promise<TopicContent> {

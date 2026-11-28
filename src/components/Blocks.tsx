@@ -57,8 +57,10 @@ const CarbonBurning = lazy(() => import('./CarbonBurning'))
 const CarbonReduction = lazy(() => import('./CarbonReduction'))
 const CarbonMechanisms = lazy(() => import('./CarbonMechanisms'))
 const CarbonRoles = lazy(() => import('./CarbonRoles'))
-const IonExchange = lazy(() => import('./IonExchange'))
+const OxideMatrix = lazy(() => import('./OxideMatrix'))
+const SaltRatio = lazy(() => import('./SaltRatio'))
 const IonTests = lazy(() => import('./IonTests'))
+const IonSearch = lazy(() => import('./IonSearch'))
 const ElectrolyteTest = lazy(() => import('./ElectrolyteTest'))
 const DipoleDemo = lazy(() => import('./WaterDipole').then((m) => ({ default: m.DipoleDemo })))
 const HydrationDemo = lazy(() => import('./WaterDipole').then((m) => ({ default: m.HydrationDemo })))
@@ -222,10 +224,14 @@ function Animation({ name }: { name: AnimationName }) {
       return <CarbonMechanisms only="cs-silicon" />
     case 'carbon-roles':
       return <CarbonRoles />
-    case 'ion-exchange':
-      return <IonExchange />
+    case 'oxide-matrix':
+      return <OxideMatrix />
+    case 'salt-ratio':
+      return <SaltRatio />
     case 'ion-tests':
       return <IonTests />
+    case 'ion-search':
+      return <IonSearch />
     case 'electrolyte-test':
       return <ElectrolyteTest />
     case 'water-dipole':
