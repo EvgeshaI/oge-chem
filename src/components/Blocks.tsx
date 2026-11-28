@@ -68,6 +68,11 @@ const ExchangeMechanism = lazy(() => import('./IonEquations').then((m) => ({ def
 const ExchangeConditions = lazy(() => import('./IonEquations').then((m) => ({ default: m.ConditionsDemo })))
 const ExchangeWriting = lazy(() => import('./IonEquations').then((m) => ({ default: m.WritingDemo })))
 const ExchangeEquations = lazy(() => import('./IonEquations').then((m) => ({ default: m.BuilderDemo })))
+const RedoxTransfer = lazy(() => import('./RedoxDemos').then((m) => ({ default: m.TransferDemo })))
+const RedoxShift = lazy(() => import('./RedoxDemos').then((m) => ({ default: m.ShiftDemo })))
+const RedoxScale = lazy(() => import('./RedoxDemos').then((m) => ({ default: m.ScaleDemo })))
+const RedoxBalance = lazy(() => import('./RedoxDemos').then((m) => ({ default: m.BalanceDemo })))
+const RedoxComplex = lazy(() => import('./RedoxDemos').then((m) => ({ default: m.ComplexDemo })))
 const StepwiseDemo = lazy(() => import('./DissociationClasses').then((m) => ({ default: m.StepwiseDemo })))
 
 /** Светлый ли фон (hex) — тогда текст делаем тёмным */
@@ -241,6 +246,16 @@ function Animation({ name }: { name: AnimationName }) {
       return <ExchangeWriting />
     case 'exchange-equations':
       return <ExchangeEquations />
+    case 'redox-transfer':
+      return <RedoxTransfer />
+    case 'redox-shift':
+      return <RedoxShift />
+    case 'redox-scale':
+      return <RedoxScale />
+    case 'redox-balance':
+      return <RedoxBalance />
+    case 'redox-complex':
+      return <RedoxComplex />
   }
 }
 

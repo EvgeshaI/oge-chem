@@ -81,6 +81,11 @@ export type AnimationName =
   | 'exchange-conditions'
   | 'exchange-writing'
   | 'exchange-equations'
+  | 'redox-transfer'
+  | 'redox-shift'
+  | 'redox-scale'
+  | 'redox-balance'
+  | 'redox-complex'
 
 export interface CardItem {
   title: string

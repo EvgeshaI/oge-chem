@@ -21,7 +21,7 @@ const SUBS: Sub[] = [
     conducts: true,
     cation: 'Na⁺',
     anion: 'Cl⁻',
-    why: 'В кристалле соли ионы уже есть, они просто «склеены» притяжением. Вода разрывает кристалл на свободные ионы, и они переносят ток.',
+    why: 'В кристалле соли ионы уже есть, они просто «склеены» притяжением. Вода разрывает кристалл на свободные ионы, и они переносят электрический ток.',
   },
   {
     id: 'naoh',
@@ -31,7 +31,7 @@ const SUBS: Sub[] = [
     conducts: true,
     cation: 'Na⁺',
     anion: 'OH⁻',
-    why: 'Щёлочь тоже построена из ионов. В воде они расходятся, поэтому раствор проводит ток.',
+    why: 'Щёлочь тоже построена из ионов. В воде они расходятся, поэтому раствор проводит электрический ток.',
   },
   {
     id: 'hcl',
@@ -50,7 +50,7 @@ const SUBS: Sub[] = [
     bond: 'ковалентные малополярные связи',
     conducts: false,
     mol: 'C₁₂H₂₂O₁₁',
-    why: 'Связи в молекуле сахара почти неполярные, вода не может их разорвать. Молекулы остаются целыми, заряженных частиц нет, ток не идёт.',
+    why: 'Связи в молекуле сахара почти неполярные, вода не может их разорвать. Молекулы остаются целыми, заряженных частиц нет, электрический ток не идёт.',
   },
   {
     id: 'alcohol',
@@ -95,7 +95,7 @@ export default function ElectrolyteTest() {
 
   return (
     <div className="rounded-2xl bg-navy p-4 text-white sm:p-6">
-      <div className="text-sm text-white/75">Выберите вещество, растворите его в воде и включите ток. Лампочка загорится, если в растворе есть свободные ионы.</div>
+      <div className="text-sm text-white/75">Выберите вещество, растворите его в воде и включите электрический ток. Лампочка загорится, если в растворе есть свободные ионы.</div>
       <div className="mt-3 flex flex-wrap gap-2">
         {SUBS.map((x, k) => (
           <button
@@ -157,7 +157,7 @@ export default function ElectrolyteTest() {
 
       <div className="flex flex-wrap items-center justify-center gap-3">
         <button onClick={() => setOn((v) => !v)} className="rounded-lg bg-orange px-4 py-2 font-bold text-navy transition hover:brightness-110">
-          {on ? 'Выключить ток' : 'Включить ток'}
+          {on ? 'Выключить электрический ток' : 'Включить электрический ток'}
         </button>
         <span className="flex flex-wrap items-center justify-center gap-3 text-xs text-white/70">
           {s.mol ? (
@@ -176,7 +176,7 @@ export default function ElectrolyteTest() {
           {s.formula}: {s.conducts ? 'электролит' : 'неэлектролит'} · {s.bond}
         </div>
         <div className="mt-1 text-sm text-white/85">
-          {on ? (s.conducts ? 'Лампочка горит: катионы идут к «−», анионы к «+», ток есть. ' : 'Лампочка не горит: переносить заряд некому. ') : ''}
+          {on ? (s.conducts ? 'Лампочка горит: катионы идут к «−», анионы к «+», электрический ток есть. ' : 'Лампочка не горит: переносить заряд некому. ') : ''}
           {s.why}
         </div>
       </div>

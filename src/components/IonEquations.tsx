@@ -645,7 +645,7 @@ export function BuilderDemo() {
             <div className="mt-1 grid gap-1.5 sm:grid-cols-2">
               {[...r.left, ...r.right].map((t, k) => (
                 <div key={k} className="flex items-center gap-2 rounded-lg bg-white/10 px-2 py-1.5 text-sm">
-                  <span className="min-w-[4.5rem] text-base font-bold">
+                  <span className="min-w-[4.5rem] shrink-0 text-base font-bold">
                     {t.coef > 1 && <span style={{ color: COL.k }}>{t.coef}</span>}
                     <Segs segs={t.mol} />
                     {t.mark && <span style={{ color: t.mark === '↓' ? COL.solid : COL.gas }}>{t.mark}</span>}

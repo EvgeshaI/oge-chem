@@ -24,6 +24,7 @@ export const loaders: Record<string, Loader> = {
   'carbon-silicon': () => import('./topics/carbon-silicon'),
   dissociation: () => import('./topics/dissociation'),
   'ion-exchange': () => import('./topics/ion-exchange'),
+  redox: () => import('./topics/redox'),
   'acids-bases-salts': () => import('./topics/acids-bases-salts'),
 }
 

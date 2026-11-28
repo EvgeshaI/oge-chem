@@ -264,3 +264,13 @@ input:disabled,
     animation-delay: 0s !important;
   }
 }
+
+/* Блоки анимаций: ячейки сеток не растягиваются шире экрана — длинные уравнения внутри прокручиваются по горизонтали */
+.rounded-2xl.bg-navy .grid > *,
+.rounded-2xl.bg-navy .flex > * {
+  min-width: 0;
+}
+.rounded-2xl.bg-navy {
+  min-width: 0;
+  max-width: 100%;
+}

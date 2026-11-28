@@ -15,10 +15,10 @@ const isReaction = (e: string) => e.split(/(?:<=>|->)(?:\[[^\]]*\])*/).length ==
 
 describe('тема «Реакции ионного обмена»', () => {
   const meta = catalog.find((t) => t.id === 'ion-exchange')!
-  it('стоит после диссоциации и перед свойствами классов, есть 10 заданий тренировки', () => {
+  it('стоит после диссоциации и перед ОВР, есть 10 заданий тренировки', () => {
     const ids = catalog.map((t) => t.id)
     expect(ids.indexOf('ion-exchange')).toBe(ids.indexOf('dissociation') + 1)
-    expect(ids.indexOf('acids-bases-salts')).toBe(ids.indexOf('ion-exchange') + 1)
+    expect(ids.indexOf('redox')).toBe(ids.indexOf('ion-exchange') + 1)
     expect(meta.theoryOnly).toBeUndefined()
     expect(meta.totalTasks).toBe(30)
     expect(content.exam).toHaveLength(2)

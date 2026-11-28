@@ -67,10 +67,15 @@ export function Select({ value, onChange, options, disabled = false, className =
   useLayoutEffect(() => {
     if (!open) return
     place()
-    window.addEventListener('scroll', place, true)
+    // прокрутка самого списка не должна пересчитывать позицию (на телефонах это ломало скролл)
+    const onScroll = (e: Event) => {
+      if (e.target instanceof Node && listRef.current?.contains(e.target)) return
+      place()
+    }
+    window.addEventListener('scroll', onScroll, true)
     window.addEventListener('resize', place)
     return () => {
-      window.removeEventListener('scroll', place, true)
+      window.removeEventListener('scroll', onScroll, true)
       window.removeEventListener('resize', place)
     }
   }, [open, place])
@@ -87,15 +92,26 @@ export function Select({ value, onChange, options, disabled = false, className =
     return () => document.removeEventListener('pointerdown', onDown)
   }, [open])
 
-  // активный пункт всегда виден
+  // активный пункт виден при открытии списка и при переходе с клавиатуры.
+  // При наведении мыши и прокрутке пальцем не двигаем список — иначе он «отскакивает».
+  const byKeyboard = useRef(false)
+  const placed = pos !== null
   useEffect(() => {
-    if (!open) return
+    if (!open || !placed) return
     listRef.current?.children[active]?.scrollIntoView({ block: 'nearest' })
-  }, [open, active, pos])
+    byKeyboard.current = false
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open, placed])
+  useEffect(() => {
+    if (!open || !byKeyboard.current) return
+    listRef.current?.children[active]?.scrollIntoView({ block: 'nearest' })
+    byKeyboard.current = false
+  }, [open, active])
 
   const onKeyDown = (e: React.KeyboardEvent) => {
     if (disabled) return
     const last = options.length - 1
+    byKeyboard.current = true
     if (!open) {
       if (['ArrowDown', 'ArrowUp', 'Enter', ' '].includes(e.key)) {
         e.preventDefault()
@@ -161,8 +177,8 @@ export function Select({ value, onChange, options, disabled = false, className =
             aria-label={ariaLabel}
             // не забираем фокус у кнопки
             onMouseDown={(e) => e.preventDefault()}
-            style={{ position: 'fixed', left: pos.left, top: pos.top, bottom: pos.bottom, minWidth: pos.minWidth, maxHeight: LIST_MAX }}
-            className="z-50 overflow-auto rounded-xl border-2 border-navy/15 bg-white p-1 text-base shadow-[0_12px_28px_-8px_rgb(27_36_69/0.3)]"
+            style={{ touchAction: 'pan-y', position: 'fixed', left: pos.left, top: pos.top, bottom: pos.bottom, minWidth: pos.minWidth, maxHeight: LIST_MAX }}
+            className="z-50 overflow-auto overscroll-contain [-webkit-overflow-scrolling:touch] rounded-xl border-2 border-navy/15 bg-white p-1 text-base shadow-[0_12px_28px_-8px_rgb(27_36_69/0.3)]"
           >
             {options.map((o, i) => {
               const isSel = o.value === value
