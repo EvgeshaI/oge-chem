@@ -89,6 +89,10 @@ export type AnimationName =
   | 'redox-scale'
   | 'redox-balance'
   | 'redox-complex'
+  | 'element-fraction'
+  | 'solution-mixer'
+  | 'fraction-triangle'
+  | 'solution-changes'
 
 export interface CardItem {
   title: string

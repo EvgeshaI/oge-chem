@@ -164,6 +164,17 @@ export const catalog: TopicMeta[] = [
     totalTasks: 0,
     theoryOnly: true,
   },
+  {
+    id: 'mass-fraction',
+    title: 'Массовая доля',
+    subtitle: 'Массовая доля элемента в веществе, массовая доля вещества в растворе: разбавление, упаривание, добавление вещества, смешивание растворов',
+    emoji: '⚗️',
+    accent: 'purple',
+    free: true,
+    kim: [15, 22],
+    totalTasks: 0,
+    theoryOnly: true,
+  },
 ]
 
 export const topicById = (id: string) => catalog.find((t) => t.id === id)

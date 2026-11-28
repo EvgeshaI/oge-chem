@@ -77,6 +77,10 @@ const RedoxScale = lazy(() => import('./RedoxDemos').then((m) => ({ default: m.S
 const RedoxBalance = lazy(() => import('./RedoxDemos').then((m) => ({ default: m.BalanceDemo })))
 const RedoxComplex = lazy(() => import('./RedoxDemos').then((m) => ({ default: m.ComplexDemo })))
 const StepwiseDemo = lazy(() => import('./DissociationClasses').then((m) => ({ default: m.StepwiseDemo })))
+const ElementFraction = lazy(() => import('./MassFraction').then((m) => ({ default: m.ElementFractionDemo })))
+const SolutionMixer = lazy(() => import('./MassFraction').then((m) => ({ default: m.SolutionMixerDemo })))
+const FractionTriangle = lazy(() => import('./MassFraction').then((m) => ({ default: m.FractionTriangleDemo })))
+const SolutionChanges = lazy(() => import('./MassFraction').then((m) => ({ default: m.SolutionChangesDemo })))
 
 /** Светлый ли фон (hex) — тогда текст делаем тёмным */
 function isLightColor(hex: string): boolean {
@@ -265,6 +269,14 @@ function Animation({ name }: { name: AnimationName }) {
       return <RedoxBalance />
     case 'redox-complex':
       return <RedoxComplex />
+    case 'element-fraction':
+      return <ElementFraction />
+    case 'solution-mixer':
+      return <SolutionMixer />
+    case 'fraction-triangle':
+      return <FractionTriangle />
+    case 'solution-changes':
+      return <SolutionChanges />
   }
 }
 
